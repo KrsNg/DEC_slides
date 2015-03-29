@@ -1,0 +1,476 @@
+\documentclass{beamer}
+\usetheme{PaloAlto}
+\useinnertheme{rectangles}
+\usecolortheme{beaver}
+\usepackage[version=3]{mhchem}
+\usepackage{caption}
+\usepackage{textpos}
+\usepackage{etoolbox}
+%\usepackage[usenames,dvipsnames]{xcolor}
+
+\setbeamercolor{section in sidebar}{fg=darkgray}            %color of the active section
+\setbeamercolor{section in sidebar shaded}{fg=lightgray}     %color of the inactive section
+\setbeamercolor{subsection in sidebar}{fg=darkred}         %color of the active subsection
+\setbeamercolor{subsection in sidebar shaded}{fg=lightgray}  %color of the inactive subsection
+%\setbeamercolor{title in sidebar}{fg=...}              %color of the presentation title
+%\setbeamercolor{author in sidebar}{fg=...}             %color of the author   
+
+
+% Define footer
+\setbeamertemplate{footline}{bg=primary}
+\makeatother
+\setbeamertemplate{footline}
+{
+    \leavevmode%
+    \hbox{%
+    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+       \usebeamerfont{author in head/foot}\insertshortauthor\ (Chris Ngigi - DEC I)
+    \end{beamercolorbox}%
+    
+    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+        \usebeamerfont{title in head/foot}\insertshorttitle
+        \hfill
+    \end{beamercolorbox}    
+        
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+        \usebeamerfont{title in head/foot}
+        \hfill    
+        \hspace{2em}\insertframenumber/\inserttotalframenumber
+       % \insertframenumber{}\hspace{1ex}
+    \end{beamercolorbox}}%
+}
+
+\beamertemplatenavigationsymbolsempty  % disable navigation
+% ==================================================================
+ \setbeamertemplate{sidebar}{%
+   \vspace*{0cm}
+    \vspace*{\fill}
+   \vspace*{0.1cm}
+   \setbeamersize{sidebar width left=2cm}
+   \includegraphics[width=0.55cm]{./figs/utias_logo_blue.jpg}
+%   \includegraphics[width=1.25cm]{weiti_logo.png}\\
+%   \includegraphics[width=1.25cm]{pw_logo.png}
+%    \vfill 
+}
+    
+\setbeamerfont{section number projected}{%
+  family=\rmfamily,series=\bfseries,size=\small}
+\setbeamercolor{section number projected}{bg=lightgray,fg=darkred}
+\setbeamertemplate{sections/subsections in toc}[circle]
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{1cm}(-1.8cm,-1.2cm)
+\includegraphics[height=1cm,width=1cm]{./figs/utias-logo2.jpg}
+\end{textblock*}}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip0.8em}{\vskip0.8em}{}{}
+\makeatother
+
+%%========================================================================
+
+
+    \title[]{Development of h-p Adjoint-based error estimation for LES of reactive flows }
+	%\author[]{Christopher Ngigi}
+	\author[]{{Christopher Ngigi\\ \tiny Ph.D. Pre-Candidate\\ \footnotesize Supervisor: Prof. C. P. T. Groth}}
+	\titlegraphic{\includegraphics[width=0.15\textheight]{./figs/utias_logo_blue.jpg}}
+	\institute[]{Doctoral Examination Committee \\ Meeting I \\ University of Toronto, Institute for Aerospace Studies}
+	\date[]{April 6, 2015}
+	%\usetheme{Warsaw}
+	
+%%========================================================================
+
+\begin{document}
+
+\addtocounter{framenumber}{-1}
+
+\begingroup
+\makeatletter
+\setlength{\hoffset}{-.5\beamer@sidebarwidth}
+\makeatother
+\begin{frame}[plain]
+    \titlepage	
+\end{frame}
+
+
+
+
+%==========================================================================
+\begin{frame}[plain,c]
+\begin{alertblock}{Outline: }
+\tableofcontents
+\end{alertblock}
+\end{frame}
+
+\endgroup
+
+\section{Introduction}
+\begin{frame}[allowframebreaks]
+
+\frametitle{Introduction}
+\begin{itemize}
+\item Cost of experiment vs numerical simulation
+\item Moore's law
+\item Turbulent combustion
+\end{itemize}
+\end{frame}
+
+%=========================================================================
+
+\section[Scope]{Scope of research}
+\begin{frame}[allowframebreaks]
+\frametitle{Scope of research}
+\begin{itemize}
+\item Reducing numerical error
+\item High Order ... CENO
+\item Explicit filtering
+\item Adjoint based error estimation
+\item Using h and p adapatation
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+
+\section[Methodology]{Methodology}
+\begin{frame}[allowframebreaks]
+\frametitle{Methodology}
+\begin{itemize}
+\item Favre Averaged Governing Equations
+\item Large Eddy Simulation:
+  \begin{itemize}
+   \item Explicit Filtering
+   \item Some LES errors: Aliasing, Commutation
+   \item Sub-filter scale (SFS) modeling
+  \end{itemize}
+\item High-order finite volume methods: CENO technique - benefits of higher accuracy on a coarse mesh
+\item AMR
+   \begin{itemize}
+   \item Block-based AMR: speed and parallelization
+   \item Anisotropic vs Isotropic: how cell count (computational cost) can be reduced
+   \item Now the non-uniform vs the uniform block modification
+   \item Mesh geometry: CFFC can deal with cartesian or curvilinear coordinates - is this via using mapping functions for reference elements?
+   \end{itemize}
+\end{itemize}
+\end{frame}
+
+%==========================================================================
+\section[Framework]{Existing framework}
+\begin{frame}[allowframebreaks]
+\frametitle{Existing framework}
+\begin{itemize}
+\item The CFFC code already includes the following required features:
+\item Block-Based : people, year
+\item AMR:
+\item Deconick's research on explicit filters
+\item High Order FVM with CENO:
+\item Scott's work/input: Newton iterations and gmres solver
+\item Lucie's non-uniform approach - improves accuracy of flux evaluations and reduces computational cost for anisotropic
+\item PCM-FPI combustion modelling: modeled by F. Hernandez-Perez and N. Shahbazian
+\item Initial adjoint analysis done by Martin for the advection equations
+\end{itemize}
+\end{frame}
+
+%==========================================================================
+
+
+\section[Error]{Overview of error}
+\begin{frame}[allowframebreaks]
+\frametitle{Overview of error}
+Types of numerical error
+\begin{itemize}
+\item Truncation error
+\item Solution error
+Then explain a bit how they arise and how they can be dealt with
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+
+\section[AMR]{Adaptive mesh refinement}
+\begin{frame}[allowframebreaks]
+\frametitle{Adaptive mesh refinement (AMR)}
+\begin{itemize}
+\item Benefits of AMR
+\item How the block-based technique works
+\item Ghost cells for intercommunication
+\item Current stencils
+\item how the high-order will affect the current stencil
+\end{itemize}
+\end{frame}
+
+
+
+
+
+%==========================================================================
+
+\section[FVM]{High Order CENO and FVM}
+\begin{frame}[allowframebreaks]
+\frametitle{High order finite volume method and CENO}
+\begin{itemize}
+\item Lucien's work
+\item Ramy's work
+\item Marc Charest's work
+\item Luiz's work
+\item how the high-order works, and how it reduces numerical error
+\item separate slide of other groups researching this: Ihme and Poinssot. show some of their results
+\end{itemize}
+\end{frame}
+
+
+
+
+%==========================================================================
+\section[Adjoint]{Adjoint-based error estimation}
+
+\begin{frame}[allowframebreaks]
+\frametitle{Adjoint-based error estimation}
+\begin{itemize}
+\item separate slide on gradient-based techniques
+\item separate slide explaining what the adjoint is. 
+\begin{itemize}
+\item who was the first to use adjoint
+\item Cite initial work for this: Giles and Pierce, venditti and darmofal, fidkowski, jameson
+\end{itemize}
+\item continuous and discrete adjoint formulations
+\begin{itemize}
+\item continuous adjoint formulation
+\item discrete adjoint formulation: methods to evaluate the discrete adjoint
+\begin{itemize}
+\item one
+\item two
+\item three
+\end{itemize}
+\end{itemize}
+\item description of the adjoint methods to evaluate psi
+\item techniques to evaluate dR/dU
+\begin{itemize}
+\item complex step
+\item finite differencing
+\item automated differentiation
+\item approximate method
+\end{itemize}
+\item error estimation indicators, residual weighting (flag for refinement) and a 1D cartoon example, perhaps, of restriction/prolongation
+\begin{itemize}
+\item projecting onto fine space
+\item restricting onto coarse space
+\item getting the error in the residual and using this as a flag for refinement
+\end{itemize}
+\item treatment of steady vs unsteady adjoints
+\item expected benefits of adjoint vs gradient based methods
+\item separate slide on mesh adaptation as based on the adjoint. Enough diagrams from venditti and darmofal, fidkowski
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+\section[Refinement]{Basis of refinement: h and p}
+\begin{frame}[allowframebreaks]
+\frametitle{Basis of refinement: h and p}
+Show or put some figures with citations. Show what other groups have done. WHO has researched or is using \textbf{adjoint with AMR}?
+\begin{itemize}
+\item Fidkowski and Darmofal [2011] - Review of Output-Based Error Estimation and Mesh Adaptation in Computational Fluid Dynamics
+\item Hartmann, ERROR ESTIMATION AND ADJOINT-BASED ADAPTATION IN AERODYNAMICS, [2006]
+\item Nemec and Aftosmis [2007] - Adjoint Error Estimation and Adaptive Refinement for Embedded-Boundary Cartesian Meshes
+\item Hartmann, Held and Leicht [2010] - Adjoint-based error estimation and adaptive mesh refinement for the RANS and k-ω turbulence model equations
+\item Woopen, May and Sch{\"u}tz [2013] Adjoint-Based Error Estimation and Mesh Adaptation for Hybridized Discontinuous Galerkin Methods
+\item Li, Allaneau and Jameson [2011] - Continuous Adjoint Approach for Adaptive Mesh Refinement
+\item Diskin and Yamaleev [2011] Grid Adaptation Using Adjoint-Based Error Minimization
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+\section[Usage]{How we can use this}
+
+\begin{frame}[allowframebreaks]
+\frametitle{How we can use this}
+\begin{itemize}
+\item using it for mesh refinement - how some previous groups used this
+\item how we can link mesh adaptation AMR to the adjoint via h
+\item how we can use p based refinement
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+\section[Progress]{Progress to date}
+
+\begin{frame}[allowframebreaks]
+\frametitle{Progress to date}
+
+\begin{itemize}
+\item CFFC code familiarization : LES test case - on parallel clusters - SciNET. Job scheduling and post-processing results (tecplot)
+\item creating and solving linear systems in parallel implementation - trilinos and MPI
+\begin{itemize}
+\item 2D Poisson problem
+\item  3D Poisson problem
+\end{itemize}
+\item Preliminary work with the discrete adjoint - shockcube problem
+\begin{itemize}
+\item give the initial states, l and r
+\item how the code was modified - multiblock and multiproc for uniform blocks
+\item some results
+\item work in progress
+\begin{itemize}
+\item boundary conditions
+\item compare with other techniques to get dR/dU
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+\section[Timeline]{Timeline}
+
+\subsection[Present]{Work done to date}
+\begin{frame}[allowframebreaks]
+\frametitle{Timeline: April 2015  - January 2016}
+\begin{itemize}
+\item Put a table of what you have done till now
+\end{itemize}
+\end{frame}
+
+
+\subsection[Future]{Future work}
+\begin{frame}[allowframebreaks]
+\frametitle{Projected milestones}
+\begin{itemize}
+\item Put a table of what you will do in the next steps
+\end{itemize}
+\end{frame}
+
+
+%==========================================================================
+
+
+
+%
+%\begin{frame}[allowframebreaks]
+%
+%{\color{blue} Colourful Sub-Title}
+%
+%  \frametitle<presentation>{Further Reading}    
+%  \begin{thebibliography}{10}    
+%  \beamertemplatebookbibitems
+%  \bibitem{Autor1990}
+%    A.~Autor.
+%    \newblock {\em Introduction to Giving Presentations}.
+%    \newblock Klein-Verlag, 1990.
+%  \beamertemplatearticlebibitems
+%  \bibitem{Jemand2000}
+%    S.~Jemand.
+%    \newblock On this and that.
+%    \newblock {\em Journal of This and That}, 2(1):50--100, 2000.
+%  \end{thebibliography}
+%
+%
+%\begin{itemize}
+%\item First bullet level.
+%\begin{itemize}
+%\item Second bullet level.
+%\begin{itemize}
+%\item Third bullet level.
+%\end{itemize}
+%\end{itemize}
+%\item First bullet level again.
+%\end{itemize} 
+%
+%\end{frame}
+%
+%%=========================================================================
+%
+%
+%\begin{frame}
+%\frametitle{Frame With Figure}
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=0.4\textheight]{./figs/BFS_FLOW_DRIVER.jpg}
+%\caption*{\tiny Typical Backward Facing Step Flow Configuration as an Example [Driver 1985]}
+%\end{figure}
+%
+%\begin{itemize}
+% \item Important bullet point.
+%\end{itemize} 
+%\end{frame}
+%
+%%==========================================================================
+%
+%\begin{frame}
+%\frametitle{Frame With Table}
+%
+%\begin{itemize}
+%\item Important bullet point.
+%\end{itemize}
+%
+%\begin{tiny}
+%\begin{table}[t!]
+%%\begin{center}
+%\caption*{{\tiny Re-Attachment Lengths Predicted by DES Turbulence Models}}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%\textbf{Solver Type} & \textbf{Pressure-Velocity Coupling} & \textbf{Pressure Interpolation} & \textbf{Re-Attachment Length (m)} \\ \hline
+%\textit{Density Based} & & & 0.091\\
+%\hline
+%\textit{Pressure Based} & Simple & Standard & 0.148   \\
+%\hline
+%\textit{Pressure Based} & Simple & Second Order & 0.129  \\
+%\hline
+%\textit{Experimental} & & & 0.0795$\pm$1.27$\times$10$^{-4}$ [Driver 1985]\\
+%\hline
+%
+%\end{tabular}
+%%\end{center}
+%\end{table}
+%\end{tiny}
+%
+%\end{frame}
+
+%==========================================================================
+
+
+
+\begin{frame}
+\begin{center}
+{\huge Thank You For Your Attention!} \\
+\vspace*{1.5cm}
+{\Large Questions?}
+\end{center}
+
+\end{frame}
+
+
+%==========================================================================
+
+\appendix
+\newcounter{finalframe}
+\setcounter{finalframe}{\value{framenumber}}
+
+\begin{frame}[allowframebreaks] 
+\frametitle{References}
+\begin{thebibliography}{1} %Using the bibtex package is recoended but this should allow you do the bibliograghy ad-hoc.
+\begin{tiny}
+\beamertemplatetextbibitems
+
+\bibitem{Driver85}
+Driver, D., and Seegmiller, L., 1985, "Features of a Reattaching Turbulent Shear Layer in Divergent Channel Flow," American Institute of Aeronautics and Astronautics, \textbf{23}(2) pp. 163-171.
+
+\end{tiny}
+\end{thebibliography}
+\end{frame}
+
+\begin{frame}
+\frametitle{Backup Slide}
+
+\begin{itemize}
+\item Important backup slide point.
+\end{itemize}
+
+\end{frame}
+
+\setcounter{framenumber}{\value{finalframe}}
+\end{document}
