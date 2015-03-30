@@ -345,7 +345,8 @@ The results they obtained for mean temperature reveal good agreement between LES
 \vspace{-20pt}
 \end{block}
 \end{minipage}
-\vspace{-8pt}
+
+\vspace{-5pt}
 \tiny
 Modelling error chiefly arises from
 \begin{itemize}
@@ -467,6 +468,35 @@ Where the change occurs most rapidly over a few mesh cells, then over this locat
 \end{itemize}
 \end{frame}
 
+%-----------------------------------------------------------------
+\subsection[example]{CFFC example}
+\begin{frame}
+\frametitle{Example of gradient-based mesh refinement}
+\scriptsize
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-10pt}
+\begin{exampleblock}{Physics as criteria for mesh coarsening/refinement - sphere with a bow shock example}
+\vspace{-20pt}
+\begin{figure}
+\label{fig:Gradientbased}
+\centering
+\subfloat[\tiny{With isotropic AMR} \label{fig:sphereIso}]
+{\includegraphics[width=0.45\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/outflowIso.png}}
+\subfloat[\tiny{With anisotropic AMR} \label{fig:sphereAniso}]
+{\includegraphics[width=0.45\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/outflowAniso.png}}
+\subfloat[\tiny{Error in the density norm} \label{fig:rhoError}]
+{\includegraphics[width=0.45\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/outflowError.png}}
+\end{figure}
+
+[Freret, 2015] and [Williamschen, 2013]
+\begin{itemize}
+\item The graph reveals the asymptotic behavior of the convergence, yet for increased number of cells, there should be continual reduction in the density error norm
+\end{itemize}
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
 
 
 \subsection[Adjoint]{About the adjoint}
@@ -519,7 +549,7 @@ Where:
 \end{exampleblock}
 \end{minipage}
 
-Methods to evaluate $\frac{\partial{J}}{\partial{R}} $  for the discrete adjoint:
+Methods to evaluate the matrix $\frac{\partial{R}}{\partial{U}} $  for the discrete adjoint:
 \begin{itemize}
 \scriptsize
 \item Finite differencing {\color{red}[citations]}
@@ -641,11 +671,11 @@ CFFC code familiarization : LES test case - on parallel clusters - SciNET. Job s
 \begin{figure}
 \label{fig:LES}
 \centering
-\subfloat[\tiny{Flame temp} \label{fig:flametemp}]{\includegraphics[width=0.2\textheight, trim=7cm 0cm 2cm 0cm,clip=true]{./figs/Flame_temp.png}}
-\subfloat[\tiny{FSD, 2.0 ms} \label{fig:fsd2}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd2_0ms.png}}
-\subfloat[\tiny{FSD, 4.25 ms} \label{fig:fsd4_25}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd4_25ms.png}}
-\subfloat[\tiny{FSD, 7.0 ms } \label{fig:fsd7_0}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd7_0ms.png}}
-\subfloat[\tiny{time ave $c_{O_{2}}$} \label{fig:tave}]{\includegraphics[width=0.25\textheight, trim=4cm 0cm 2cm 0cm,clip=true]{./figs/Time_averaged_c_O2.png}}
+\subfloat[\tiny{Flame temp} \label{fig:flametemp}]{\includegraphics[width=0.21\textheight, trim=7cm 0.2cm 2cm 0.2cm,clip=true]{./figs/Flame_temp.png}}
+\subfloat[\tiny{FSD at 2.0 ms} \label{fig:fsd2}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd2_0ms.png}}
+\subfloat[\tiny{FSD at 4.25 ms} \label{fig:fsd4_25}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd4_25ms.png}}
+\subfloat[\tiny{FSD at 7.0 ms } \label{fig:fsd7_0}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd7_0ms.png}}
+\subfloat[\tiny{time ave $c_{O_{2}}$} \label{fig:tave}]{\includegraphics[width=0.25\textheight, trim=4cm 0.3cm 2cm 0.5cm,clip=true]{./figs/Time_averaged_c_O2.png}}
 %\tiny{\caption{\tiny{Solution contours for Poisson problem}}}
 \end{figure}
 

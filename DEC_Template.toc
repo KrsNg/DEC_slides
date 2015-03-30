@@ -18,12 +18,13 @@
 \beamer@sectionintoc {8}{Error estimation}{15}{0}{8}
 \beamer@subsectionintoc {8}{1}{Foundation}{15}{0}{8}
 \beamer@subsectionintoc {8}{2}{A background on gradient/physics-based refinement}{16}{0}{8}
-\beamer@subsectionintoc {8}{3}{About the adjoint}{17}{0}{8}
-\beamer@subsectionintoc {8}{4}{Basis of refinement: h and p}{19}{0}{8}
-\beamer@subsectionintoc {8}{5}{Error estimation indicators}{20}{0}{8}
-\beamer@subsectionintoc {8}{6}{Mesh adaptation}{21}{0}{8}
-\beamer@sectionintoc {9}{Usage}{22}{0}{9}
-\beamer@sectionintoc {10}{Progress to date}{23}{0}{10}
-\beamer@sectionintoc {11}{Timeline}{26}{0}{11}
-\beamer@subsectionintoc {11}{1}{Work done to date}{26}{0}{11}
-\beamer@subsectionintoc {11}{2}{Future work}{27}{0}{11}
+\beamer@subsectionintoc {8}{3}{CFFC example}{17}{0}{8}
+\beamer@subsectionintoc {8}{4}{About the adjoint}{18}{0}{8}
+\beamer@subsectionintoc {8}{5}{Basis of refinement: h and p}{20}{0}{8}
+\beamer@subsectionintoc {8}{6}{Error estimation indicators}{21}{0}{8}
+\beamer@subsectionintoc {8}{7}{Mesh adaptation}{22}{0}{8}
+\beamer@sectionintoc {9}{Usage}{23}{0}{9}
+\beamer@sectionintoc {10}{Progress to date}{24}{0}{10}
+\beamer@sectionintoc {11}{Timeline}{27}{0}{11}
+\beamer@subsectionintoc {11}{1}{Work done to date}{27}{0}{11}
+\beamer@subsectionintoc {11}{2}{Future work}{28}{0}{11}
