@@ -473,7 +473,7 @@ Where the change occurs most rapidly over a few mesh cells, then over this locat
 \begin{frame}%[allowframebreaks]
 \scriptsize
 \frametitle{About the adjoint}
-To make error estimation more relevant to engineering applications: assess the error made in predicting an integral quantity which represents an engineering output. This output is the functional. For example,the output can be the average pressure on a wall. The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the residual.\newline
+To make error estimation more relevant to engineering applications: assess the error made in predicting an integral quantity which represents an engineering output. This output is the functional. For example,the output can be the average pressure on a wall. The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the input. (Well, actually, it is a function of the residual, but the residual is in turn a function of the input/state. \newline
 The adjoint has two main formulations [Venditti and Darmofal, 2000]:
 \begin{itemize}
 \item continuous:
@@ -564,25 +564,10 @@ All about residual weighting (flag for refinement) and a 1D cartoon example, per
 \item restricting onto coarse space
 \item getting the error in the residual and using this as a flag for refinement
 \end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------
-
-\subsection{Steady vs unsteady}
-\begin{frame}
-\scriptsize
-\frametitle{Steady vs unsteady}
-Lastly: treatment of steady vs unsteady adjoints
-\end{frame}
-
-%-----------------------------------------------------------------
-
-\subsection{Benefits}
-\begin{frame}
-\scriptsize
-\frametitle{Benefits of the adjoint approach}
+Steady vs unsteady adjoints:
 Expected benefits of adjoint vs gradient based methods
 \end{frame}
+
 
 %-----------------------------------------------------------------
 
@@ -593,7 +578,7 @@ Expected benefits of adjoint vs gradient based methods
 This is a separate slide on mesh adaptation as based on the adjoint. Enough diagrams from venditti and darmofal, fidkowski
 \end{frame}
 
-%==========================================================================
+
 
 
 %==========================================================================
