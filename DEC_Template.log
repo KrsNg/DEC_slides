@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  28 MAR 2015 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  29 MAR 2015 22:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,31 +935,95 @@ Grid set 16 x 16 = 22.7622pt x 17.07166pt
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 \etb@tempcnta=\count182
 )
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 75.
-
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen290
+\WF@size=\dimen291
+\c@WF@wrappedlines=\count183
+\WF@box=\box69
+\WF@everypar=\toks48
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
+\c@tracingmulticols=\count184
+\mult@box=\box70
+\multicol@leftmargin=\dimen292
+\c@unbalance=\count185
+\c@collectmore=\count186
+\doublecol@number=\count187
+\multicoltolerance=\count188
+\multicolpretolerance=\count189
+\full@width=\dimen293
+\page@free=\dimen294
+\premulticols=\dimen295
+\postmulticols=\dimen296
+\multicolsep=\skip79
+\multicolbaselineskip=\skip80
+\partial@page=\box71
+\last@line=\box72
+\maxbalancingoverflow=\dimen297
+\mult@rightbox=\box73
+\mult@grightbox=\box74
+\mult@gfirstbox=\box75
+\mult@firstbox=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\c@columnbadness=\count190
+\c@finalcolumnbadness=\count191
+\last@try=\dimen298
+\multicolovershoot=\dimen299
+\multicolundershoot=\dimen300
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count192
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count193
+\sf@farskip=\skip81
+\sf@captopadj=\dimen301
+\sf@capskip=\skip82
+\sf@nearskip=\skip83
+\c@subfigure=\count194
+\c@subfigure@save=\count195
+\c@depth=\count196
+\c@subtable=\count197
+\c@subtable@save=\count198
+\sf@top=\skip84
+\sf@bottom=\skip85
+)
 (./DEC_Template.aux)
 \openout1 = `DEC_Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -997,17 +1061,18 @@ LaTeX Font Info:    ... okay on input line 83.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count183
-\scratchdimen=\dimen290
-\scratchbox=\box69
-\nofMPsegments=\count184
-\nofMParguments=\count185
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count186
-\MPscratchDim=\dimen291
-\MPnumerator=\count187
-\makeMPintoPDFobject=\count188
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count199
+\scratchdimen=\dimen302
+\scratchbox=\box96
+\nofMPsegments=\count200
+\nofMParguments=\count201
+\everyMPshowfont=\toks49
+Normal \count register pool exhausted, switching to extended pool.
+\MPscratchCnt=\count277
+\MPscratchDim=\dimen303
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
+\everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1024,8 +1089,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box70
-Package hyperref Info: Link coloring OFF on input line 83.
+\AtBeginShipoutBox=\box97
+Package hyperref Info: Link coloring OFF on input line 107.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1033,68 +1098,68 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count189
+\c@section@level=\count280
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (./DEC_Template.out) (./DEC_Template.out)
 \@outlinefile=\write5
 \openout5 = `DEC_Template.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 83.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 83.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 107.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 83.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 83.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 83.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 83.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 83.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 83.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 83.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 83.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 83.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 83.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 83.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 83.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 83.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 83.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 83.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 83.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 83.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 107.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 8
-3.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+07.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-83.
+107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 83.
+ut line 107.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1120,8 +1185,9 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 83.
+LaTeX Info: Redefining \includegraphics on input line 107.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: Incompatible package detected (regarding \caption).
 (caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@err
 or {\noexpand \caption outside figure or table}\@ehd \expandafter \@gobble \els
@@ -1134,34 +1200,75 @@ Package caption Warning: \caption will not be redefined since it's already
 (caption)                unknown to the caption package.
 See the caption package documentation for explanation.
 
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (./DEC_Template.nav)
-Overfull \hbox (2.11946pt too wide) in paragraph at lines 83--83
+Overfull \hbox (2.11946pt too wide) in paragraph at lines 107--107
 [][][][]  
  []
 
-<./figs/utias_logo_blue.jpg, id=80, 651.8754pt x 826.7688pt>
+<./figs/utias_logo_blue.jpg, id=136, 651.8754pt x 826.7688pt>
 File: ./figs/utias_logo_blue.jpg Graphic file (type jpg)
 
 <use ./figs/utias_logo_blue.jpg>
-Package pdftex.def Info: ./figs/utias_logo_blue.jpg used on input line 93.
+Package pdftex.def Info: ./figs/utias_logo_blue.jpg used on input line 116.
 (pdftex.def)             Requested size: 32.32068pt x 40.98763pt.
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figs/
-utias_logo_blue.jpg>] (./DEC_Template.toc)
-[2
+utias_logo_blue.jpg>] (./DEC_Template.toc
+Overfull \hbox (1.80008pt too wide) detected at line 25
+ []\OT1/cmr/bx/n/8 10 
+ []
 
-] <./figs/utias-logo2.jpg, id=126, 441.43297pt x 552.1428pt>
+
+Overfull \hbox (1.80008pt too wide) detected at line 26
+ []\OT1/cmr/bx/n/8 11 
+ []
+
+
+Overfull \hbox (1.80008pt too wide) detected at line 27
+ []\OT1/cmr/bx/n/8 12 
+ []
+
+) [2
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 174.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 174.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 174.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+) <./figs/MooresLaw.png, id=176, 1218.5525pt x 818.05624pt>
+File: ./figs/MooresLaw.png Graphic file (type png)
+
+<use ./figs/MooresLaw.png>
+Package pdftex.def Info: ./figs/MooresLaw.png used on input line 174.
+(pdftex.def)             Requested size: 222.08183pt x 136.64938pt.
+
+<./figs/utias-logo2.jpg, id=179, 441.43297pt x 552.1428pt>
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 116.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 174.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (2.36719pt too high) detected at line 174
+ []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 116.
+(Font)              size <5> substituted on input line 174.
 
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1170,10 +1277,16 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [3
 
- <./figs/utias-logo2.jpg>]
+ <./figs/MooresLaw.png (PNG copy)> <./figs/utias-logo2.jpg>]
+<./figs/dlrflame.png, id=209, 110.4125pt x 281.05pt>
+File: ./figs/dlrflame.png Graphic file (type png)
+ <use ./figs/dlrflame.png>
+Package pdftex.def Info: ./figs/dlrflame.png used on input line 206.
+(pdftex.def)             Requested size: 47.97176pt x 122.1126pt.
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 130.
+
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 206.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1182,10 +1295,28 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [4
 
-]
+ <./figs/dlrflame.png>]
+<./figs/Temperatures.png, id=235, 488.82625pt x 377.41pt>
+File: ./figs/Temperatures.png Graphic file (type png)
+
+<use ./figs/Temperatures.png>
+Package pdftex.def Info: ./figs/Temperatures.png used on input line 224.
+(pdftex.def)             Requested size: 150.83533pt x 116.45456pt.
+
+<./figs/Temp_DNS_LES2.png, id=236, 492.84125pt x 400.49625pt>
+File: ./figs/Temp_DNS_LES2.png Graphic file (type png)
+
+<use ./figs/Temp_DNS_LES2.png>
+Package pdftex.def Info: ./figs/Temp_DNS_LES2.png used on input line 224.
+(pdftex.def)             Requested size: 140.06067pt x 113.81873pt.
+
+Overfull \hbox (0.15337pt too wide) in paragraph at lines 224--224
+ [][] 
+ []
+
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 155.
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 224.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1194,10 +1325,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [5
 
-]
+ <./figs/Temperatures.png> <./figs/Temp_DNS_LES2.png>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 172.
+
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 248.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1209,7 +1341,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 186.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 262.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1221,7 +1353,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 201.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 295.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1233,7 +1365,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 220.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 313.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1245,7 +1377,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 265.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 328.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1257,7 +1389,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 265.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 345.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1266,13 +1398,10 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [11
 
-
 ]
-Missing character: There is no Ï in font cmss10!
-Missing character: There is no ‰ in font cmss10!
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 282.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 361.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1284,7 +1413,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 282.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 374.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1293,11 +1422,10 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [13
 
-
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 295.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 384.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1309,7 +1437,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 323.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 411.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1321,7 +1449,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 335.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 429.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1333,7 +1461,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 344.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 442.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1343,6 +1471,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [17
 
 ]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 448.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
  []
@@ -1350,14 +1483,9 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [18
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 450.
-
-\c@finalframe=\count190
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 464.
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 455.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1369,7 +1497,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 473.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 462.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1377,6 +1505,104 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
  []
 
 [20
+
+]
+Missing character: There is no Ï in font cmss8!
+Missing character: There is no ‰ in font cmss8!
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 479.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[21
+
+]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 493.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[22
+
+]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 521.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[23
+
+]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 534.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[24
+
+]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 544.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[25
+
+]
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[26
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 557.
+
+\c@finalframe=\count281
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 578.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[27
+
+]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 589.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[28
 
 ]
 \tf@nav=\write6
@@ -1388,39 +1614,45 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `DEC_Template.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 592.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 592.
  (./DEC_Template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 592.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 592.
 Package rerunfilecheck Info: File `DEC_Template.out' has not changed.
-(rerunfilecheck)             Checksum: 7E7F8AF71FFB20CFF98F52216EC4871B;825.
+(rerunfilecheck)             Checksum: 7356C3C96C0D233B27145F3723773AAF;1856.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 592.
  ) 
 Here is how much of TeX's memory you used:
- 24096 strings out of 493109
- 470923 string characters out of 6135003
- 526897 words of memory out of 5000000
- 27070 multiletter control sequences out of 15000+600000
- 7559 words of font info for 27 fonts, out of 8000000 for 9000
+ 24651 strings out of 493109
+ 480239 string characters out of 6135003
+ 536389 words of memory out of 5000000
+ 27547 multiletter control sequences out of 15000+600000
+ 14277 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,68p,10349b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on DEC_Template.pdf (20 pages, 271968 bytes).
+ 56i,16n,68p,10349b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on DEC_Template.pdf (28 pages, 709748 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
- 57 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 811 PDF objects out of 1000 (max. 8388607)
+ 742 compressed objects within 8 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 

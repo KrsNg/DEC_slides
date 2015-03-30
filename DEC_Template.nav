@@ -6,84 +6,114 @@
 \headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Computing power}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Computing power}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\sectionentry {2}{Scope}{4}{Scope of research}{0}}
-\headcommand {\beamer@sectionpages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\slideentry {2}{0}{4}{4/4}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{4}{Turbulent combustion - experimental}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{2}{1}{4/4}{Turbulent combustion - experimental}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\sectionentry {3}{Methodology}{5}{Methodology}{0}}
-\headcommand {\beamer@sectionpages {4}{4}}
-\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\slideentry {3}{0}{5}{5/5}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{5}{Turbulent combustion - simulation}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {1}{3}{1}{5/5}{Turbulent combustion - simulation}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\sectionentry {4}{Framework}{6}{Existing framework}{0}}
-\headcommand {\beamer@sectionpages {5}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\slideentry {4}{0}{6}{6/6}{}{0}}
+\headcommand {\slideentry {1}{3}{2}{6/6}{Turbulent combustion - simulation}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\sectionentry {5}{Error}{7}{Overview of error}{0}}
-\headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\slideentry {5}{0}{7}{7/7}{}{0}}
+\headcommand {\sectionentry {2}{Scope}{7}{Scope of research}{0}}
+\headcommand {\beamer@sectionpages {3}{6}}
+\headcommand {\beamer@subsectionpages {5}{6}}
+\headcommand {\slideentry {2}{0}{3}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\sectionentry {6}{AMR}{8}{Adaptive mesh refinement}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{this will be a subsection}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{this will be another subsection}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{8}{this will be the last subsection}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\sectionentry {3}{Methodology}{8}{Methodology}{0}}
 \headcommand {\beamer@sectionpages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {6}{0}{8}{8/8}{}{0}}
+\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {3}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\sectionentry {7}{FVM}{9}{High Order CENO and FVM}{0}}
+\headcommand {\sectionentry {4}{Framework}{9}{Existing framework}{0}}
 \headcommand {\beamer@sectionpages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {7}{0}{9}{9/9}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {8}{Adjoint}{10}{Adjoint-based error estimation}{0}}
+\headcommand {\sectionentry {5}{Error}{10}{Overview of error}{0}}
 \headcommand {\beamer@sectionpages {9}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\slideentry {8}{0}{10}{10/10}{}{0}}
+\headcommand {\slideentry {5}{0}{3}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {8}{0}{10}{10/11}{}{0}}
-\headcommand {\beamer@framepages {10}{11}}
-\headcommand {\sectionentry {9}{Refinement}{12}{Basis of refinement: h and p}{0}}
-\headcommand {\beamer@sectionpages {10}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\slideentry {9}{0}{11}{12/12}{}{0}}
+\headcommand {\sectionentry {6}{AMR}{11}{Adaptive mesh refinement}{0}}
+\headcommand {\beamer@sectionpages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {6}{0}{4}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {7}{FVM}{12}{High Order CENO and FVM}{0}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{12}{High order FVM}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {7}{1}{1}{12/12}{High order FVM}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {9}{0}{11}{12/13}{}{0}}
-\headcommand {\beamer@framepages {12}{13}}
-\headcommand {\sectionentry {10}{Usage}{14}{How we can use this}{0}}
+\headcommand {\beamer@subsectionentry {0}{7}{2}{13}{CENO}}\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {7}{2}{1}{13/13}{CENO}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\sectionentry {8}{Adjoint}{14}{Adjoint-based error estimation}{0}}
 \headcommand {\beamer@sectionpages {12}{13}}
-\headcommand {\beamer@subsectionpages {12}{13}}
-\headcommand {\slideentry {10}{0}{12}{14/14}{}{0}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{8}{1}{14}{Gradient technique}}\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\slideentry {8}{1}{1}{14/14}{Gradient technique}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {11}{Progress}{15}{Progress to date}{0}}
-\headcommand {\beamer@sectionpages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\slideentry {11}{0}{13}{15/15}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{8}{2}{15}{About the adjoint}}\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {8}{2}{1}{15/15}{About the adjoint}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\sectionentry {12}{Timeline}{16}{Timeline}{0}}
-\headcommand {\beamer@sectionpages {15}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{12}{1}{16}{Present}}\headcommand {\beamer@subsectionpages {16}{15}}
-\headcommand {\slideentry {12}{1}{1}{16/16}{Present}{0}}
+\headcommand {\slideentry {8}{2}{2}{16/16}{About the adjoint}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{12}{2}{17}{Future}}\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\slideentry {12}{2}{1}{17/17}{Future}{0}}
+\headcommand {\beamer@subsectionentry {0}{8}{3}{17}{Error estimation indicators}}\headcommand {\beamer@subsectionpages {15}{16}}
+\headcommand {\slideentry {8}{3}{1}{17/17}{Error estimation indicators}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {12}{2}{2}{18/18}{Future}{0}}
+\headcommand {\beamer@subsectionentry {0}{8}{4}{18}{Steady vs unsteady}}\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {8}{4}{1}{18/18}{Steady vs unsteady}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@sectionpages {16}{18}}
-\headcommand {\beamer@subsectionpages {17}{18}}
-\headcommand {\beamer@appendixpages {19}}
-\headcommand {\slideentry {12}{0}{3}{19/19}{}{1}}
+\headcommand {\beamer@subsectionentry {0}{8}{5}{19}{Benefits}}\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {8}{5}{1}{19/19}{Benefits}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {12}{0}{4}{20/20}{}{1}}
+\headcommand {\beamer@subsectionentry {0}{8}{6}{20}{Mesh adaptation}}\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\slideentry {8}{6}{1}{20/20}{Mesh adaptation}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {19}{20}}
-\headcommand {\beamer@subsectionpages {19}{20}}
-\headcommand {\beamer@sectionpages {19}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\def \inserttotalframenumber {17}}
+\headcommand {\sectionentry {9}{Refinement}{21}{Basis of refinement: h and p}{0}}
+\headcommand {\beamer@sectionpages {14}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {9}{0}{2}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\sectionentry {10}{Usage}{22}{How we can use this}{0}}
+\headcommand {\beamer@sectionpages {21}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\slideentry {10}{0}{3}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\sectionentry {11}{Progress}{23}{Progress to date}{0}}
+\headcommand {\beamer@sectionpages {22}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\slideentry {11}{0}{4}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\sectionentry {12}{Timeline}{24}{Timeline}{0}}
+\headcommand {\beamer@sectionpages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{12}{1}{24}{Present}}\headcommand {\beamer@subsectionpages {24}{23}}
+\headcommand {\slideentry {12}{1}{1}{24/24}{Present}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@subsectionentry {0}{12}{2}{25}{Future}}\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\slideentry {12}{2}{1}{25/25}{Future}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {12}{2}{2}{26/26}{Future}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{26}}
+\headcommand {\beamer@sectionpages {24}{26}}
+\headcommand {\beamer@subsectionpages {25}{26}}
+\headcommand {\beamer@appendixpages {27}}
+\headcommand {\slideentry {12}{0}{3}{27/27}{}{1}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {12}{0}{4}{28/28}{}{1}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@partpages {27}{28}}
+\headcommand {\beamer@subsectionpages {27}{28}}
+\headcommand {\beamer@sectionpages {27}{28}}
+\headcommand {\beamer@documentpages {28}}
+\headcommand {\def \inserttotalframenumber {25}}

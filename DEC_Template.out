@@ -1,15 +1,29 @@
 \BOOKMARK [2][]{Outline0.1}{Introduction}{}% 1
-\BOOKMARK [2][]{Outline0.2}{Scope of research}{}% 2
-\BOOKMARK [2][]{Outline0.3}{Methodology}{}% 3
-\BOOKMARK [2][]{Outline0.4}{Existing framework}{}% 4
-\BOOKMARK [2][]{Outline0.5}{Overview of error}{}% 5
-\BOOKMARK [2][]{Outline0.6}{Adaptive mesh refinement}{}% 6
-\BOOKMARK [2][]{Outline0.7}{High Order CENO and FVM}{}% 7
-\BOOKMARK [2][]{Outline0.8}{Adjoint-based error estimation}{}% 8
-\BOOKMARK [2][]{Outline0.9}{Basis of refinement: h and p}{}% 9
-\BOOKMARK [2][]{Outline0.10}{How we can use this}{}% 10
-\BOOKMARK [2][]{Outline0.11}{Progress to date}{}% 11
-\BOOKMARK [2][]{Outline0.12}{Timeline}{}% 12
-\BOOKMARK [3][]{Outline0.12.1.16}{Work done to date}{Outline0.12}% 13
-\BOOKMARK [3][]{Outline0.12.2.17}{Future work}{Outline0.12}% 14
-\BOOKMARK [1][]{Outline1}{Appendix}{}% 15
+\BOOKMARK [3][]{Outline0.1.1.3}{Computing power}{Outline0.1}% 2
+\BOOKMARK [3][]{Outline0.1.2.4}{Turbulent combustion - experimental}{Outline0.1}% 3
+\BOOKMARK [3][]{Outline0.1.3.5}{Turbulent combustion - simulation}{Outline0.1}% 4
+\BOOKMARK [2][]{Outline0.2}{Scope of research}{}% 5
+\BOOKMARK [3][]{Outline0.2.1.8}{this will be a subsection}{Outline0.2}% 6
+\BOOKMARK [3][]{Outline0.2.2.8}{this will be another subsection}{Outline0.2}% 7
+\BOOKMARK [3][]{Outline0.2.3.8}{this will be the last subsection}{Outline0.2}% 8
+\BOOKMARK [2][]{Outline0.3}{Methodology}{}% 9
+\BOOKMARK [2][]{Outline0.4}{Existing framework}{}% 10
+\BOOKMARK [2][]{Outline0.5}{Overview of error}{}% 11
+\BOOKMARK [2][]{Outline0.6}{Adaptive mesh refinement}{}% 12
+\BOOKMARK [2][]{Outline0.7}{High Order CENO and FVM}{}% 13
+\BOOKMARK [3][]{Outline0.7.1.12}{High order FVM}{Outline0.7}% 14
+\BOOKMARK [3][]{Outline0.7.2.13}{CENO}{Outline0.7}% 15
+\BOOKMARK [2][]{Outline0.8}{Adjoint-based error estimation}{}% 16
+\BOOKMARK [3][]{Outline0.8.1.14}{A background on gradient/physics-based refinement}{Outline0.8}% 17
+\BOOKMARK [3][]{Outline0.8.2.15}{About the adjoint}{Outline0.8}% 18
+\BOOKMARK [3][]{Outline0.8.3.17}{Error estimation indicators}{Outline0.8}% 19
+\BOOKMARK [3][]{Outline0.8.4.18}{Steady vs unsteady}{Outline0.8}% 20
+\BOOKMARK [3][]{Outline0.8.5.19}{Benefits}{Outline0.8}% 21
+\BOOKMARK [3][]{Outline0.8.6.20}{Mesh adaptation}{Outline0.8}% 22
+\BOOKMARK [2][]{Outline0.9}{Basis of refinement: h and p}{}% 23
+\BOOKMARK [2][]{Outline0.10}{How we can use this}{}% 24
+\BOOKMARK [2][]{Outline0.11}{Progress to date}{}% 25
+\BOOKMARK [2][]{Outline0.12}{Timeline}{}% 26
+\BOOKMARK [3][]{Outline0.12.1.24}{Work done to date}{Outline0.12}% 27
+\BOOKMARK [3][]{Outline0.12.2.25}{Future work}{Outline0.12}% 28
+\BOOKMARK [1][]{Outline1}{Appendix}{}% 29
