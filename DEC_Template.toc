@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.10pt}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Computing power}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Turbulent combustion - experimental}{4}{0}{1}
@@ -11,19 +11,21 @@
 \beamer@sectionintoc {4}{Existing framework}{9}{0}{4}
 \beamer@sectionintoc {5}{Overview of error}{10}{0}{5}
 \beamer@sectionintoc {6}{Adaptive mesh refinement}{11}{0}{6}
-\beamer@sectionintoc {7}{High Order CENO and FVM}{12}{0}{7}
+\beamer@sectionintoc {7}{High order FVM, CENO and LES}{12}{0}{7}
 \beamer@subsectionintoc {7}{1}{High order FVM}{12}{0}{7}
 \beamer@subsectionintoc {7}{2}{CENO}{13}{0}{7}
-\beamer@sectionintoc {8}{Adjoint-based error estimation}{14}{0}{8}
-\beamer@subsectionintoc {8}{1}{A background on gradient/physics-based refinement}{14}{0}{8}
-\beamer@subsectionintoc {8}{2}{About the adjoint}{15}{0}{8}
-\beamer@subsectionintoc {8}{3}{Error estimation indicators}{17}{0}{8}
-\beamer@subsectionintoc {8}{4}{Steady vs unsteady}{18}{0}{8}
-\beamer@subsectionintoc {8}{5}{Benefits}{19}{0}{8}
-\beamer@subsectionintoc {8}{6}{Mesh adaptation}{20}{0}{8}
-\beamer@sectionintoc {9}{Basis of refinement: h and p}{21}{0}{9}
-\beamer@sectionintoc {10}{How we can use this}{22}{0}{10}
-\beamer@sectionintoc {11}{Progress to date}{23}{0}{11}
-\beamer@sectionintoc {12}{Timeline}{24}{0}{12}
-\beamer@subsectionintoc {12}{1}{Work done to date}{24}{0}{12}
-\beamer@subsectionintoc {12}{2}{Future work}{25}{0}{12}
+\beamer@subsectionintoc {7}{3}{LES}{14}{0}{7}
+\beamer@sectionintoc {8}{Error estimation}{15}{0}{8}
+\beamer@subsectionintoc {8}{1}{Foundation}{15}{0}{8}
+\beamer@subsectionintoc {8}{2}{A background on gradient/physics-based refinement}{16}{0}{8}
+\beamer@subsectionintoc {8}{3}{About the adjoint}{17}{0}{8}
+\beamer@subsectionintoc {8}{4}{Basis of refinement: h and p}{19}{0}{8}
+\beamer@subsectionintoc {8}{5}{Error estimation indicators}{20}{0}{8}
+\beamer@subsectionintoc {8}{6}{Steady vs unsteady}{21}{0}{8}
+\beamer@subsectionintoc {8}{7}{Benefits}{22}{0}{8}
+\beamer@subsectionintoc {8}{8}{Mesh adaptation}{23}{0}{8}
+\beamer@sectionintoc {9}{Usage}{24}{0}{9}
+\beamer@sectionintoc {10}{Progress to date}{25}{0}{10}
+\beamer@sectionintoc {11}{Timeline}{28}{0}{11}
+\beamer@subsectionintoc {11}{1}{Work done to date}{28}{0}{11}
+\beamer@subsectionintoc {11}{2}{Future work}{29}{0}{11}
