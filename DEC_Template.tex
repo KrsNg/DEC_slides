@@ -9,13 +9,12 @@
 \usepackage[version=3]{mhchem}
 \usepackage{caption}
 \usepackage{textpos}
-\usepackage{amsmath}
+\usepackage{amsmath,esint}
 \usepackage{etoolbox}
 \usepackage{wrapfig}
 \usepackage{multicol}
 \usepackage[caption=false]{subfig}
 %\usepackage[font=small,skip=0pt]{caption}
-
 
 
 % SETTINGS==========================================================================================
@@ -99,6 +98,13 @@
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.5em}{}{}
 \patchcmd\insertverticalnavigation{\dohead}{\vskip-35pt\dohead}{}{}
 \makeatother
+
+
+%===================================
+% include the user-defined commands
+%===================================
+%\include{commands_ltn}
+
 
 
 % ==================================================================
@@ -259,67 +265,44 @@ The results they obtained for mean temperature reveal good agreement between LES
 \end{frame}
 %=========================================================================
 
-\section[Scope]{Scope of research}
-\begin{frame}%[allowframebreaks]
-\frametitle{Scope of research}
-\scriptsize
-\begin{itemize}
-\item Reducing numerical error
-\item High Order ... CENO
-\item Explicit filtering
-\item Adjoint based error estimation
-\item Using h and p adapatation
-\end{itemize}
-\end{frame}
-
-\subsection{this will be a subsection}
-
-\subsection{this will be another subsection}
-
-\subsection{this will be the last subsection}
-
-%==========================================================================
-
 \section[Methodology]{Methodology}
 \begin{frame}%[allowframebreaks]
-\frametitle{Methodology}
+\frametitle{Scope and methodology within framework}
 \scriptsize
+
 \begin{itemize}
-\item Favre Averaged Governing Equations
+\item Reducing numerical error: using high order CENO and adjoint based error estimation : {$\mathcal{O}(h^p)$} $\rightarrow$ h and p adaptation
+
+\item Combustion modeling:
+  \begin{itemize}
+   \tiny
+   \item PCM-FPI: allowing detailed chemical kinetics via tabulation of precomputed laminar premixed flames [H. Perez 2011]
+   \end{itemize}  
+
+
+\item Favre averaged Navier Stokes governing equations
+
 \item Large Eddy Simulation:
   \begin{itemize}
-  \scriptsize
-   \item Explicit Filtering
-   \item Some LES errors: Aliasing, Commutation
-   \item Sub-filter scale (SFS) modeling
+  \tiny
+   \item Explicit Filtering [Deconinck 2008]
+   \item Sub-filter scale (SFS) modeling [H-Perez 2011]
   \end{itemize}
-\item High-order finite volume methods: CENO technique - benefits of higher accuracy on a coarse mesh
+
+\item High-order finite volume methods: CENO technique - benefits of higher accuracy on a coarse mesh [Groth and Ivan 2013][Ivan 2010][Rashad 2009]
+
+
 \item AMR
    \begin{itemize}
-   \scriptsize
-   \item Block-based AMR: speed and parallelization
-   \item Anisotropic vs Isotropic: how cell count (computational cost) can be reduced
-   \item Now the non-uniform vs the uniform block modification
-   \item Mesh geometry: CFFC can deal with cartesian or curvilinear coordinates - is this via using mapping functions for reference elements?
+   \tiny
+   \item Block-based AMR: speed and parallelization [Groth et al 1999]
+   \item Anisotropic vs Isotropic: how cell count (computational cost) can be reduced [Zhang 2011][Williamschen 2013][Freret 2015]
+   \item Now the non-uniform vs the uniform block modification [Freret 2015]
    \end{itemize}
-\end{itemize}
-\end{frame}
-
-%==========================================================================
-\section[Framework]{Existing framework}
-\begin{frame}%[allowframebreaks]
-\scriptsize
-\frametitle{Existing framework}
-\begin{itemize}
-\item The CFFC code already includes the following required features:
-\item Block-Based : people, year
-\item AMR:
-\item Deconick's research on explicit filters
-\item High Order FVM with CENO:
-\item Scott's work/input: Newton iterations and GMRES solver
-\item Lucie's non-uniform approach - improves accuracy of flux evaluations and reduces computational cost for anisotropic
-\item PCM-FPI combustion modelling: modeled by F. Hernandez-Perez 
-\item Initial adjoint analysis done by Martin for the advection equations
+   
+\item Solver: [Northrup 2013] implemented an implicit time marching GMRES method that improves the capability of the CFFC code   
+   
+\item Creating a framework for the adjoint based error estimation method
 \end{itemize}
 \end{frame}
 
@@ -384,6 +367,8 @@ We can broadly classify the two key sources of error in CFD as follows:
 %==========================================================================
 
 \section[AMR]{Adaptive mesh refinement}
+
+\subsection{Basis}
 \begin{frame}%[allowframebreaks]
 \frametitle{Adaptive mesh refinement (AMR)}
 \tiny
@@ -395,29 +380,85 @@ AMR: [Berger et al 1984, 1986, 1989] [Aftomis et al 1998, 2000, 2004]
 \tiny
 \item localized refinement, large variation of scales, easily automatable
 \end{itemize}
-Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012]
-\begin{itemize}
-\tiny
-\item Parallelizable, low memory and storage requirements
-\end{itemize}
-
-\vspace{-25pt}
+\vspace{-20pt}
 \begin{figure}
 \label{fig:cubeAMRbased}
 \centering
-\subfloat[\tiny{With Anisotropic AMR. 5522 (8x8x8) blocks [Freret 2015]} \label{fig:cubeIso}]
-{\includegraphics[width=0.55\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/shockCubeAniso3.jpg}}
-\subfloat[\tiny{With isotropic AMR. 7036 (8x8x8) blocks [Freret 2015]} \label{fig:cubeAniso}]
-{\includegraphics[width=0.55\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/shockCubeIso3.jpg}}
+\subfloat[\tiny{Cell refinement strategies on a reference uniform mesh[Zhang 2011]} \label{fig:blockdiv}]
+{\includegraphics[width=1\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/BlockDivision.jpg}}
 \end{figure}
 \vspace{-15pt}
 \begin{itemize}
 \tiny
 \item Benefits of AMR: overall large computational cell count savings
-\item Isotropic vs anisotropic: up to 85\% savings in cell count in 3D [Williamschen 2013]
-\item How the block-based technique works
-\item Ghost cells for intercommunication
 \end{itemize}
+
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
+%---------------------------------------------------------------------------------------
+
+\subsection{Block based AMR}
+\begin{frame}%[allowframebreaks]
+\frametitle{Block based AMR}
+\tiny
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-15pt}
+\begin{exampleblock}{Key characteristics}
+Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012] \newline
+Entire block gets refined, along with all its cells. This approach is much cheaper than individual cell refinement, since the latter would require updated lists and cross-checking.
+\vspace{-20pt}
+\begin{figure}
+\label{fig:cubeAMRbased}
+\centering
+\subfloat[\tiny{With Anisotropic AMR. 5522 (8x8x8) blocks [Freret 2015]} \label{fig:cubeIso}]
+{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/shockCubeAniso3.jpg}}
+\subfloat[\tiny{With isotropic AMR. 7036 (8x8x8) blocks [Freret 2015]} \label{fig:cubeAniso}]
+{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/shockCubeIso3.jpg}}
+\end{figure}
+\vspace{-15pt}
+\begin{itemize}
+\tiny
+\item Isotropic vs anisotropic: up to 85\% savings in cell count in 3D [Williamschen 2013]
+\end{itemize}
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
+%---------------------------------------------------------------------------------------
+
+
+
+\subsection{Usage}
+\begin{frame}%[allowframebreaks]
+\frametitle{Implementation}
+\tiny
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-15pt}
+\begin{exampleblock}{Key characteristics}
+[Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012, 2013]:
+\begin{itemize}
+\tiny
+\item How the block-based technique works; ghost cells for intercommunication 
+\item Parallelizable, low memory and storage requirements
+\item New non-uniform approach [Freret 2015]
+\end{itemize}
+
+\vspace{-15pt}
+\begin{figure}
+\label{fig:Blockbased}
+\centering
+\subfloat[\tiny{Ghost cells on 8 blocks [Rashad 2009]} \label{fig:2dcomm}]
+{\includegraphics[width=0.4\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/ghostblock.png}}
+\subfloat[\tiny{Parallelization [Northrup 2013]} \label{fig:parall}]
+{\includegraphics[width=0.4\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/parallel-domain-decomp.eps}}
+\subfloat[\tiny{Non-uniform approach [Freret 2015]} \label{fig:nonUni}]
+{\includegraphics[width=0.55\textheight, trim=2cm 0cm 1cm 0cm,clip=true]{./figs/Non-UniformBlock.png}}
+\end{figure}
+\vspace{-15pt}
 \end{exampleblock}
 \end{minipage}
 
@@ -433,36 +474,116 @@ Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012]
 \subsection{High order FVM}
 \begin{frame}%[allowframebreaks]
 \frametitle{High order finite volume method}
-\scriptsize
-An explanation on h.o FVM.
-how the high-order works, and how it reduces numerical error.
-separate slide of other groups researching this: Ihme and Poinssot. show some of their results
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Error reduction via p}
+\tiny
+
+An explanation on h.o FVM.  $ p > 2 $.
+
+\begin{block}{Integral Form of the Governing Equations}
+     \[
+      \frac{\mathrm{d}\overline{\mathbf{U}}}{\mathrm{d}t} = 
+      - \frac{1}{V} \oiint_A \left( \vec{\mathcal{F}}^{\rm I} - 
+      \vec{\mathcal{F}}^{\rm V} \right) \cdot \hat{n} \mathrm{d}\mathcal{A} + 
+      \overline{\mathbf{S}}
+     \] 
+    Using a two-dimensional Gauss quadrature integration rule:
+    \[  \frac{\mathrm{d}\overline{\mathbf{U}}_{ijk}}{\mathrm{d}t} = 
+       \frac{1}{{V}_{ijk}} \sum_{l=1}^{N_f}     
+      \sum_{m=1}^{N_G} \left( \omega \left(\vec{\mathcal{F}^{\mathrm{I}}} - 
+      \vec{\mathcal{F}^{\mathrm{V}}} \right)\cdot \hat{n} {A} \right)_{ijk,l,m} 
+      + \overline{\mathbf{S}}_{ijk} 
+      = \overline{\mathbf{R}}_{ijk}  \left( \overline{\mathbf{U}} \right) \]
+    The higher the order p of the scheme, the more the quadrature points ($ N_G $) which have their own corresponding weights $ \omega $.
+\end{block}
+
+
+\begin{itemize}
+\tiny
+\item Gauss-Legendre quadrature rules are defined on reference cartesian cubic elements, and mapped onto 3D hexahedral elements via mapping functions
+\item High-order schemes reduces numerical error by increasing the accuracy of approximation between the actual governing equations (PDE form) and the discretized value.
+\item Other groups researching this: Ihme (Stanford) and Poinsot (CERFACS)
+\end{itemize}
+\end{exampleblock}
+\end{minipage}
+
+
 \end{frame}
 
+%---------------------------------------------------------------------------------
 
 \subsection{CENO}
 \begin{frame}
 \scriptsize
-\frametitle{Central essentially non-oscillatory (CENO) scheme}
+\frametitle{Central essentially non-oscillatory (CENO) scheme implementation} 
+
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Error reduction via p}
+\tiny
+[Ivan and Groth 2011, 2012]
 \begin{itemize}
-\item Lucien's work
-\item Ramy's work
-\item Marc Charest's work
-\item Luiz's work
+\item CENO eliminates oscillations that are typical of discontinuities
+\item Reconstruction: FVM technique is cell centered. We may at times need state values on faces (flux evaluations) or at quadrature points (high-order)
+\item CENO uses fixed stencil for reconstruction
+\item smoothness indicators are used to select if a high order (p) reconstruction is to be carried out, or just a piecewise linear reconstruction
 \end{itemize}
+\vspace{-20pt}
+\tiny
+\begin{figure}
+\label{fig:h_order_error}
+\centering
+\subfloat[\tiny{Example of quadrature points on the cell faces} \label{fig:errorHO}]
+{\includegraphics[width=0.53\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/fig_quadpts.png}}
+\subfloat[\tiny{L1 error norm in the solution for an unsteady advection equation having a quantity distribution gaussian profile. N = total mesh count} \label{fig:errorHO}]
+{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/error_ho_amr3.jpg}}
+\end{figure}
+\end{exampleblock}
+\end{minipage}
+
 \end{frame}
+
+%------------------------------------------------------------------------------
+
 
 \subsection{LES}
 \begin{frame}
-\frametitle{Large Eddy Simulation}
+\frametitle{Large Eddy Simulation (LES)}
 \scriptsize
-
-Give an overview
-
-Explicit filtering. [Deconinck, 2008]
+[Piomelli 1999][Ghosal and Moin 1999]
 \begin{itemize}
-\item one point about explicit vs implicit filtering
-\item another point about the filtering
+\item The accuracy of LES lies between the very accurate DNS and RANS.
+\item DNS is mostly impractical and very expensive
+\item RANS has fully modelled turbulence. Only the largest scales are resolved
+\item LES utilizes a spatial filtering of a given width, $\bar{\Delta} $. Any scales below this will be modelled $\rightarrow$ sub-filter scales (SFS) [Smagorinsky 1963][Germano 1991][Piomelli 1991][Ghosal and Moin 1999][Lilly 1992]
+\item while scales larger than $\bar{\Delta}$ will be fully resolved.
+
+\item Hence in LES an appropriate balance is sought for accuracy, since too much reliance on modeling can be a source of error. Can be broadly categorized into two:
+
+\begin{itemize}
+\tiny
+\item Implicit filtering [Aspden et al 2008]
+\begin{itemize}
+\tiny
+\item The filter width is not explicitly defined
+\item Inherently related to grid resolution
+\item Main disadvantage - difficult to compare results of adapted/refined meshes
+\item Difficult to control aliasing and commutation errors
+\end{itemize}
+
+
+\item Explicit filtering. [Vasilyev et al, 1998] [Deconinck, 2008]
+\begin{itemize}
+\tiny
+\item Define $\bar{\Delta} $ to be fixed for the entire mesh: top-hat, Gaussian, etc.
+\item Results easily comparable since $\bar{\Delta} $ does not change for different meshes
+\item Order of truncation errors (discretized scheme) can be controlled to be the same order of the commutation errors
+\item Allows control of aliasing errors
+\end{itemize}
+
+\end{itemize}
+
 \end{itemize}
 \end{frame}
 
@@ -550,8 +671,8 @@ Where the change occurs most rapidly over a few mesh cells, then over this locat
 \scriptsize
 \frametitle{About the adjoint}
 To make error estimation more relevant to engineering applications: assess the error made in predicting an integral quantity which represents an engineering output. This output is the functional. For example,the output can be the average pressure on a wall. 
-\newline The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the input. (It is a function of the residual, but the residual is in turn a function of the input/state). \newline
-The adjoint has two main formulations [Venditti and Darmofal, 2000]:
+\newline The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the input. (It is a function of the residual, but the residual is in turn a function of both the input and the state). \newline
+The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 2001][Venditti and Darmofal, 2000, 2002] [Becker and Rannacher: 2001,2003]:
 \begin{itemize}
 \item continuous:
 \begin{itemize} 
@@ -575,19 +696,17 @@ The adjoint has two main formulations [Venditti and Darmofal, 2000]:
 \frametitle{Discrete adjoint}
 \scriptsize
 For these initial stages, beginning with the discrete formulation of the adjoint
-\begin{minipage}[t][0.6\textheight]{0.75\textwidth}
+\begin{minipage}[t][0.6\textheight]{1\textwidth}
 \scriptsize
 \vspace{-10pt}
 \begin{exampleblock}{Discrete Adjoint}
-\[
-\left( \frac{\partial{R}}{\partial{U}} \right)^T ~\Psi~ = -\left( \frac{\partial{J}}{\partial{U}} \right)^T
-\]
+\[\left( \frac{\partial{R}}{\partial{U}} \right)^T ~\Psi~ = -\left( \frac{\partial{J}}{\partial{U}} \right)^T\]
 \text{yielding a linear system of equations:}
-\[
-Ax = b
-\]
-\tiny
-Where:
+\vspace{-10pt}
+\[Ax = b\]
+\vspace{-10pt}
+\text{Where:}
+\vspace{10pt}
 \begin{itemize}
 \item \textbf{$J$} = the functional
 \item \textbf{$R$} =  the residual
@@ -599,10 +718,10 @@ Where:
 Methods to evaluate the matrix $\frac{\partial{R}}{\partial{U}} $  for the discrete adjoint:
 \begin{itemize}
 \scriptsize
-\item Finite differencing {\color{red}[citations]}
-\item Forward linearization with automated differentiation {\color{red}[citations]}
-\item Adjoint method {\color{red}[citations]}
-\item Complex step {\color{red}[citations]}
+\item Finite differencing - perturbing the state U to evaluate R 
+\item Automated differentiation - tools that evaluate the differential [Bischof et al: 1992, 1996, 2008]
+\item Approximate method  - using the inbuilt functions within CFFC code [Northrup, 2013]
+\item Complex step [Martins, Alonso and Sturdza: 2003]
 \end{itemize}
 
 
@@ -635,39 +754,59 @@ Some of the groups using \textbf{adjoint with AMR}
 \begin{frame}
 \scriptsize
 \frametitle{Error estimation indicators}
-All about residual weighting (flag for refinement) and a 1D cartoon example, perhaps, of restriction/prolongation
+[Venditti and Darmofal 2000][Fidkowski and Darmofal 2011]
+
 \begin{itemize}
-\item projecting onto fine space
-\item restricting onto coarse space
-\item getting the error in the residual and using this as a flag for refinement
+\item Our goal is to reduce discretization errors based on the mesh resolution.
+
+\begin{itemize}
+\tiny
+\item Consider 2 levels of mesh resolution: coarse (H) and fine (h). We calculate the state ($U_H$) and functional ($J_H(U_H)$) on the coarse space. Residual, $R_H(U_H) = 0$
+\item We would like to evaluate the functional on the fine space, $J_h(U_h)$ (expensive). Thus we use a prolongation operator ($U_h^H = I_h^H U_H$) to inject the fine space state onto the coarse space state.
+\item The output error, $\delta J \equiv J_H(U_H) - J_h(U_h) \neq 0$
+\item Expect the new residual, $R_h(U_h^H) \neq 0$ 
+\item The injected coarse state solves: $ R_h(U_h^\prime) - R_h(U_h^H) = 0 \rightarrow (U_h^\prime) = (U_h^H)$
+\item $ \delta J \approx  J_h(U_h^H) - J_h(U_h) = \Psi_h^T \delta R_h = -\Psi_h^T R_h(U_h^H)   $, using the definition of the fine space adjoint, $\Psi_h$
+\item Error estimate is the value of $\delta J$, and does not need evaluation of $U_h$, primal solution on the fine space. We can use this error estimate as a flag for refinement, given some threshold value
 \end{itemize}
-Steady vs unsteady adjoints:
-Expected benefits of adjoint vs gradient based methods
+
+\item Steady vs unsteady adjoints: for unsteady, march forward in time, evaluating $\psi$, then march backwards in time. Now have all the sensitivities. Use this to refine the mesh at those time levels. Check set tolerance and repeat until convergence.
+\item Expected benefits of adjoint vs gradient based methods: the adjoint technique is a one time calculation for the sensitivity of a single output to several inputs.
+\end{itemize}
+
 \end{frame}
-
-
-%-----------------------------------------------------------------
-
-\subsection{Mesh adaptation}
-\begin{frame}
-\scriptsize
-\frametitle{Mesh adaptation based on adjoint}
-This is a separate slide on mesh adaptation as based on the adjoint. Enough diagrams from venditti and darmofal, fidkowski
-\end{frame}
-
-
-
 
 %==========================================================================
 \section[Usage]{Usage}
 
 \begin{frame}%[allowframebreaks]
-\frametitle{How we can use this}
+\frametitle{How we can use this: \LARGE{$\mathcal{O}(h^p)$}}
+
 \scriptsize
 \begin{itemize}
-\item using it for mesh refinement - how some previous groups used this
-\item how we can link mesh adaptation AMR to the adjoint via h
-\item how we can use p based refinement
+\vspace{-25pt}
+\item h: using error estimates for mesh adaptation. Entire block would be refined.
+\begin{minipage}[t][0.7\textheight]{0.95\textwidth}
+\vspace{-10pt}
+\begin{exampleblock}{Launch abort vehicle example, [Nemec et al, 2008]}
+\tiny
+Functional as a linear combination of normal and axial forces. $M = 1.1; \alpha=-25\deg$
+\vspace{-10pt}
+
+\begin{figure}
+\label{fig:LAVone}
+\centering
+\subfloat[\tiny{Adjoint of density with accompanying error estimate} \label{fig:LAVerror}]
+{\includegraphics[width=0.5\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/LAV_adj_err.png}}
+\subfloat[\tiny{Final obtained mesh. Initial was $3.7x10^3$ cells; final $2x10^6$ cells } \label{fig:LAVmesh}]
+{\includegraphics[width=0.7\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/LAV_mesh.png}}
+\end{figure}
+\end{exampleblock}
+\end{minipage}
+\vspace{0pt}
+\item p: using the error estimates to run, locally, on the flagged block, a higher discretization of the numerical scheme. Usually, for high order,  $ p > 2 $.
+
+
 \end{itemize}
 \end{frame}
 
@@ -783,19 +922,81 @@ Computational costs:
 \begin{frame}%[allowframebreaks]
 \frametitle{Timeline: April 2015  - January 2016}
 \scriptsize
-\begin{itemize}
-\item Put a table of what you have done till now
-\end{itemize}
+
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Work done to date}
+
+\begin{tabular}{|l|c|} \hline
+\multicolumn{1}{|c|}{\bf{Task}} & \multicolumn{1}{|c|}{\bf{Completion Date}} \\
+
+\hline Literature Review & September-October 2014 \\
+
+\hline Trelis Meshing Software & November 2014 \\
+
+\hline CFFC Group Code Flux Jacobian Analysis & December 2014 \\
+
+\hline Trilinos Package solution for & December 2014 \\ Poisson Problem in serial &\\and parallel configurations & \\
+
+\hline Running a current-state LES case of a Turbulent & January 2015\\ Premixed  Methane Flame using PCM-FPI to & \\ get a threshold estimation & \\ of solution run time &\\
+
+\hline Implementing the approximate Adjoint Derivative & March 2015 \\  to the Flux Jacobians &\\ testing on Euler Equations  &\\
+
+\hline
+\end{tabular}
+
+\end{exampleblock}
+\end{minipage}
+
 \end{frame}
 
 
 \subsection[Future]{Future work}
 \begin{frame}%[allowframebreaks]
-\frametitle{Projected milestones}
+\frametitle{Future work}
 \scriptsize
-\begin{itemize}
-\item Put a table of what you will do in the next steps
-\end{itemize}
+
+
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Projected milestones}
+
+\begin{tabular}{|l|c|} \hline
+\multicolumn{1}{|c|}{\bf{Task}} & \multicolumn{1}{|c|}{\bf{Completion Date}} \\
+
+\hline Extension to Mesh adaptation & May 2015\\
+
+\hline Application of Adjoint Problem to Navier Stokes  & June 2015\\
+
+\hline Explicit Filters for High Order FVM implementation  & October 2015\\
+
+\hline Coupling of High Order method with Adjoint-based AMR & December 2015\\
+
+\hline CFD simulation of Cold Flow & January 2016\\
+
+\hline CFD simulation of Laminar Non-Premixed Flame & February 2016\\
+
+\hline CFD simulation of Laminar Diffusion Flame & February 2016\\
+
+\hline Conference Paper II draft & April 2016\\
+
+\hline CFD simulation of Turbulent Non-Premixed Flame & May 2016\\
+
+\hline CFD simulation of Full Thermo-coupling & October 2016\\
+
+\hline Thesis write-up & September 2017 \\ 
+
+\hline
+
+\end{tabular}
+
+\end{exampleblock}
+\end{minipage}
+
+
+
+
+
 \end{frame}
 
 

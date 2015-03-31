@@ -1,0 +1,342 @@
+%----------------------------------------------------------------%
+%-------------------- Shortcut commands -------------------------%
+%----------------------------------------------------------------%
+\newcommand{\Dfrac}[2]{\ensuremath \frac{\mbox{d} #1}{\mbox{d} #2}}
+\newcommand{\dint}{\ensuremath \,\mathrm{d}}
+\newcommand{\etal}{{\em et al}}
+\newcommand{\Ys}{\ensuremath Y^*}
+\newcommand{\Ts}{\ensuremath T^*}
+\newcommand{\cs}{\ensuremath c^*}
+\newcommand{\zs}{\ensuremath z^*}
+\newcommand{\Zs}{\ensuremath Z^*}
+\newcommand{\dYs}{\mathrm{d} Y^*}
+\newcommand{\dTs}{\mathrm{d} T^*}
+\newcommand{\dzs}{\mathrm{d} z^*}
+\newcommand{\dZs}{\mathrm{d} Z^*}
+\newcommand{\dcs}{\mathrm{d} c^*}
+\newcommand{\dzstar}{\mathrm{d} z\star}                                   
+\newcommand{\dcstar}{\mathrm{d} c\star}
+\newcommand{\rrate}{\ensuremath {\dot{\omega}}}
+\newcommand{\todo}[1]{{TODO: \textit{\small #1}\\}}
+
+
+% Shortcut commands
+\newcommand{\Matrix}[1]{\ensuremath \mathsf{#1}}
+\newcommand{\Vector}[1]{\ensuremath \mathbf{#1}}
+\newcommand{\Tensor}[1]{\ensuremath \vec{\vec{#1}}}
+\newcommand{\Pfrac}[2]{\ensuremath \frac{\partial #1}{\partial #2}}
+\newcommand{\pf}[2]{\ensuremath \frac{\partial #1}{\partial #2}}
+\newcommand{\Rfrac}[2]{\ensuremath \frac{\mbox{d} #1}{\mbox{d} #2}}
+\newcommand{\Dvolume}{\ensuremath {d\Omega}}
+\newcommand{\Dsurface}{\ensuremath dS}
+\newcommand{\Intvolume}[1]{\ensuremath \int_\Omega {#1}\Dvolume}
+\newcommand{\Intsurface}[1]{\ensuremath \int_{\Dvolume} {#1}\Dsurface}
+\newcommand{\Intsurfacedot}[1]{\ensuremath \int_{\Dvolume} {#1}\cdot\Vector{\Dsurface}}
+\newcommand{\Div}[1]{\ensuremath \Vector{\nabla}\cdot#1}
+\newcommand{\Grad}[1]{\ensuremath \Vector{\nabla #1}}
+\newcommand{\Sumedges}{\ensuremath \sum_{ik}^{\text{edges}}}
+\newcommand{\nutilde}{\ensuremath \tilde{\nu}}
+\newcommand{\Dx}{\ensuremath \Delta x}
+\newcommand{\Dy}{\ensuremath \Delta y}
+\newcommand{\Ds}{\ensuremath \Delta s}
+\newcommand{\Dl}{\ensuremath \Delta l}
+\newcommand{\Dt}{\ensuremath \Delta t}
+\newcommand{\Tilda}[1]{\ensuremath \mbox{\~{#1}}}
+\newcommand{\pseudo}{\ensuremath \textrm{\textdied}}
+%\newcommand{\Fluxi}{\overrightarrow{\ensuremath{\mathbf{F}_{\boldsymbol{\iota}}} }}
+\newcommand{\Fluxi}{\overrightarrow{\ensuremath{\mathbf{F}} }}
+\newcommand{\Fluxv}{\overrightarrow{\ensuremath{\mathbf{F_{v}}} }}
+%\newcommand{\Fi}{\ensuremath{\mathbf{F}_{\boldsymbol{\iota}}} }
+\newcommand{\Fi}{\ensuremath{\mathbf{F}} }
+%\newcommand{\Fv}{\ensuremath{\mathbf{F}_{\boldsymbol{\nu}}}}
+\newcommand{\Fv}{\ensuremath{\mathbf{F_{v}}} }
+%\newcommand{\Gi}{\ensuremath{\mathbf{G}_{\boldsymbol{\iota}}} }
+\newcommand{\Gi}{\ensuremath{\mathbf{G}} }
+%\newcommand{\Gv}{\ensuremath{\mathbf{G}_{\boldsymbol{\nu}}} }
+\newcommand{\Gv}{\ensuremath{\mathbf{G_{v}}} }
+%\newcommand{\Hi}{\ensuremath{\mathbf{H}_{\boldsymbol{\iota}}} }
+\newcommand{\Hi}{\ensuremath{\mathbf{H}} }
+%\newcommand{\Hv}{\ensuremath{\mathbf{H}_{\boldsymbol{\nu}}} }
+\newcommand{\Hv}{\ensuremath{\mathbf{H_{v}}} }
+\newcommand{\Uavg}{\ensuremath{\mathbf{\overline{U}}} }
+
+
+% \encircle{width}{EllipseWidth}{EllipseHeight}{text}              % Requires \usepackage{pgf} (defined above amsmath)
+\newcommand{\encircle}[4]{
+\begin{pgfpicture}{- #1 cm}{-0.115 cm}{#1 cm}{0cm} 
+\pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{#4}} 
+\pgfellipse[stroke]{\pgfxy(0,0)}{\pgfxy(#2,0)}{\pgfxy(0,#3)}
+\end{pgfpicture}
+}
+\newcommand{\mathencircle}[4]{
+\begin{pgfpicture}{- #1 cm}{-0.05 cm}{#1 cm}{0cm} 
+\pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{$ #4 $}} 
+\pgfellipse[stroke]{\pgfxy(0,0)}{\pgfxy(#2,0)}{\pgfxy(0,#3)}
+\end{pgfpicture}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Redefine some of the nomenclature commands
+%\renewcommand{\nomname}{List of Symbols}
+%\newcommand{\nomalpha}[2]{\nomenclature[ar ]{#1}{#2}}
+%\newcommand{\nomgreek}[2]{\nomenclature[bg ]{#1}{#2}}
+%\newcommand{\nomsuper}[2]{\nomenclature[cp ]{#1}{#2}}
+%\newcommand{\nomsub}[2]{\nomenclature[db ]{#1}{#2}}
+%
+%% change the look of the default nomenclature commands
+%\renewcommand{\nomgroup}[1]{%
+%  \ifthenelse{\equal{#1}{A}}{\item[\textbf{Alphanumeric Symbols}]}{%
+%   \ifthenelse{\equal{#1}{B}}{\item[\textbf{Greek Symbols}]}{%
+%     \ifthenelse{\equal{#1}{C}}{\item[\textbf{Superscripts}]}{%
+%       \ifthenelse{\equal{#1}{D}}{\item[\textbf{Subscripts}]}{}{}}{}}{}}{}}
+%
+
+% Add a new column type in table environment (Requires \usepackage{array} )
+% centered paragraph
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+
+% Alter some LaTeX defaults for better treatment of figures:
+% See p.105 of "TeX Unbound" for suggested values.
+% See pp. 199-200 of Lamport's "LaTeX" book for details.
+% General parameters, for ALL pages:
+\renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+\renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+% Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}     % 2 may work better
+\setcounter{dbltopnumber}{2}    % for 2-column pages
+\renewcommand{\dbltopfraction}{0.9}	% fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
+% Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+\renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+
+
+% Added by Ramy Rashad (courtesy of Lucian Ivan) 
+% Modified by Sean McDonald
+
+\newcommand {\al}{\hspace*{9mm}}                                %0
+\newcommand {\p} {\partial}
+\newcommand {\ds} {\displaystyle}
+\newcommand {\vs} {\vspace*{2mm}}
+\newcommand {\vsb} {\vspace*{5mm}}
+\newcommand {\ns} {\hspace*{-5mm}}
+\newcommand {\spp}[1] {#1_{p_{1}p_{2}}}
+\newcommand {\Sp}[1] {#1^{p_{1}}}
+\newcommand {\Spp}[1] {#1^{p_{2}}}
+\newcommand {\Sppp}[1] {#1^{p_{3}}}
+\newcommand {\alpp} {\alpha_{p_{1}p_{2}}}
+\newcommand {\Dpp} {D_{p_{1}p_{2}}}
+\newcommand {\Dppp} {D_{p_{1}p_{2}p_{3}}}
+\newcommand {\Ipp} {I_{p_{1}p_{2}}}
+\newcommand {\Sij}[1] {#1^{i,j}}
+\newcommand {\sij}[1] {#1_{i,j}}
+\newcommand {\Sijk}[1] {#1^{i,j,k}}
+\newcommand {\sijk}[1] {#1_{i,j,k}}
+\newcommand {\Sumpp} {\sum_{p_{1}=0}^{k}\sum_{p_{2}=0}^{k}}
+\newcommand {\Sumppp} {\sum_{p_{1}=0}^{k}\sum_{p_{2}=0}^{k}\sum_{p_{3}=0}^{k}}
+\newcommand {\SumpppZero}{\mathop{\sum_{p_{1}=0}^{k}\sum_{p_{2}=0}^{k}\sum_{p_{3}=0}^{k}}_{(p_{1}+p_{2}+p_{3} \leq k)}}
+\newcommand {\SumpppOne}{\mathop{\sum_{p_{1}=0}^{k}\sum_{p_{2}=0}^{k}\sum_{p_{3}=0}^{k}}_{(p_{1}+p_{2}+p_{3} \neq 0)}}
+\newcommand {\SC}[1] {#1^{cell}}
+\newcommand {\sC}[1] {#1_{cell}}
+\newcommand {\Rijk} {R_{j}^{k}(\vec{r},u_{*}^{i})}
+
+\newcommand {\IIG} {\int\hspace{-2.5mm}\int\limits_{\!\!\!\mathcal{G}}}
+\newcommand {\IIIG} {\int\hspace{-2.5mm}\int\hspace{-2.5mm}\int\limits_{\!\!\!\mathcal{G}}}
+\newcommand {\IIIdomain}[1] {\int\hspace{-2.5mm}\int\hspace{-2.5mm}\int\limits_{\!\!\!{#1}}}
+\newcommand {\IIGZ} {\int\hspace{-3.5mm}\int\limits_{\hspace{-2mm}
+                                                    \mathcal{G(\zeta,\theta)}}}
+\newcommand {\XYZhat}[4] {\left(\widehat{{x^{#1} y^{#2} z^{#3}}}\right)_{#4}}
+\newcommand {\XYhat}[3] {\left(\widehat{{x^{#1} y^{#2} }}\right)_{#3}}
+\newcommand {\XYZtilde}[4] {\left(\widetilde{{x^{#1} y^{#2} z^{#3}}}\right)_{#4}}
+\newcommand {\XYZbar}[4] {\Big(\overline{{x^{#1} y^{#2} z^{#3}}}\Big)_{#4}}
+\newcommand {\XYbar}[3] {\Big(\overline{{x^{#1} y^{#2}}}\Big)_{#3}}
+\newcommand {\prodXY} {\Sp{\left(x-x_{i}\right)}
+                       \Spp{\left(y-y_{i}\right)}}
+\newcommand {\prodXYZ} {\Sp{\left(x-x_{i}\right)}
+                       \Spp{\left(y-y_{i}\right)}
+		       \Sppp{\left(z-z_{i}\right)}}
+\newcommand {\sg}[1] {#1_{g}}
+\newcommand {\Sg}[1] {#1^{g}}
+\newcommand {\Sumg} {\sum\limits_{g=1}^{NN}}
+\newcommand {\DiffU} {\sg{\bar{U}} - \sij{\bar{U}}}
+\newcommand {\R} {\right}
+\newcommand {\dx} {\Delta\sC{x}}
+\newcommand {\dy} {\Delta\sC{y}}
+\newcommand {\ddx} {\frac{\p}{\p x}}
+\newcommand {\ddy} {\frac{\p}{\p y}}
+\newcommand {\foo} {f(x_{0},y_{0})}
+
+\newcommand {\Uxyz} {U_{ijk}^{k}(x,y,z)}
+\newcommand {\Uexact} {U_{\text{exact}}(x,y,z)}
+
+\newcommand {\Ui} {U_{i}^{k}(x,y,z)}
+\newcommand {\Uj} {U_{i}^{k}(x,y,z)}
+\newcommand {\Uiavg} {\overline{U_{i}} }
+\newcommand {\Ujavg} {\overline{U_{j}} }
+
+\newcommand {\XYZ} {\Sp{\left(x-x_{ijk}\right)}\Spp{\left(y-y_{ijk}\right)}\Sppp{\left(z-z_{ijk}\right)}}
+\newcommand {\XY} {\Sp{\left(x-x_{ijk}\right)}\Spp{\left(y-y_{ijk}\right)}}
+\newcommand {\XYZi} {\Sp{\left(x-x_{i}\right)}\Spp{\left(y-y_{i}\right)}\Sppp{\left(z-z_{i}\right)}}
+\newcommand {\XYi} {\Sp{\left(x-x_{i}\right)}\Spp{\left(y-y_{i}\right)}}
+\newcommand {\XYZj} {\Sp{\left(x-x_{j}\right)}\Spp{\left(y-y_{j}\right)}\Sppp{\left(z-z_{j}\right)}}
+\newcommand {\XYj} {\Sp{\left(x-x_{j}\right)}\Spp{\left(y-y_{j}\right)}}
+\newcommand {\XYZa} {\Sp{\left(x-x_{\alpha}\right)}\Spp{\left(y-y_{\alpha}\right)}\Sppp{\left(z-z_{\alpha}\right)}}
+\newcommand {\XYZb} {\Sp{\left(x-x_{\beta}\right)}\Spp{\left(y-y_{\beta}\right)}\Sppp{\left(z-z_{\beta}\right)}}
+
+\newcommand {\Vol} {\mathcal{V}}
+% remember to use [htp] or [htpb] for placement
+
+% Add some preamble to the nomenclature page
+%\renewcommand{\nompreamble}{The following typesetting convention is
+%  applied throughout this document: scalar $s$, vector $\Vector{v}$,
+%  tensor $\Tensor{t}$, and matrix $\Matrix{m}$. No convention is
+%  implied by case.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Provides some info for the pdf file version
+%\makeatletter
+%\special{pdf: docinfo 
+%<< 
+%/Author (\@author)
+%/Title (\@title)
+%/Keywords (parallel, diffusion-flames, finite-volume, AMR, combusion)
+%>> }
+%\makeatother
+%
+%\DeclareGraphicsRule{.pdf}{eps}{.bb}{}
+%
+%%%%%%%%%%%%%%%%% Predetermined graphic sizes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\newcommand{\incfig}[1]{%
+%  \begin{center}%
+%    \includegraphics*[totalheight=0.3\textheight,keepaspectratio="true",clip]{#1}%
+%  \end{center}
+%}
+%
+%\newcommand{\incsubfig}[2]{%
+%  \subfigure[#2]{%
+%    \includegraphics*[width=0.48\textwidth,keepaspectratio="true",clip]{#1}%
+%  }%
+%}
+%
+
+
+
+
+
+
+
+%%----------------------------------------------------------------%
+%%--------------------  Style            -------------------------%
+%%----------------------------------------------------------------%
+%\titleformat*{\section}{\rmfamily\bfseries\Large}
+%\titleformat*{\subsection}{\rmfamily\bfseries\large}
+%\titleformat*{\subsubsection}{\rmfamily\bfseries}
+%
+%% chapter 
+%\makeatletter
+%\renewcommand*\@makechapterhead[1]{%
+%  \vspace*{50\p@}%
+%  {\parindent \z@  \raggedleft \normalfont  %\raggedleft \center  
+%    \ifnum \c@secnumdepth >\m@ne
+%        \huge \bfseries\rmfamily \@chapapp\space \thechapter
+%        \par\nobreak
+%        \vskip 20\p@
+%    \fi
+%    \interlinepenalty\@M
+%    \hrule
+%    \vspace*{10\p@}% 
+%    \raggedright
+%    \Huge \bfseries\rmfamily{#1}\par\nobreak  % \sffamily
+%    \vspace*{10\p@}%
+%    \hrule
+%    \vskip 40\p@
+%  }}
+%\makeatother
+%
+%\makeatletter
+%\renewcommand*\@makeschapterhead[1]{%
+%  \vspace*{50\p@}%
+%  {\parindent \z@  \raggedright \normalfont  %\raggedleft  \center  
+%    \interlinepenalty\@M
+%    \hrule
+%    \vspace*{10\p@}% 
+%    \Huge \bfseries\rmfamily{#1}\par\nobreak %\sffamily
+%    \vspace*{10\p@}%  
+%    \hrule
+%    \vskip 40\p@
+%  }}
+%\makeatother
+%
+%
+%% short titles in chaptermark
+%\makeatletter
+%\newcommand*\std@chapter{}
+%\let\std@chapter=\@chapter
+%\renewcommand*\@chapter[2][]{\std@chapter[#2]{#2}\chaptermark{#1}}
+%\makeatother
+%
+%
+%% treatment of figures
+%\renewcommand{\topfraction}{0.9}    % max fraction of floats at top
+%\renewcommand{\bottomfraction}{0.9} % max fraction of floats at bottom
+%\renewcommand{\textfraction}{0.1}   % allow minimal text w. figs
+%\renewcommand{\floatpagefraction}{0.9} % require fuller float pages
+%
+%
+%
+%
+%
+%%----------------------------------------------------------------%
+%%--------------------  Nomenclature     -------------------------%
+%%----------------------------------------------------------------%
+%% Redefine some of the nomenclature commands
+%\renewcommand{\nomname}{List of Symbols}
+%\renewcommand{\bibsection}{\chapter*}
+%
+%\renewcommand{\nomgroup}[1]{%
+%  \ifthenelse{\equal{#1}{A}}{\item[\textbf{Alphanumeric Symbols}]}{%
+%   \ifthenelse{\equal{#1}{B}}{{\vskip 1em}\item[\textbf{Greek Symbols}]}{%
+%     \ifthenelse{\equal{#1}{C}}{{\vskip 1em}\item[\textbf{Superscripts}]}{%
+%       \ifthenelse{\equal{#1}{D}}{{\vskip 1em}\item[\textbf{Subscripts}]}{%
+%          \ifthenelse{\equal{#1}{E}}{{\vskip 1em}\item[\textbf{Other Symbols}]}{%
+%             \ifthenelse{\equal{#1}{F}}{{\vskip 1em}\item[\textbf{Abbreviations}]}{}{}}{}}{}}{}}{}}{}}
+%
+%% Add some preamble to the nomenclature page
+%%\renewcommand{\nompreamble}{The following typesetting convention is
+%%  applied throughout this document: scalar $s$, vector $\Vector{v}$,
+%%  tensor $\Tensor{t}$, and matrix $\Matrix{m}$. No convention is
+%%  implied by case.}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Provides some info for the pdf file version
+%%\makeatletter
+%%\special{pdf: docinfo 
+%%<< 
+%%/Author (\@author)
+%%/Title (\@title)
+%%/Keywords (parallel, diffusion-flames, finite-volume, AMR, combusion)
+%%>> }
+%%\makeatother
+%%
+%%\DeclareGraphicsRule{.pdf}{eps}{.bb}{}
+%%
+%%%%%%%%%%%%%%%%%% Predetermined graphic sizes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%\newcommand{\incfig}[1]{%
+%%  \begin{center}%
+%%    \includegraphics*[totalheight=0.3\textheight,keepaspectratio="true",clip]{#1}%
+%%  \end{center}
+%%}
+%%
+%%\newcommand{\incsubfig}[2]{%
+%%  \subfigure[#2]{%
+%%    \includegraphics*[width=0.48\textwidth,keepaspectratio="true",clip]{#1}%
+%%  }%
+%%}
+%%
