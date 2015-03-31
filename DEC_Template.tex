@@ -345,19 +345,39 @@ The results they obtained for mean temperature reveal good agreement between LES
 \vspace{-20pt}
 \end{block}
 \end{minipage}
+\end{frame}
 
-\vspace{-5pt}
-\tiny
-Modelling error chiefly arises from
-\begin{itemize}
-\item LES: Aliasing error, commutation error
-\item Mesh: selection of the mesh refinement, types of cells, configuration to bulk flow direction
-\end{itemize}
-Discretization error chiefly arises from
-\begin{itemize}
-\item Truncation error - how high order reduces this
-\item Solution error
-\end{itemize}
+
+\begin{frame}%[allowframebreaks]
+\frametitle{Types of error}
+\scriptsize
+We can broadly classify the two key sources of error in CFD as follows:
+
+\begin{enumerate}
+\item Numerical error:
+	\begin{enumerate}[a]
+	\scriptsize
+	\item Solution error - that between the exact solution value and the CFD obtained value
+	\item Truncation error - exists between the actual governing equations and the discretized PDEs for the numerical scheme
+	\item Convergence error - arising due to nature of the iterative technique used
+	\end{enumerate}
+\item Modeling error:
+	\begin{enumerate}[a]
+	\scriptsize
+	\item Pertaining to LES:
+		\begin{itemize}
+		\tiny
+		\item Sub-filter scale turbulence model: inappropriate model selected
+		\item Combustion and chemistry model
+		\item Filtering:\newline
+			  aliasing errors - decomposed nonlinear terms in FANS = feedback of frequencies beyond filter bandwidth, = 'fake' stresses \newline
+			 commutation errors - exist between filtering and differential operations 
+		\end{itemize}
+	\item Errors in geometry definition 
+	\item Errors in types of mesh cells - selection of the mesh refinement, types of cells, configuration to bulk flow direction
+	\end{enumerate}
+\end{enumerate}
+
 \end{frame}
 
 
@@ -366,15 +386,41 @@ Discretization error chiefly arises from
 \section[AMR]{Adaptive mesh refinement}
 \begin{frame}%[allowframebreaks]
 \frametitle{Adaptive mesh refinement (AMR)}
-\scriptsize
+\tiny
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-15pt}
+\begin{exampleblock}{Key characteristics}
+AMR: [Berger et al 1984, 1986, 1989] [Aftomis et al 1998, 2000, 2004]
 \begin{itemize}
-\item Benefits of AMR
+\tiny
+\item localized refinement, large variation of scales, easily automatable
+\end{itemize}
+Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012]
+\begin{itemize}
+\tiny
+\item Parallelizable, low memory and storage requirements
+\end{itemize}
+
+\vspace{-25pt}
+\begin{figure}
+\label{fig:cubeAMRbased}
+\centering
+\subfloat[\tiny{With Anisotropic AMR. 5522 (8x8x8) blocks [Freret 2015]} \label{fig:cubeIso}]
+{\includegraphics[width=0.55\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/shockCubeAniso3.jpg}}
+\subfloat[\tiny{With isotropic AMR. 7036 (8x8x8) blocks [Freret 2015]} \label{fig:cubeAniso}]
+{\includegraphics[width=0.55\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/shockCubeIso3.jpg}}
+\end{figure}
+\vspace{-15pt}
+\begin{itemize}
+\tiny
+\item Benefits of AMR: overall large computational cell count savings
+\item Isotropic vs anisotropic: up to 85\% savings in cell count in 3D [Williamschen 2013]
 \item How the block-based technique works
 \item Ghost cells for intercommunication
-\item Current stencils
-\item how the high-order will affect the current stencil
-\item use radial sphere diags
 \end{itemize}
+\end{exampleblock}
+\end{minipage}
+
 \end{frame}
 
 
@@ -503,7 +549,8 @@ Where the change occurs most rapidly over a few mesh cells, then over this locat
 \begin{frame}%[allowframebreaks]
 \scriptsize
 \frametitle{About the adjoint}
-To make error estimation more relevant to engineering applications: assess the error made in predicting an integral quantity which represents an engineering output. This output is the functional. For example,the output can be the average pressure on a wall. The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the input. (Well, actually, it is a function of the residual, but the residual is in turn a function of the input/state. \newline
+To make error estimation more relevant to engineering applications: assess the error made in predicting an integral quantity which represents an engineering output. This output is the functional. For example,the output can be the average pressure on a wall. 
+\newline The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the input. (It is a function of the residual, but the residual is in turn a function of the input/state). \newline
 The adjoint has two main formulations [Venditti and Darmofal, 2000]:
 \begin{itemize}
 \item continuous:
@@ -628,6 +675,7 @@ This is a separate slide on mesh adaptation as based on the adjoint. Enough diag
 %==========================================================================
 \section[Progress]{Progress to date}
 
+\subsection{Poisson}
 \begin{frame}[shrink=20]%[allowframebreaks]
 \frametitle{Poisson problem}
 \scriptsize
@@ -660,6 +708,7 @@ This is a separate slide on mesh adaptation as based on the adjoint. Enough diag
 
 %------------------------------------------------------------------------
 
+\subsection{LES flame}
 \begin{frame}
 \frametitle{Running already existing LES case on SciNET}
 \scriptsize
@@ -696,22 +745,33 @@ Computational costs:
 
 %------------------------------------------------------------------------
 
-
+\subsection{Adjoint runs}
 \begin{frame}
 \frametitle{Work on the adjoint}
-Preliminary work with the discrete adjoint - shockcube problem
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Preliminary work with the discrete adjoint - shockcube problem}
+\vspace{-20pt}
+\tiny
+\begin{figure}
+\label{fig:shockedcube}
+\centering
+\subfloat[\tiny{$\rho.u$} \label{fig:rhoU}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/rhoU.png}}
+\subfloat[\tiny{$\Psi_{rho.u}$} \label{fig:adjRhoU}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/rhoU_adjoint.png}}
+\end{figure}
+\vspace{-10pt}
 \begin{itemize}
 \scriptsize
-\item give the initial states, l and r
+\item give the initial states, l and r: Initial conditions: $\frac{\rho_L}{\rho_R} \approx 6$. Adjoint evaluated at t = 0.035 sec.
 \item how the code was modified - multiblock and multiproc for uniform blocks
-\item some results
-\item work in progress
-\begin{itemize}
-\scriptsize
-\item boundary conditions
-\item compare with other techniques to get dR/dU
+\item Selected as functional the average pressure in the shockcube.
+
 \end{itemize}
-\end{itemize}
+
+\end{exampleblock}
+\end{minipage}
 
 \end{frame}
 
@@ -741,15 +801,6 @@ Preliminary work with the discrete adjoint - shockcube problem
 
 %==========================================================================
 \begin{frame}
-\frametitle{Acknowledgements}
-\begin{center}
-Computations were performed on the GPC supercomputer at the SciNet HPC Consortium. SciNet is funded by: the Canada Foundation for Innovation under the auspices of Compute Canada; the Government of Ontario; Ontario Research Fund - Research Excellence; and the University of Toronto. 
-\end{center}
-\end{frame}
-
-
-%==========================================================================
-\begin{frame}
 \begin{center}
 {\huge Thank You For Your Attention!} \\
 \vspace*{1.5cm}
@@ -762,40 +813,27 @@ Computations were performed on the GPC supercomputer at the SciNet HPC Consortiu
 \newcounter{finalframe}
 \setcounter{finalframe}{\value{framenumber}}
 
-\begin{frame}[allowframebreaks] 
+\begin{frame}
 \frametitle{References}
 \begin{thebibliography}{1} %Using the bibtex package is recoended but this should allow you do the bibliograghy ad-hoc.
 \begin{tiny}
 \beamertemplatetextbibitems
 \bibitem{MooreLaw}
-BCA Research Blog, \newblock {\url{http://blog.bcaresearch.com/wp-content/uploads/2013/10/Chart-III-8-Moores-Law-Over-199-Years-And-Going-Strong.png}}, \newblock Accessed 29-03-2015
+BCA Research Blog, \newblock {\url{http://blog.bcaresearch.com/wp-content/uploads/2013/10/Chart-III-8-Moores-Law-Over-199-Years-And-Going-Strong.png}}, Accessed 29-03-2015
 \bibitem{Kohler}
-K{\"o}hler, M., Boxx, I., Geigle, K. P., and Meier, W., \newblock Simultaneous planar measurements of soot structure and velocity fields in a turbulent lifted jet flame at 3-kHz", \newblock Applied Physics B 103 (2), 271-279, \newblock 2011  
+K{\"o}hler, M., Boxx, I., Geigle, K. P., and Meier, W., \newblock Simultaneous planar measurements of soot structure and velocity fields in a turbulent lifted jet flame at 3-kHz", Applied Physics B 103 (2), 271-279, 2011  
 \bibitem{AdelaideISF}
-Adelaide international sooting flame (ISF) workshop, \newblock \url{http://www.adelaide.edu.au/cet/isfworkshop/data-sets/turbulent/}, \newblock Accessed 29-03-2015
+Adelaide international sooting flame (ISF) workshop, \newblock \url{http://www.adelaide.edu.au/cet/isfworkshop/data-sets/turbulent/}, Accessed 29-03-2015
 \bibitem{Pope}
-Yang, Y., Pope, S. B., Chen, J. H., \newblock "An LES/PDF study of a turbulent lifted ethylene jet flame in a heated coflow", \newblock 8th US National Combustion Meeting, \newblock 2013
+Yang, Y., Pope, S. B., Chen, J. H., \newblock "An LES/PDF study of a turbulent lifted ethylene jet flame in a heated coflow", 8th US National Combustion Meeting, 2013
 \bibitem{Graetsch}
-Gr{\"a}tsch, T., Bathe, K. J., \newblock "A posteriori error estimation techniques in practical finite element analysis", \newblock Journal of Computers and Structures 83, 235–265 ,\newblock 2005 
+Gr{\"a}tsch, T., Bathe, K. J., \newblock "A posteriori error estimation techniques in practical finite element analysis", Journal of Computers and Structures 83, 235–265 , 2005 
 \bibitem{Bibb}
-Bibb, K., Gnoffo, P. A., Park, M. A., Jones, W. T., \newblock "Parallel, Gradient-Based Anisotropic Mesh Adaptation for Re-entry Vehicle Configurations", \newblock AIAA/ASME Joint Thermophysics and Heat Transfer Conference, AIAA Paper 2006–3579, \newblock 2006 
-\bibitem{Loken}
-Loken, C. et al, \newblock  Journal of Physics: Conf. Ser. 256 012026 , \newblock doi: (10.1088/1742-6596/256/1/012026), \newblock 2010
-
+Bibb, K., Gnoffo, P. A., Park, M. A., Jones, W. T., \newblock "Parallel, Gradient-Based Anisotropic Mesh Adaptation for Re-entry Vehicle Configurations",  AIAA/ASME Joint Thermophysics and Heat Transfer Conference, AIAA Paper 2006–3579, 2006 
 \end{tiny}
 \end{thebibliography}
 \end{frame}
 %==========================================================================
-
-
-\begin{frame}
-\frametitle{Backup Slide}
-
-\begin{itemize}
-\item Important backup slide point.
-\end{itemize}
-
-\end{frame}
 
 \setcounter{framenumber}{\value{finalframe}}
 \end{document}
