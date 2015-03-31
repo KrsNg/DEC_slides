@@ -1,30 +1,33 @@
 \BOOKMARK [2][]{Outline0.1}{Introduction}{}% 1
-\BOOKMARK [3][]{Outline0.1.1.3}{Computing power}{Outline0.1}% 2
-\BOOKMARK [3][]{Outline0.1.2.4}{Turbulent combustion - experimental}{Outline0.1}% 3
-\BOOKMARK [3][]{Outline0.1.3.5}{Turbulent combustion - simulation}{Outline0.1}% 4
-\BOOKMARK [2][]{Outline0.2}{Methodology}{}% 5
-\BOOKMARK [2][]{Outline0.3}{Overview of error}{}% 6
-\BOOKMARK [2][]{Outline0.4}{Adaptive mesh refinement}{}% 7
-\BOOKMARK [3][]{Outline0.4.1.10}{Basis}{Outline0.4}% 8
-\BOOKMARK [3][]{Outline0.4.2.11}{Block based AMR}{Outline0.4}% 9
-\BOOKMARK [3][]{Outline0.4.3.12}{Usage}{Outline0.4}% 10
-\BOOKMARK [2][]{Outline0.5}{High order FVM, CENO and LES}{}% 11
-\BOOKMARK [3][]{Outline0.5.1.13}{High order FVM}{Outline0.5}% 12
-\BOOKMARK [3][]{Outline0.5.2.14}{CENO}{Outline0.5}% 13
-\BOOKMARK [3][]{Outline0.5.3.15}{LES}{Outline0.5}% 14
-\BOOKMARK [2][]{Outline0.6}{Error estimation}{}% 15
-\BOOKMARK [3][]{Outline0.6.1.16}{Foundation}{Outline0.6}% 16
-\BOOKMARK [3][]{Outline0.6.2.17}{A background on gradient/physics-based refinement}{Outline0.6}% 17
-\BOOKMARK [3][]{Outline0.6.3.18}{CFFC example}{Outline0.6}% 18
-\BOOKMARK [3][]{Outline0.6.4.19}{About the adjoint}{Outline0.6}% 19
-\BOOKMARK [3][]{Outline0.6.5.21}{Basis of refinement: h and p}{Outline0.6}% 20
-\BOOKMARK [3][]{Outline0.6.6.22}{Error estimation indicators}{Outline0.6}% 21
-\BOOKMARK [2][]{Outline0.7}{Usage}{}% 22
-\BOOKMARK [2][]{Outline0.8}{Progress to date}{}% 23
-\BOOKMARK [3][]{Outline0.8.1.24}{Poisson}{Outline0.8}% 24
-\BOOKMARK [3][]{Outline0.8.2.25}{LES flame}{Outline0.8}% 25
-\BOOKMARK [3][]{Outline0.8.3.26}{Adjoint runs}{Outline0.8}% 26
-\BOOKMARK [2][]{Outline0.9}{Timeline}{}% 27
-\BOOKMARK [3][]{Outline0.9.1.27}{Work done to date}{Outline0.9}% 28
-\BOOKMARK [3][]{Outline0.9.2.28}{Future work}{Outline0.9}% 29
-\BOOKMARK [1][]{Outline1}{Appendix}{}% 30
+\BOOKMARK [3][]{Outline0.1.1.2}{Computing power}{Outline0.1}% 2
+\BOOKMARK [3][]{Outline0.1.2.3}{Turbulent combustion - experimental}{Outline0.1}% 3
+\BOOKMARK [3][]{Outline0.1.3.4}{Turbulent combustion - simulation}{Outline0.1}% 4
+\BOOKMARK [2][]{Outline0.2}{Adaptive mesh refinement}{}% 5
+\BOOKMARK [3][]{Outline0.2.1.6}{Basis}{Outline0.2}% 6
+\BOOKMARK [3][]{Outline0.2.2.7}{Common AMR strategies}{Outline0.2}% 7
+\BOOKMARK [3][]{Outline0.2.3.8}{Block based AMR}{Outline0.2}% 8
+\BOOKMARK [3][]{Outline0.2.4.9}{Usage}{Outline0.2}% 9
+\BOOKMARK [2][]{Outline0.3}{High order FVM, CENO and LES}{}% 10
+\BOOKMARK [3][]{Outline0.3.1.10}{High order FVM}{Outline0.3}% 11
+\BOOKMARK [3][]{Outline0.3.2.11}{CENO}{Outline0.3}% 12
+\BOOKMARK [3][]{Outline0.3.3.12}{LES}{Outline0.3}% 13
+\BOOKMARK [2][]{Outline0.4}{Overview of error}{}% 14
+\BOOKMARK [3][]{Outline0.4.1.14}{Types of error}{Outline0.4}% 15
+\BOOKMARK [2][]{Outline0.5}{Error estimation}{}% 16
+\BOOKMARK [3][]{Outline0.5.1.15}{Foundation}{Outline0.5}% 17
+\BOOKMARK [3][]{Outline0.5.2.16}{A background on gradient/physics-based refinement}{Outline0.5}% 18
+\BOOKMARK [3][]{Outline0.5.3.17}{CFFC example}{Outline0.5}% 19
+\BOOKMARK [3][]{Outline0.5.4.18}{About the adjoint}{Outline0.5}% 20
+\BOOKMARK [2][]{Outline0.6}{Methodology}{}% 21
+\BOOKMARK [2][]{Outline0.7}{Discrete adjoint}{}% 22
+\BOOKMARK [2][]{Outline0.8}{Basis of refinement: h and p}{}% 23
+\BOOKMARK [3][]{Outline0.8.1.22}{Error estimation indicators}{Outline0.8}% 24
+\BOOKMARK [2][]{Outline0.9}{Usage}{}% 25
+\BOOKMARK [2][]{Outline0.10}{Progress to date}{}% 26
+\BOOKMARK [3][]{Outline0.10.1.24}{Poisson}{Outline0.10}% 27
+\BOOKMARK [3][]{Outline0.10.2.25}{LES flame}{Outline0.10}% 28
+\BOOKMARK [3][]{Outline0.10.3.26}{Adjoint runs}{Outline0.10}% 29
+\BOOKMARK [2][]{Outline0.11}{Timeline}{}% 30
+\BOOKMARK [3][]{Outline0.11.1.27}{Work done to date}{Outline0.11}% 31
+\BOOKMARK [3][]{Outline0.11.2.28}{Future work}{Outline0.11}% 32
+\BOOKMARK [1][]{Outline1}{Appendix}{}% 33

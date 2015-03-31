@@ -130,20 +130,20 @@
 \begin{frame}[plain]
     \titlepage	
 \end{frame}
-
-%==========================================================================================
-\begin{frame}[plain,c]
-\centering
-\begin{minipage}[t][1\textheight]{1\textwidth}
-\begin{alertblock}{\large{Outline: }}
-\small
-
-\tableofcontents[hideallsubsections]
-
-\end{alertblock}
-\end{minipage}
-\end{frame}
 \endgroup
+%==========================================================================================
+%\begin{frame}[plain,c]
+%\centering
+%\begin{minipage}[t][1\textheight]{1\textwidth}
+%\begin{alertblock}{\large{Outline: }}
+%\small
+%
+%\tableofcontents[hideallsubsections]
+%
+%\end{alertblock}
+%\end{minipage}
+%\end{frame}
+
 
 %===========================================================================================
 
@@ -263,106 +263,6 @@ Their numerical setup:
 The results they obtained for mean temperature reveal good agreement between LES and DNS at x/H = 6, with lower-than-predicted values at x/H = 12. They anticipate mean temperature prediction to improve with finer mesh resolution in the LES grid.
 
 \end{frame}
-%=========================================================================
-
-\section[Methodology]{Methodology}
-\begin{frame}%[allowframebreaks]
-\frametitle{Scope and methodology within framework}
-\scriptsize
-
-\begin{itemize}
-\item Reducing numerical error: using high order CENO and adjoint based error estimation : {$\mathcal{O}(h^p)$} $\rightarrow$ h and p adaptation
-
-\item Combustion modeling:
-  \begin{itemize}
-   \tiny
-   \item PCM-FPI: allowing detailed chemical kinetics via tabulation of precomputed laminar premixed flames [H. Perez 2011]
-   \end{itemize}  
-
-
-\item Favre averaged Navier Stokes governing equations
-
-\item Large Eddy Simulation:
-  \begin{itemize}
-  \tiny
-   \item Explicit Filtering [Deconinck 2008]
-   \item Sub-filter scale (SFS) modeling [H-Perez 2011]
-  \end{itemize}
-
-\item High-order finite volume methods: CENO technique - benefits of higher accuracy on a coarse mesh [Groth and Ivan 2013][Ivan 2010][Rashad 2009]
-
-
-\item AMR
-   \begin{itemize}
-   \tiny
-   \item Block-based AMR: speed and parallelization [Groth et al 1999]
-   \item Anisotropic vs Isotropic: how cell count (computational cost) can be reduced [Zhang 2011][Williamschen 2013][Freret 2015]
-   \item Now the non-uniform vs the uniform block modification [Freret 2015]
-   \end{itemize}
-   
-\item Solver: [Northrup 2013] implemented an implicit time marching GMRES method that improves the capability of the CFFC code   
-   
-\item Creating a framework for the adjoint based error estimation method
-\end{itemize}
-\end{frame}
-
-%==========================================================================
-
-
-\section[Error]{Overview of error}
-\begin{frame}%[allowframebreaks]
-\frametitle{Overview of error}
-\vspace{-5pt}
-\begin{minipage}[t][0.7\textheight]{1\textwidth}
-\scriptsize
-\vspace{-20pt}
-\begin{block}{Likely sources of error}
-\vspace{-10pt}
-\begin{figure}[h!]
-%\centering
-\includegraphics[height=0.47\textwidth]{./figs/Error.png}
-\vspace{-5pt}
-\caption{Some sources of error [Fidkowski 2012]}
-\label{fig:Fidk}
-\end{figure}
-\vspace{-20pt}
-\end{block}
-\end{minipage}
-\end{frame}
-
-
-\begin{frame}%[allowframebreaks]
-\frametitle{Types of error}
-\scriptsize
-We can broadly classify the two key sources of error in CFD as follows:
-
-\begin{enumerate}
-\item Numerical error:
-	\begin{enumerate}[a]
-	\scriptsize
-	\item Solution error - that between the exact solution value and the CFD obtained value
-	\item Truncation error - exists between the actual governing equations and the discretized PDEs for the numerical scheme
-	\item Convergence error - arising due to nature of the iterative technique used
-	\end{enumerate}
-\item Modeling error:
-	\begin{enumerate}[a]
-	\scriptsize
-	\item Pertaining to LES:
-		\begin{itemize}
-		\tiny
-		\item Sub-filter scale turbulence model: inappropriate model selected
-		\item Combustion and chemistry model
-		\item Filtering:\newline
-			  aliasing errors - decomposed nonlinear terms in FANS = feedback of frequencies beyond filter bandwidth, = 'fake' stresses \newline
-			 commutation errors - exist between filtering and differential operations 
-		\end{itemize}
-	\item Errors in geometry definition 
-	\item Errors in types of mesh cells - selection of the mesh refinement, types of cells, configuration to bulk flow direction
-	\end{enumerate}
-\end{enumerate}
-
-\end{frame}
-
 
 %==========================================================================
 
@@ -400,6 +300,46 @@ AMR: [Berger et al 1984, 1986, 1989] [Aftomis et al 1998, 2000, 2004]
 
 %---------------------------------------------------------------------------------------
 
+\subsection[AMR types]{Common AMR strategies}
+\begin{frame}%[allowframebreaks]
+\frametitle{Common AMR strategies}
+\tiny
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-15pt}
+\begin{exampleblock}{Key characteristics}
+[Northrup 2013]
+\vspace{-20pt}
+\begin{figure} \label{fig:AMRtypes}
+\centering
+\subfloat[\tiny{flagged cells} \label{fig:flag}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/flagged_cells.jpg}}
+\subfloat[\tiny{Cell-based refinement} \label{fig:cell-b}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/cell-based-refine.jpg}}
+\subfloat[\tiny{Patch-based refinement} \label{fig:patch-b}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/patch-based_refine.jpg}}
+\subfloat[\tiny{Block-based refinement} \label{fig:block-b}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/block-based.jpg}}
+\end{figure}
+
+\vspace{-15pt}
+\begin{itemize}
+\tiny
+\item Cell based: [Powell et al, 1993] [Berger and Leveque, 1989] [Aftosmis et al, 1998] \newline Cells refined individually, hierarchy stored in a (very dense) tree
+
+\item Patch based: [Berger and Collela, 1989] \newline Cells are organized into collections of rectangular patches
+
+\item Block based:  [Groth and co-workers, 1999] [Berger, 1994 ] \newline Entire blocks get refined, much lighter tree structure, efficient domain decomposition
+\end{itemize}
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
+
+
+
+%---------------------------------------------------------------------------------------
+
 \subsection{Block based AMR}
 \begin{frame}%[allowframebreaks]
 \frametitle{Block based AMR}
@@ -408,7 +348,7 @@ AMR: [Berger et al 1984, 1986, 1989] [Aftomis et al 1998, 2000, 2004]
 \vspace{-15pt}
 \begin{exampleblock}{Key characteristics}
 Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012] \newline
-Entire block gets refined, along with all its cells. This approach is much cheaper than individual cell refinement, since the latter would require updated lists and cross-checking.
+Entire block gets refined, along with all its cells. This approach is much cheaper than individual cell refinement, having a lighter tree structure.
 \vspace{-20pt}
 \begin{figure}
 \label{fig:cubeAMRbased}
@@ -421,7 +361,8 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \vspace{-15pt}
 \begin{itemize}
 \tiny
-\item Isotropic vs anisotropic: up to 85\% savings in cell count in 3D [Williamschen 2013]
+\item For the above shockcube cases, cell ratio of isotropic $:$ anisotropic $\approx 0.78$ thus reflecting approximately $22 \%$ reduction in number of cells
+\item Williamschen [2013] have previously obtained savings of up to 85\% reduction in cell count in 3D [Williamschen 2013]
 \end{itemize}
 \end{exampleblock}
 \end{minipage}
@@ -588,7 +529,69 @@ An explanation on h.o FVM.  $ p > 2 $.
 \end{frame}
 
 
-%===== ADJOINT =====================================================================
+%==========================================================================
+
+
+\section[Error]{Overview of error}
+\begin{frame}%[allowframebreaks]
+\frametitle{Overview of error}
+\vspace{-5pt}
+\begin{minipage}[t][0.7\textheight]{1\textwidth}
+\scriptsize
+\vspace{-20pt}
+\begin{block}{Likely sources of error}
+\vspace{-10pt}
+\begin{figure}[h!]
+%\centering
+\includegraphics[height=0.47\textwidth]{./figs/Error.png}
+\vspace{-5pt}
+\caption{Some sources of error [Fidkowski 2012]}
+\label{fig:Fidk}
+\end{figure}
+\vspace{-20pt}
+\end{block}
+\end{minipage}
+\end{frame}
+
+
+\subsection{Types of error}
+\begin{frame}%[allowframebreaks]
+\frametitle{Types of error}
+\scriptsize
+We can broadly classify the two key sources of error in CFD as follows:
+
+\begin{enumerate}
+\item Numerical error:
+	\begin{enumerate}[a]
+	\scriptsize
+	\item Solution error - that between the exact solution value and the CFD obtained value
+	\item Truncation error - exists between the actual governing equations and the discretized PDEs for the numerical scheme
+	\item Convergence error - arising due to nature of the iterative technique used
+	\end{enumerate}
+\item Modeling error:
+	\begin{enumerate}[a]
+	\scriptsize
+	\item Pertaining to LES:
+		\begin{itemize}
+		\tiny
+		\item Sub-filter scale turbulence model: inappropriate model selected
+		\item Combustion and chemistry model
+		\item Filtering:\newline
+			  aliasing errors - decomposed nonlinear terms in FANS = feedback of frequencies beyond filter bandwidth, = 'fake' stresses \newline
+			 commutation errors - exist between filtering and differential operations 
+		\end{itemize}
+	\item Errors in geometry definition 
+	\item Errors in types of mesh cells - selection of the mesh refinement, types of cells, configuration to bulk flow direction
+	\end{enumerate}
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+%===== ADJOINT ============================================================
 \section[Error estimates]{Error estimation}
 
 \subsection{Foundation}
@@ -692,6 +695,54 @@ The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 200
 \end{itemize}
 \end{frame}
 
+
+%=========================================================================
+
+\section[Methodology]{Methodology}
+\begin{frame}%[allowframebreaks]
+\frametitle{Scope and methodology within framework}
+\scriptsize
+
+\begin{itemize}
+\item Reducing numerical error: using high order CENO and adjoint based error estimation : {$\mathcal{O}(h^p)$} $\rightarrow$ h and p adaptation
+
+\item Combustion modeling:
+  \begin{itemize}
+   \tiny
+   \item PCM-FPI: allowing detailed chemical kinetics via tabulation of precomputed laminar premixed flames [H. Perez 2011]
+   \end{itemize}  
+
+
+\item Favre averaged Navier Stokes governing equations
+
+\item Large Eddy Simulation:
+  \begin{itemize}
+  \tiny
+   \item Explicit Filtering [Deconinck 2008]
+   \item Sub-filter scale (SFS) modeling [H-Perez 2011]
+  \end{itemize}
+
+\item High-order finite volume methods: CENO technique - benefits of higher accuracy on a coarse mesh [Groth and Ivan 2013][Ivan 2010][Rashad 2009]
+
+
+\item AMR
+   \begin{itemize}
+   \tiny
+   \item Block-based AMR: speed and parallelization [Groth et al 1999]
+   \item Anisotropic vs Isotropic: how cell count (computational cost) can be reduced [Zhang 2011][Williamschen 2013][Freret 2015]
+   \item Now the non-uniform vs the uniform block modification [Freret 2015]
+   \end{itemize}
+   
+\item Solver: [Northrup 2013] implemented an implicit time marching GMRES method that improves the capability of the CFFC code   
+   
+\item Creating a framework for the adjoint based error estimation method
+\end{itemize}
+\end{frame}
+
+
+%===============================================================================
+
+\section{Discrete adjoint}
 \begin{frame}
 \frametitle{Discrete adjoint}
 \scriptsize
@@ -730,7 +781,7 @@ Methods to evaluate the matrix $\frac{\partial{R}}{\partial{U}} $  for the discr
 
 %=====================================================================
 
-\subsection[Usage]{Basis of refinement: h and p}
+\section[Usage]{Basis of refinement: h and p}
 \begin{frame}%[allowframebreaks]
 \frametitle{\scriptsize{Usage of the adjoint as a basis of refinement: h and p}}
 \scriptsize
@@ -1016,8 +1067,14 @@ Computational costs:
 
 \begin{frame}
 \frametitle{References}
-\begin{thebibliography}{1} %Using the bibtex package is recoended but this should allow you do the bibliograghy ad-hoc.
+
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{}
+
 \begin{tiny}
+
+\begin{thebibliography}{1} %Using the bibtex package is recoended but this should allow you do the bibliograghy ad-hoc.
 \beamertemplatetextbibitems
 \bibitem{MooreLaw}
 BCA Research Blog, \newblock {\url{http://blog.bcaresearch.com/wp-content/uploads/2013/10/Chart-III-8-Moores-Law-Over-199-Years-And-Going-Strong.png}}, Accessed 29-03-2015
@@ -1031,8 +1088,14 @@ Yang, Y., Pope, S. B., Chen, J. H., \newblock "An LES/PDF study of a turbulent l
 Gr{\"a}tsch, T., Bathe, K. J., \newblock "A posteriori error estimation techniques in practical finite element analysis", Journal of Computers and Structures 83, 235–265 , 2005 
 \bibitem{Bibb}
 Bibb, K., Gnoffo, P. A., Park, M. A., Jones, W. T., \newblock "Parallel, Gradient-Based Anisotropic Mesh Adaptation for Re-entry Vehicle Configurations",  AIAA/ASME Joint Thermophysics and Heat Transfer Conference, AIAA Paper 2006–3579, 2006 
-\end{tiny}
+
 \end{thebibliography}
+\end{tiny}
+
+\end{exampleblock}
+\end{minipage}
+
+
 \end{frame}
 %==========================================================================
 
