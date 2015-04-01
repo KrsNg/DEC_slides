@@ -21,13 +21,10 @@
 \setbeamerfont{caption}{series=\normalfont,size=\fontsize{5}{5}}
 \setbeamercolor{section in sidebar}{fg=black}
 \setbeamercolor{section in sidebar shaded}{fg=lightgray}%section in sidebar.fg!40!bg}
-%\setbeamercolor{section in sidebar}{fg=black}            %color of the active section
-%\setbeamercolor{section in sidebar shaded}{fg=gray}     %color of the inactive section
 \setbeamercolor{subsection in sidebar}{fg=darkred}         %color of the active subsection
 \setbeamercolor{subsection in sidebar shaded}{fg=darkgray}  %color of the inactive subsection
 \setbeamercolor{title in sidebar}{fg=black}              %color of the presentation title
-%\setbeamercolor{author in sidebar}{fg=...}             %color of the author  
-%\setbeamertemplate{section in toc shaded}[default][10]
+\setbeamertemplate{itemize items}{\scalebox{0.9}{\text{\textbullet}}} 
  
  
 \makeatletter
@@ -420,7 +417,7 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \begin{exampleblock}{Error reduction via p}
 \tiny
 
-High order methods > $2^{nd}$ order accuracy.
+High order methods  generally $ > 2^{nd}$ order accuracy.
 
 \begin{block}{Integral Form of the Governing Equations}
      \[
@@ -436,6 +433,7 @@ High order methods > $2^{nd}$ order accuracy.
       \vec{\mathcal{F}^{\mathrm{V}}} \right)\cdot \hat{n} {A} \right)_{ijk,l,m} 
       + \sum_{n=1}^{N_{GV}} \left( \omega_n {\mathbf{S}} \right)_{i,j,k,n}      
        = \overline{\mathbf{R}}_{ijk}  \left( \overline{\mathbf{U}} \right) \]
+    The discretized scheme is then expressed in matrix-vector form. [Northrup 2013] GMRES.   
     The higher the order p of the scheme, the more the quadrature points ($ N_G $) which have their own corresponding weights $ \omega $.
 \end{block}
 
@@ -488,23 +486,24 @@ High order methods > $2^{nd}$ order accuracy.
 %------------------------------------------------------------------------------
 
 
-\subsection{LES}
+\section{LES}
 \begin{frame}
 \frametitle{Large Eddy Simulation (LES)}
 \scriptsize
+\begin{minipage}[t][1\textheight]{1\textwidth}
 [Piomelli 1999][Ghosal and Moin 1999]
-\begin{itemize}
+\begin{enumerate}[1.]
+\setlength\itemsep{0.3em}
 \item The accuracy of LES lies between the very accurate DNS and RANS.
 \item DNS is mostly impractical and very expensive
 \item RANS has fully modelled turbulence. Only the largest scales are resolved
 \item LES utilizes a spatial filtering of a given width, $\bar{\Delta} $. Any scales below this will be modelled $\rightarrow$ sub-filter scales (SFS) [Smagorinsky 1963][Germano 1991][Piomelli 1991][Ghosal and Moin 1999][Lilly 1992]
 \item while scales larger than $\bar{\Delta}$ will be fully resolved.
-
-\item Hence in LES an appropriate balance is sought for accuracy, since too much reliance on modeling can be a source of error. Can be broadly categorized into two:
-
-\begin{itemize}
+\item Hence in LES an appropriate balance is sought for accuracy, since too much reliance on modeling can be a source of error. Broadly categorized into:\par
+\begin{enumerate}[(a)]
 \tiny
-\item Implicit filtering [Aspden et al 2008]
+\vspace{-2pt}
+\item \scriptsize{\textit{Implicit filtering} [Aspden et al 2008]}
 \begin{itemize}
 \tiny
 \item The filter width is not explicitly defined
@@ -513,8 +512,8 @@ High order methods > $2^{nd}$ order accuracy.
 \item Difficult to control aliasing and commutation errors
 \end{itemize}
 
-
-\item Explicit filtering. [Vasilyev et al, 1998] [Deconinck, 2008]
+\vspace{-2pt}
+\item \scriptsize{\textit{Explicit filtering} [Vasilyev et al, 1998] [Deconinck, 2008]}
 \begin{itemize}
 \tiny
 \item Define $\bar{\Delta} $ to be fixed for the entire mesh: top-hat, Gaussian, etc.
@@ -523,9 +522,11 @@ High order methods > $2^{nd}$ order accuracy.
 \item Allows control of aliasing errors
 \end{itemize}
 
-\end{itemize}
+\end{enumerate}
 
-\end{itemize}
+\end{enumerate}
+\end{minipage}
+
 \end{frame}
 
 
@@ -535,21 +536,21 @@ High order methods > $2^{nd}$ order accuracy.
 \section[Error]{Overview of error}
 \begin{frame}%[allowframebreaks]
 \frametitle{Overview of error}
-\vspace{-5pt}
-\begin{minipage}[t][0.7\textheight]{1\textwidth}
+\vspace{0pt}
+\begin{minipage}[t][1\textheight]{1\textwidth}
 \scriptsize
 \vspace{-20pt}
-\begin{block}{Likely sources of error}
+\begin{exampleblock}{Likely sources of error}
 \vspace{-10pt}
 \begin{figure}[h!]
 %\centering
-\includegraphics[height=0.47\textwidth]{./figs/Error.png}
+\includegraphics[height=0.64\textwidth]{./figs/Error.png}
 \vspace{-5pt}
 \caption{Some sources of error [Fidkowski 2012]}
 \label{fig:Fidk}
 \end{figure}
 \vspace{-20pt}
-\end{block}
+\end{exampleblock}
 \end{minipage}
 \end{frame}
 
@@ -560,16 +561,16 @@ High order methods > $2^{nd}$ order accuracy.
 \scriptsize
 We can broadly classify the two key sources of error in CFD as follows:
 
-\begin{enumerate}
+\begin{enumerate}[1.]
 \item Numerical error:
-	\begin{enumerate}[a]
+	\begin{enumerate}[(a)]
 	\scriptsize
 	\item Solution error - that between the exact solution value and the CFD obtained value
 	\item Truncation error - exists between the actual governing equations and the discretized PDEs for the numerical scheme
 	\item Convergence error - arising due to nature of the iterative technique used
 	\end{enumerate}
 \item Modeling error:
-	\begin{enumerate}[a]
+	\begin{enumerate}[(a)]
 	\scriptsize
 	\item Pertaining to LES:
 		\begin{itemize}
@@ -600,7 +601,7 @@ We can broadly classify the two key sources of error in CFD as follows:
 \scriptsize
 Basis for selective mesh refinement - we would like to refine the mesh where the cells have a very critical effect on the solution, while coarsening the less critical areas to save on computational cost.\newline 
 Basically, there are two types of error estimation procedures available:
-\begin{itemize}
+\begin{enumerate}[1.]
 \item a priori error estimators:  these predict the long-term behavior of the errors in the discretization. They are not actually designed to approximate the error estimate for a given mesh. 
 \item a posteriori error estimators: these use the simulation results to derive estimates of solution errors. Furthermore, these results are used to guide adaptive schemes:
 \begin{itemize}
@@ -608,12 +609,12 @@ Basically, there are two types of error estimation procedures available:
 \item where either the mesh is locally refined (h-version) 
 \item where the polynomial degree is raised (p-method)
 \end{itemize}
-\end{itemize}
+\end{enumerate}
 Two main a posteriori approaches are the:
-\begin{itemize}
+\begin{enumerate}[(a)]
 \item gradient-based : [Bibb et al, 2006] [Giles and Pierce, 2000]
 \item adjoint-based : [Giles and Pierce, 2000][Venditti and Darmofal - 2000,2002][Fidkowski and Darmofal, 2011] 
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 
@@ -624,7 +625,7 @@ Two main a posteriori approaches are the:
 In these simulations, the mesh or discretization order is changed based on the rates of change of (physical) solution variables.\newline
 Where the change occurs most rapidly over a few mesh cells, then over this location the mesh resolution can be increased (higher mesh refinement), or the scheme order can be increased, effectively using a higher order discretization over these cells.
 
-\begin{itemize}
+\begin{enumerate}[(a)]
 \item The reasoning behind this is to have enough cells to capture the changes as \textit{smoothly} as possible.
 \item Once refinement is completed, the solution is re-run and the gradients re-evaluated. Changes made as necessary. Error can be compared to a higher discretization (h or p) solution.
 \item This is the present utility in the anisotropic and isotropic AMR functionality of the CFFC code used by the CFD and Propulsion group.
@@ -635,7 +636,7 @@ Where the change occurs most rapidly over a few mesh cells, then over this locat
 \item gradient-based approach can only deal with continuous functionals as opposed to discrete optimization functionals
 \item inability to deal with functions that have multiple minima. In this latter case, the gradient-based technique will generally converge to the nearest local minima, whose value may not represent overall system minimum.
 \end{itemize}
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 %-----------------------------------------------------------------
@@ -676,7 +677,7 @@ Where the change occurs most rapidly over a few mesh cells, then over this locat
 To make error estimation more relevant to engineering applications: assess the error made in predicting an integral quantity which represents an engineering output. This output is the functional. For example,the output can be the average pressure on a wall. 
 \newline The adjoint technique is a sensitivity analysis, that measures the rates of change of a design functional to a given change in the input. (It is a function of the residual, but the residual is in turn a function of both the input and the state). \newline
 The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 2001][Venditti and Darmofal, 2000, 2002] [Becker and Rannacher: 2001,2003]:
-\begin{itemize}
+\begin{enumerate}[(a)]
 \item continuous:
 \begin{itemize} 
 \tiny
@@ -692,7 +693,7 @@ The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 200
 \item If adjoint consistent (discrete adjoint = continuous adjoint), no need for B.C. specification -automatically incorporated via the primal residual.   
 \item thus obtain a linear system of equations - only need linear sensitivities of the functional and the Jacobian matrix associated with the primal residual.
 \end{itemize}
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 
@@ -703,7 +704,7 @@ The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 200
 \frametitle{Scope and methodology within framework}
 \scriptsize
 
-\begin{itemize}
+\begin{enumerate}[1.]
 \item Reducing numerical error: using high order CENO and adjoint based error estimation : {$\mathcal{O}(h^p)$} $\rightarrow$ h and p adaptation
 
 \item Combustion modeling:
@@ -736,7 +737,7 @@ The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 200
 \item Solver: [Northrup 2013] implemented an implicit time marching GMRES method that improves the capability of the CFFC code   
    
 \item Creating a framework for the adjoint based error estimation method
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 
@@ -746,34 +747,36 @@ The adjoint has two main formulations [Giles and Pierce: 1997,2001][Jameson, 200
 \begin{frame}
 \frametitle{Discrete adjoint}
 \scriptsize
-For these initial stages, beginning with the discrete formulation of the adjoint
-\begin{minipage}[t][0.6\textheight]{1\textwidth}
-\scriptsize
+\begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-10pt}
+For these initial stages, beginning with the discrete formulation of the adjoint
+
 \begin{exampleblock}{Discrete Adjoint}
-\[\left( \frac{\partial{R}}{\partial{U}} \right)^T ~\Psi~ = -\left( \frac{\partial{J}}{\partial{U}} \right)^T\]
+\vspace{-8pt}
+\[\left( \frac{\partial{\mathbf{R}}}{\partial{\mathbf{U}}} \right)^T ~\Psi~ = -\left( \frac{\partial{\mathbf{J}}}{\partial{\mathbf{U}}} \right)^T\]
 \text{yielding a linear system of equations:}
 \vspace{-10pt}
-\[Ax = b\]
-\vspace{-10pt}
-\text{Where:}
-\vspace{10pt}
+\[\mathbf{Ax} = \mathbf{b}\]\text{where:} % \vspace{-5pt}
+%\vspace{-10pt}
 \begin{itemize}
-\item \textbf{$J$} = the functional
-\item \textbf{$R$} =  the residual
-\item \textbf{$\psi$} = the adjoint vector
+\tiny
+\item \textbf{$\mathbf{J}$} = the functional
+\item \textbf{$\mathbf{R}$} =  the residual
+\item \textbf{$\mathbf{\Psi}$} = the adjoint vector
 \end{itemize}
 \end{exampleblock}
-\end{minipage}
 
-Methods to evaluate the matrix $\frac{\partial{R}}{\partial{U}} $  for the discrete adjoint:
-\begin{itemize}
-\scriptsize
+\vspace{0pt}
+Methods to evaluate the matrix $\frac{\partial{\mathbf{R}}}{\partial{\mathbf{U}}} $  for the discrete adjoint:
+\vspace{2pt}
+\begin{enumerate}[1.]
+\tiny
 \item Finite differencing - perturbing the state U to evaluate R 
 \item Automated differentiation - tools that evaluate the differential [Bischof et al: 1992, 1996, 2008]
 \item Approximate method  - using the inbuilt functions within CFFC code [Northrup, 2013]
 \item Complex step [Martins, Alonso and Sturdza: 2003]
-\end{itemize}
+\end{enumerate}
+\end{minipage}
 
 
 \end{frame}
@@ -789,33 +792,33 @@ Methods to evaluate the matrix $\frac{\partial{R}}{\partial{U}} $  for the discr
 \frametitle{Error estimation indicators}
 [Venditti and Darmofal 2000][Fidkowski and Darmofal 2011]
 
-\begin{itemize}
+\begin{enumerate}[(a)]
 \item Our goal is to reduce discretization errors based on the mesh resolution.
 
 \begin{itemize}
 \tiny
-\item Consider 2 levels of mesh resolution: coarse (H) and fine (h). We calculate the state ($U_H$) and functional ($J_H(U_H)$) on the coarse space. Residual, $R_H(U_H) = 0$
-\item We would like to evaluate the functional on the fine space, $J_h(U_h)$ (expensive). Thus we use a prolongation operator ($U_h^H = I_h^H U_H$) to inject the fine space state onto the coarse space state.
-\item The output error, $\delta J \equiv J_H(U_H) - J_h(U_h) \neq 0$
-\item Expect the new residual, $R_h(U_h^H) \neq 0$ 
-\item The injected coarse state solves: $ R_h(U_h^\prime) - R_h(U_h^H) = 0 \rightarrow (U_h^\prime) = (U_h^H)$
-\item $ \delta J \approx  J_h(U_h^H) - J_h(U_h) = \Psi_h^T \delta R_h = -\Psi_h^T R_h(U_h^H)   $, using the definition of the fine space adjoint, $\Psi_h$
-\item Error estimate is the value of $\delta J$, and does not need evaluation of $U_h$, primal solution on the fine space. We can use this error estimate as a flag for refinement, given some threshold value
+\item Consider 2 levels of mesh resolution: coarse (H) and fine (h). We calculate the state ($\mathbf{U}_H$) and functional ($\mathbf{J}_H(\mathbf{U}_H)$) on the coarse space. Residual, $\mathbf{R}_H(\mathbf{U}_H) = 0$
+\item We would like to evaluate the functional on the fine space, $\mathbf{J}_h(\mathbf{U}_h)$ (expensive). Thus we use a prolongation operator ($\mathbf{U}_h^H = I_h^H \mathbf{U}_H$) to inject the fine space state onto the coarse space state.
+\item The output error, $\delta \mathbf{J} \equiv \mathbf{J}_H(\mathbf{U}_H) - \mathbf{J}_h(\mathbf{U}_h) \neq 0$
+\item Expect the new residual, $\mathbf{R}_h(\mathbf{U}_h^H) \neq 0$ 
+\item The injected coarse state solves: $ \mathbf{R}_h(\mathbf{U}_h^\prime) - \mathbf{R}_h(\mathbf{U}_h^H) = 0 \rightarrow (\mathbf{U}_h^\prime) = (\mathbf{U}_h^H)$
+\item $ \delta \mathbf{J} \approx  \mathbf{J}_h(\mathbf{U}_h^H) - \mathbf{J}_h(U_h) = \mathbf{\Psi}_h^T \delta \mathbf{R}_h = -\mathbf{\Psi}_h^T \mathbf{R}_h(\mathbf{U}_h^H)   $, using the definition of the fine space adjoint, $\mathbf{\Psi}_h$
+\item Error estimate is the value of $\delta \mathbf{J}$, and does not need evaluation of $U_h$, primal solution on the fine space. We can use this error estimate as a flag for refinement, given some threshold value
 \end{itemize}
 
 \item Steady vs unsteady adjoints: for unsteady, march forward in time, evaluating $\psi$, then march backwards in time. Now have all the sensitivities. Use this to refine the mesh at those time levels. Check set tolerance and repeat until convergence.
 \item Expected benefits of adjoint vs gradient based methods: the adjoint technique is a one time calculation for the sensitivity of a single output to several inputs.
-\end{itemize}
+\end{enumerate}
 
 \end{frame}
 
 
 \subsection{Other groups}
 \begin{frame}%[allowframebreaks]
-\frametitle{\scriptsize{Usage of the adjoint as a basis of mesh  refinement: h}}
+\frametitle{Adjoint as basis of mesh refinement: $\mathcal{O}(h)$}
 \scriptsize
 Some of the groups using \textbf{adjoint with AMR}
-\begin{itemize}
+\begin{enumerate}[1.]
 \item Becker and Rannacher [2001] - An Optimal Control Approach to a Posteriori Error Estimation in Finite Element Methods
 \item Fidkowski and Darmofal [2011] - Review of Output-Based Error Estimation and Mesh Adaptation in Computational Fluid Dynamics
 \item Hartmann [2006] - Error Estimation and Adjoint-based Adaptation in Aerodynamics
@@ -825,7 +828,7 @@ Some of the groups using \textbf{adjoint with AMR}
 \item Woopen, May and Sch{\"u}tz [2013] - Adjoint-Based Error Estimation and Mesh Adaptation for Hybridized Discontinuous Galerkin Methods
 \item Li, Allaneau and Jameson [2011] - Continuous Adjoint Approach for Adaptive Mesh Refinement
 \item Diskin and Yamaleev [2011] - Grid Adaptation Using Adjoint-Based Error Minimization
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 %-----------------------------------------------------------------
@@ -836,14 +839,14 @@ Some of the groups using \textbf{adjoint with AMR}
 \section[Usage]{Usage}
 
 \begin{frame}%[allowframebreaks]
-\frametitle{How we can use this: \LARGE{$\mathcal{O}(h^p)$}}
-
+\frametitle{\LARGE Extension to {$\mathcal{O}(h^p)$}}
+\begin{minipage}[t][1\textheight]{1\textwidth}
 \scriptsize
-\begin{itemize}
-\vspace{-25pt}
-\item h: using error estimates for mesh adaptation. Entire block would be refined.
-\begin{minipage}[t][0.7\textheight]{0.95\textwidth}
+\begin{enumerate}[1.]
 \vspace{-10pt}
+\item h: using error estimates for mesh adaptation. Entire block would be refined.
+\vspace{-10pt}
+\hspace{10em}
 \begin{exampleblock}{Launch abort vehicle example, [Nemec et al, 2008]}
 \tiny
 Functional as a linear combination of normal and axial forces. $M = 1.1; \alpha=-25\deg$
@@ -853,17 +856,18 @@ Functional as a linear combination of normal and axial forces. $M = 1.1; \alpha=
 \label{fig:LAVone}
 \centering
 \subfloat[\tiny{Adjoint of density with accompanying error estimate} \label{fig:LAVerror}]
-{\includegraphics[width=0.5\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/LAV_adj_err.png}}
+{\includegraphics[width=0.64\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/LAV_adj_err.png}}
 \subfloat[\tiny{Final obtained mesh. Initial was $3.7x10^3$ cells; final $2x10^6$ cells } \label{fig:LAVmesh}]
-{\includegraphics[width=0.7\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/LAV_mesh.png}}
+{\includegraphics[width=0.71\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/LAV_mesh.png}}
 \end{figure}
 \end{exampleblock}
-\end{minipage}
-\vspace{0pt}
+
+\vspace{-5pt}
 \item p: using the error estimates to run, locally, on the flagged block, a higher discretization of the numerical scheme. Usually, for high order,  $ p > 2 $.
 
+\end{enumerate}
+\end{minipage}
 
-\end{itemize}
 \end{frame}
 
 
@@ -922,6 +926,9 @@ CFFC code familiarization : LES test case - on parallel clusters - SciNET. Job s
 \subfloat[\tiny{time ave $c_{O_{2}}$} \label{fig:tave}]{\includegraphics[width=0.25\textheight, trim=4cm 0.3cm 2cm 0.5cm,clip=true]{./figs/Time_averaged_c_O2.png}}
 %\tiny{\caption{\tiny{Solution contours for Poisson problem}}}
 \end{figure}
+\vspace{5pt}
+\tiny{*FSD, flame surface density is used to model the flame structure, particularly for turbulent premixed flames.}
+\vspace{10pt}
 
 Computational costs:
 \begin{itemize}
@@ -949,12 +956,12 @@ Computational costs:
 \vspace{-20pt}
 \tiny
 \begin{figure}
-\label{fig:shockedcube}
+\label{fig:Blkshockedcube}
 \centering
-\subfloat[\tiny{$\rho$ at t = 0} \label{fig:rhoU}]
-{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/rho_mesh.png}}
-\subfloat[\tiny{$\Psi_{\rho}$ at t = 0} \label{fig:adjRhoU}]
-{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/rhoAdj_mesh.png}}
+\subfloat[\tiny{$\rho$ at t = 0} \label{fig:BlockRho}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/20Rho.png}}
+\subfloat[\tiny{$\Psi_{\rho}$ at t = 0} \label{fig:BlockadjRho}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/20RhoAdj.png}}
 \end{figure}
 \vspace{-10pt}
 \begin{itemize}
@@ -1047,19 +1054,15 @@ Computational costs:
 \end{exampleblock}
 \end{minipage}
 
-
-
-
-
 \end{frame}
 
 
 %==========================================================================
 \begin{frame}
+\frametitle{Questions?}
 \begin{center}
 {\huge Thank You For Your Attention!} \\
 \vspace*{1.5cm}
-{\Large Questions?}
 \end{center}
 \end{frame}
 %==========================================================================
@@ -1068,6 +1071,7 @@ Computational costs:
 \newcounter{finalframe}
 \setcounter{finalframe}{\value{framenumber}}
 
+\section{References}
 \begin{frame}
 \frametitle{References}
 
@@ -1100,6 +1104,45 @@ Bibb, K., Gnoffo, P. A., Park, M. A., Jones, W. T., \newblock "Parallel, Gradien
 
 
 \end{frame}
+
+
+%==========================================================================================
+
+\section{Backup}
+\begin{frame}
+\frametitle{Work on the adjoint: Backup slide}
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Preliminary work with the discrete adjoint - shockcube problem. 8 (20x20x20) blocks}
+\tiny
+CFFC = Computational Framework for Fluids and Combustion
+\vspace{-20pt}
+\begin{figure}
+\label{fig:shockedcube}
+\centering
+\subfloat[\tiny{$\rho$ at t = 0} \label{fig:rhoU}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/rho_mesh.png}}
+\subfloat[\tiny{$\Psi_{\rho}$ at t = 0} \label{fig:adjRhoU}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/rhoAdj_mesh.png}}
+\end{figure}
+\vspace{-10pt}
+\begin{itemize}
+\scriptsize
+\item Initial conditions: $\frac{\rho_L}{\rho_R} = 8$, $\frac{P_R}{P_L} = 10$. 
+\item how the code was modified - multiblock and multiproc for uniform blocks
+\item Selected as functional the average pressure in the shockcube.
+
+\end{itemize}
+
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
+
+
+
+
 %==========================================================================
 
 \setcounter{framenumber}{\value{finalframe}}

@@ -36,6 +36,9 @@
 \beamer@slide {fig:fsd4_25}{25}
 \beamer@slide {fig:fsd7_0}{25}
 \beamer@slide {fig:tave}{25}
-\beamer@slide {fig:shockedcube}{26}
-\beamer@slide {fig:rhoU}{26}
-\beamer@slide {fig:adjRhoU}{26}
+\beamer@slide {fig:Blkshockedcube}{26}
+\beamer@slide {fig:BlockRho}{26}
+\beamer@slide {fig:BlockadjRho}{26}
+\beamer@slide {fig:shockedcube}{31}
+\beamer@slide {fig:rhoU}{31}
+\beamer@slide {fig:adjRhoU}{31}
