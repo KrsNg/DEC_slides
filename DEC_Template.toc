@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.10pt}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Computing power}{2}{0}{1}
 \beamer@subsectionintoc {1}{2}{Turbulent combustion - experimental}{3}{0}{1}
@@ -22,7 +22,8 @@
 \beamer@sectionintoc {6}{Methodology}{19}{0}{6}
 \beamer@sectionintoc {7}{Discrete adjoint}{20}{0}{7}
 \beamer@sectionintoc {8}{Basis of refinement: h and p}{21}{0}{8}
-\beamer@subsectionintoc {8}{1}{Error estimation indicators}{22}{0}{8}
+\beamer@subsectionintoc {8}{1}{Error estimation indicators}{21}{0}{8}
+\beamer@subsectionintoc {8}{2}{Other groups}{22}{0}{8}
 \beamer@sectionintoc {9}{Usage}{23}{0}{9}
 \beamer@sectionintoc {10}{Progress to date}{24}{0}{10}
 \beamer@subsectionintoc {10}{1}{Poisson}{24}{0}{10}

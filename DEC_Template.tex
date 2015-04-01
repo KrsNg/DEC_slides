@@ -420,7 +420,7 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \begin{exampleblock}{Error reduction via p}
 \tiny
 
-An explanation on h.o FVM.  $ p > 2 $.
+High order methods > $2^{nd}$ order accuracy.
 
 \begin{block}{Integral Form of the Governing Equations}
      \[
@@ -432,10 +432,10 @@ An explanation on h.o FVM.  $ p > 2 $.
     Using a two-dimensional Gauss quadrature integration rule:
     \[  \frac{\mathrm{d}\overline{\mathbf{U}}_{ijk}}{\mathrm{d}t} = 
        \frac{1}{{V}_{ijk}} \sum_{l=1}^{N_f}     
-      \sum_{m=1}^{N_G} \left( \omega \left(\vec{\mathcal{F}^{\mathrm{I}}} - 
+      \sum_{m=1}^{N_{GF}} \left( \omega \left(\vec{\mathcal{F}^{\mathrm{I}}} - 
       \vec{\mathcal{F}^{\mathrm{V}}} \right)\cdot \hat{n} {A} \right)_{ijk,l,m} 
-      + \overline{\mathbf{S}}_{ijk} 
-      = \overline{\mathbf{R}}_{ijk}  \left( \overline{\mathbf{U}} \right) \]
+      + \sum_{n=1}^{N_{GV}} \left( \omega_n {\mathbf{S}} \right)_{i,j,k,n}      
+       = \overline{\mathbf{R}}_{ijk}  \left( \overline{\mathbf{U}} \right) \]
     The higher the order p of the scheme, the more the quadrature points ($ N_G $) which have their own corresponding weights $ \omega $.
 \end{block}
 
@@ -781,25 +781,7 @@ Methods to evaluate the matrix $\frac{\partial{R}}{\partial{U}} $  for the discr
 
 %=====================================================================
 
-\section[Usage]{Basis of refinement: h and p}
-\begin{frame}%[allowframebreaks]
-\frametitle{\scriptsize{Usage of the adjoint as a basis of refinement: h and p}}
-\scriptsize
-Some of the groups using \textbf{adjoint with AMR}
-\begin{itemize}
-\item Becker and Rannacher [2001] - An Optimal Control Approach to a Posteriori Error Estimation in Finite Element Methods
-\item Fidkowski and Darmofal [2011] - Review of Output-Based Error Estimation and Mesh Adaptation in Computational Fluid Dynamics
-\item Hartmann [2006] - Error Estimation and Adjoint-based Adaptation in Aerodynamics
-\item Nemec and Aftosmis [2007] - Adjoint Error Estimation and Adaptive Refinement for Embedded-Boundary Cartesian Meshes
-\item Nemec, Aftosmis, and Wintzer [2008] - Adjoint-Based Adaptive Mesh Refinement for Complex Geometries
-\item Hartmann, Held and Leicht [2010] - Adjoint-based error estimation and adaptive mesh refinement for the RANS and k-ω turbulence model equations
-\item Woopen, May and Sch{\"u}tz [2013] - Adjoint-Based Error Estimation and Mesh Adaptation for Hybridized Discontinuous Galerkin Methods
-\item Li, Allaneau and Jameson [2011] - Continuous Adjoint Approach for Adaptive Mesh Refinement
-\item Diskin and Yamaleev [2011] - Grid Adaptation Using Adjoint-Based Error Minimization
-\end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------
+\section[$\Psi$ with h]{Basis of refinement: h and p}
 
 \subsection[Estimation]{Error estimation indicators}
 \begin{frame}
@@ -826,6 +808,29 @@ Some of the groups using \textbf{adjoint with AMR}
 \end{itemize}
 
 \end{frame}
+
+
+\subsection{Other groups}
+\begin{frame}%[allowframebreaks]
+\frametitle{\scriptsize{Usage of the adjoint as a basis of mesh  refinement: h}}
+\scriptsize
+Some of the groups using \textbf{adjoint with AMR}
+\begin{itemize}
+\item Becker and Rannacher [2001] - An Optimal Control Approach to a Posteriori Error Estimation in Finite Element Methods
+\item Fidkowski and Darmofal [2011] - Review of Output-Based Error Estimation and Mesh Adaptation in Computational Fluid Dynamics
+\item Hartmann [2006] - Error Estimation and Adjoint-based Adaptation in Aerodynamics
+\item Nemec and Aftosmis [2007] - Adjoint Error Estimation and Adaptive Refinement for Embedded-Boundary Cartesian Meshes
+\item Nemec, Aftosmis, and Wintzer [2008] - Adjoint-Based Adaptive Mesh Refinement for Complex Geometries
+\item Hartmann, Held and Leicht [2010] - Adjoint-based error estimation and adaptive mesh refinement for the RANS and k-ω turbulence model equations
+\item Woopen, May and Sch{\"u}tz [2013] - Adjoint-Based Error Estimation and Mesh Adaptation for Hybridized Discontinuous Galerkin Methods
+\item Li, Allaneau and Jameson [2011] - Continuous Adjoint Approach for Adaptive Mesh Refinement
+\item Diskin and Yamaleev [2011] - Grid Adaptation Using Adjoint-Based Error Minimization
+\end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------------
+
+
 
 %==========================================================================
 \section[Usage]{Usage}
@@ -940,21 +945,21 @@ Computational costs:
 \frametitle{Work on the adjoint}
 \begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-20pt}
-\begin{exampleblock}{Preliminary work with the discrete adjoint - shockcube problem}
+\begin{exampleblock}{Preliminary work with the discrete adjoint - shockcube problem. 8 (20x20x20) blocks}
 \vspace{-20pt}
 \tiny
 \begin{figure}
 \label{fig:shockedcube}
 \centering
-\subfloat[\tiny{$\rho$} \label{fig:rhoU}]
-{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/rho.png}}
-\subfloat[\tiny{$\Psi_{\rho}$} \label{fig:adjRhoU}]
-{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/rhoAdjoint.png}}
+\subfloat[\tiny{$\rho$ at t = 0} \label{fig:rhoU}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/rho_mesh.png}}
+\subfloat[\tiny{$\Psi_{\rho}$ at t = 0} \label{fig:adjRhoU}]
+{\includegraphics[width=0.65\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/rhoAdj_mesh.png}}
 \end{figure}
 \vspace{-10pt}
 \begin{itemize}
 \scriptsize
-\item give the initial states, l and r: Initial conditions: $\frac{\rho_L}{\rho_R} \approx 6$. Adjoint evaluated at t = 0.035 sec.
+\item Initial conditions: $\frac{\rho_L}{\rho_R} = 8$, $\frac{P_R}{P_L} = 10$. 
 \item how the code was modified - multiblock and multiproc for uniform blocks
 \item Selected as functional the average pressure in the shockcube.
 
