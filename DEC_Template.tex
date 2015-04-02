@@ -417,7 +417,7 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \begin{exampleblock}{Error reduction via p}
 \tiny
 
-High order methods  generally $ > 2^{nd}$ order accuracy.
+High order methods  generally $ > 2^{nd}$ order accuracy. They reduce numerical error by increasing the accuracy of approximation between the actual governing equations (PDE form) and the discretized value.
 
 \begin{block}{Integral Form of the Governing Equations}
      \[
@@ -437,11 +437,14 @@ High order methods  generally $ > 2^{nd}$ order accuracy.
     The higher the order p of the scheme, the more the quadrature points ($ N_G $) which have their own corresponding weights $ \omega $.
 \end{block}
 
-
+\vspace{-10pt}
 \begin{itemize}
 \tiny
 \item Gauss-Legendre quadrature rules are defined on reference cartesian cubic elements, and mapped onto 3D hexahedral elements via mapping functions
-\item High-order schemes reduces numerical error by increasing the accuracy of approximation between the actual governing equations (PDE form) and the discretized value.
+\item Apply solution reconstruction (CENO)
+\item Evaluate the inviscid and viscous fluxes and apply the weights to respective Gauss-Legendre points;
+\item Evaluate source vector, which adds effects of turbulence and chemistry in reacting flows;
+\item Apply an appropriate time-marching scheme, such as a fourth-order Runge-Kutta (RK4) suitable for High-Order methods.
 \item Other groups researching this: Ihme (Stanford) and Poinsot (CERFACS)
 \end{itemize}
 \end{exampleblock}
@@ -919,7 +922,7 @@ CFFC code familiarization : LES test case - on parallel clusters - SciNET. Job s
 \begin{figure}
 \label{fig:LES}
 \centering
-\subfloat[\tiny{Flame temp} \label{fig:flametemp}]{\includegraphics[width=0.21\textheight, trim=7cm 0.2cm 2cm 0.2cm,clip=true]{./figs/Flame_temp.png}}
+\subfloat[\tiny{Flame temp at t=9.0 ms} \label{fig:flametemp}]{\includegraphics[width=0.21\textheight, trim=7cm 0.2cm 2cm 0.2cm,clip=true]{./figs/Flame_temp.png}}
 \subfloat[\tiny{FSD at 2.0 ms} \label{fig:fsd2}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd2_0ms.png}}
 \subfloat[\tiny{FSD at 4.25 ms} \label{fig:fsd4_25}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd4_25ms.png}}
 \subfloat[\tiny{FSD at 7.0 ms } \label{fig:fsd7_0}]{\includegraphics[width=0.3\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/fsd7_0ms.png}}
