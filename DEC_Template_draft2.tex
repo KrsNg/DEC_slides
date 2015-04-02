@@ -115,7 +115,7 @@
 
 %%========================================================================
 
-\title[]{Development of $h-p$ Adjoint-based error estimation for LES of reactive flows }
+\title[]{Development of $h$-$p$ Adjoint-based error estimation for LES of reactive flows }
 \author[]{{Christopher Ngigi \texorpdfstring{\\ \tiny{Ph.D. Candidate} \\} \footnotesize Supervisor: Prof. C. P. T. Groth}}
 \titlegraphic{\includegraphics[width=0.15\textheight]{./figs/utias_logo_blue.jpg}}
 \institute[]{Doctoral Examination Committee \\ Meeting I \\ University of Toronto, Institute for Aerospace Studies}
@@ -195,7 +195,7 @@
 
 \subsection[experimental]{Turbulent combustion - experimental}
 \begin{frame}%[allowframebreaks]
-\frametitle{Turbulent combustion - example flame}
+\frametitle{Turbulent combustion - Example flame}
 \scriptsize
 [K{\"o}hler 2006] \cite{Kohler, AdelaideISF}
 \begin{minipage}[0.5\textheight]{\textwidth}
@@ -226,7 +226,7 @@ Zone between flame-base and nozzle may have partial premixing.  }
 \scriptsize
 Turbulent combustion: practical reactive flows almost always involve turbulence.
 \newline \newline
-Simulation technique: Large eddy simulation (LES): higher accuracy than Reynolds averaged Navier Stokes (RANS) $\rightarrow$ lower cost (time, resources) than direct numerical simulation (DNS).
+Simulation techniques: Large eddy simulation (LES): higher accuracy than Reynolds averaged Navier Stokes (RANS) $\rightarrow$ lower cost (time, resources) than direct numerical simulation (DNS).
 
 
 \end{frame}
@@ -247,7 +247,7 @@ Simulation technique: Large eddy simulation (LES): higher accuracy than Reynolds
 \begin{figure}
 \label{fig:DNSLES}
 \centering
-\subfloat[\tiny{temperature in x-y plane: DNS (L), LES/PDF (R)} \label{fig:contourDNS}]
+\subfloat[\tiny{temperature in $x$-$y$ plane: DNS (L), LES/PDF (R)} \label{fig:contourDNS}]
 {\includegraphics[width=0.7\textheight]{./figs/Temperatures.png}}
 \subfloat[\tiny{Mean temperature: DNS and LES} \label{fig:meanTemp}]
 {\includegraphics[width=0.6\textheight]{./figs/Temp_DNS_LES2.png}}
@@ -259,17 +259,17 @@ Simulation technique: Large eddy simulation (LES): higher accuracy than Reynolds
 \frametitle{Turbulent combustion - LES \& DNS comparison cont'd}
 Numerical setup of Yang, Pope and Chen [2013]:\newline
 \tiny{
-Boundary conditions (BCs) are inflow/outflow in x and y, while periodic in z.\newline
-H = 2 mm is the jet width.}\newline
-Computational domain $ = 3D $ cuboid\newline
-Streamwise x-, transverse y-, and spanwise z-directions.
+Boundary conditions (BCs) are inflow/outflow in $x$ and $y$, while periodic in $z$.\newline
+$H = 2$ mm is the jet width.}\newline
+Computational domain $=$ cuboid\newline
+Streamwise $x$-, transverse $y$-, and spanwise $z$-directions.
 \begin{itemize}
 \scriptsize
 \item DNS 
 \begin{enumerate}[(1)]
 \scriptsize
 \item Grid points $ = 1.3 \times 10^9$.  
-\item Computational cost $ = \approx 14 \times 10^6$ CPU hours.
+\item Computational cost $\approx 14 \times 10^6$ CPU hours.
 \item $L_x \times L_y \times L_z = 15H \times 20H \times 3H$ 
 \end{enumerate}
 \item LES
@@ -282,8 +282,8 @@ Streamwise x-, transverse y-, and spanwise z-directions.
 \end{itemize}
 \vspace{10pt}
 \scriptsize
-Mean temperature results agreement between LES and DNS at $\frac{x}{H} = 6$. \newline LES values lower than DNS for $\frac{x}{H} = 12$.\newline
-Anticipate this to improve for increased mesh resolution in LES grid.
+Mean temperature results show agreement between LES and DNS at $\frac{x}{H} = 6$. \newline LES values lower than DNS for $\frac{x}{H} = 12$.\newline
+Anticipate this to improve for increased LES mesh resolution.
 
 \end{frame}
 
@@ -379,8 +379,8 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \vspace{-15pt}
 \begin{itemize}
 \tiny
-\item For the above shockcube cases, cell ratio of isotropic $:$ anisotropic $\approx 0.78$ thus reflecting approximately $22 \%$ reduction in number of cells
-\item Williamschen [2013] previously obtained savings of up to 85\% reduction in cell count in 3D
+\item For the above shockcube cases, cell ratio of isotropic $:$ anisotropic $\approx 0.78$ thus reflecting approximately $28 \%$ reduction in number of cells
+\item Williamschen [2013] previously obtained savings of up to $85 \%$ reduction in cell count for 3D meshes for inviscid flows
 \end{itemize}
 \end{exampleblock}
 \end{minipage}
@@ -553,19 +553,15 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \begin{frame}%[allowframebreaks]
 \frametitle{Overview of error}
 \vspace{0pt}
-\begin{minipage}[t][1\textheight]{1\textwidth}
+\begin{minipage}[t][1.1\textheight]{1\textwidth}
 \scriptsize
 \vspace{-20pt}
 \begin{exampleblock}{Likely sources of error}
-\vspace{-10pt}
-\begin{figure}[h!]
-%\centering
-\includegraphics[height=0.64\textwidth]{./figs/Error.png}
-\vspace{-5pt}
-\caption{Some sources of error [Fidkowski 2012]}
-\label{fig:Fidk}
-\end{figure}
 \vspace{-20pt}
+\begin{figure}[h!]
+\subfloat[\tiny{Some sources of error [Fidkowski 2012]}\label{fig:Fidk}]
+{\includegraphics[height=0.64\textwidth]{./figs/Error.png}}
+\end{figure}
 \end{exampleblock}
 \end{minipage}
 \end{frame}
@@ -610,28 +606,31 @@ We can broadly classify the two key sources of error in CFD as follows:
 \scriptsize
 Two general types of error estimation:
 \begin{enumerate}[1.]
-\item a priori error estimators:  predict long-term behavior of the errors. 
-\item a posteriori error estimators: use simulation results to derive estimates of solution errors and guide adaptive schemes. 
-\item Where calculated error estimates are higher than set threshold:
+\item \textit{a priori} error estimators:  predict long-term behavior of the errors. 
+\item \textit{a posteriori} error estimators: use simulation results to derive estimates of solution errors and guide adaptive schemes.
+\end{enumerate}
+
+Where calculated error estimates are higher than set threshold:
 \begin{itemize}
 \scriptsize
 \item Mesh can be locally refined ($h$-refinement) while coarsening the less critical areas to save on computational cost. 
-\item Degree of polynomial representation can be raised ($p$-increment)
+\item Degree of polynomial representation can be raised ($p$-refinement)
 \end{itemize}
-\item Two main \textit{a-posteriori} approaches are:
+
+Two main \textit{a posteriori} approaches are:
 \begin{enumerate}[(a)]
 \scriptsize
 \item gradient-based: [Bibb et al, 2006] [Giles and Pierce, 2000]
 \item adjoint-based: [Giles and Pierce, 2000][Venditti and Darmofal - 2000,2002][Fidkowski and Darmofal, 2011] 
 \end{enumerate}
-\end{enumerate}
+
 \end{frame}
 
 
 \subsection[Gradient]{Background on gradient/physics-based refinement}
 \begin{frame}%[allowframebreaks]
 \scriptsize
-\frametitle{Background on gradient/physics-based refinement}
+\frametitle{Gradient/physics-based refinement}
 Where rates of change of (physical) solution variables are highest, mesh refinement can be applied, or the scheme order can be increased.
 
 \begin{enumerate}[(a)]
@@ -639,7 +638,7 @@ Where rates of change of (physical) solution variables are highest, mesh refinem
 \item Re-iterate solution to establish new gradients. Changes are again made as necessary. 
 \item Error can be compared to a higher discretization (h or p) solution.
 \item This is the present utility in the anisotropic and isotropic AMR functionality of the CFFC code used by the CFD and Propulsion group.
-\item Main disadvantages of the gradient based approach it the lack of continual reduction of error despite continued $h$ refinements
+\item Main disadvantages of the gradient based approach it the lack of continual reduction of solution error with continued $h$ refinements - see next slide
 \end{enumerate}
 \end{frame}
 
@@ -679,7 +678,7 @@ Where rates of change of (physical) solution variables are highest, mesh refinem
 \frametitle{Solution adjoint}
 \begin{enumerate}[(a)]
 \scriptsize
-\item Make error estimation more relevant to engineering applications
+\item Make error estimation more relevant for engineering applications
 \item Assess error in predicting an \textit{integral quantity representation} of an engineering output (the functional): e.g. average pressure on a wall. 
 \item Adjoint technique is a sensitivity analysis. Measures rates of change of a design functional to a given change in the input. 
 \end{enumerate}
@@ -749,7 +748,7 @@ Two main formulations
    
 \item Solution method: [Northrup 2013] implemented an implicit time marching GMRES method that improves the capability of the CFFC code   
    
-\item Develop a framework for the adjoint based error estimation with $h-p$ AMR and CENO
+\item Develop a framework for the adjoint based error estimation with $h$-$p$ AMR and CENO
 \end{enumerate}
 \end{frame}
 
@@ -823,7 +822,7 @@ A method to reduce discretization errors based on the mesh resolution.
 \begin{frame}%[allowframebreaks]
 \frametitle{Adjoint as basis of mesh refinement: $\mathcal{O}(h)$}
 \scriptsize
-Some of the groups using \textbf{adjoint with AMR}
+Extensive literature from groups researching \textbf{adjoint with AMR}
 \begin{enumerate}[1.]
 \item Becker and Rannacher [2001] - An Optimal Control Approach to a Posteriori Error Estimation in Finite Element Methods
 \item Fidkowski and Darmofal [2011] - Review of Output-Based Error Estimation and Mesh Adaptation in Computational Fluid Dynamics
@@ -954,7 +953,7 @@ Computational costs:
 \frametitle{Solution of adjoint problem for the Euler equations}
 \begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-20pt}
-\begin{exampleblock}{Preliminary work with the discrete adjoint - shockcube problem. 8 (20x20x20) blocks}
+\begin{exampleblock}{Preliminary work with the discrete adjoint - shockcube problem. 27 (30x30x30) blocks}
 \vspace{-20pt}
 \tiny
 \begin{figure}
@@ -986,7 +985,7 @@ Computational costs:
 
 \subsection[Present]{Work done to date}
 \begin{frame}%[allowframebreaks]
-\frametitle{Timeline: April 2015  - January 2016}
+\frametitle{Timeline: September 2014  - March 2015}
 \scriptsize
 
 \begin{minipage}[t][1\textheight]{1\textwidth}
@@ -1004,7 +1003,7 @@ Computational costs:
 
 \hline Trilinos Package solution for & December 2014 \\ Poisson Problem in serial &\\and parallel configurations & \\
 
-\hline Running a current-state LES case of a Turbulent & January 2015\\ Premixed  Methane Flame using PCM-FPI to & \\ get a threshold estimation & \\ of solution run time &\\
+\hline Running a current-state LES case of a Turbulent & January 2015\\ Premixed  Methane Flame using PCM-FPI to & \\ get a threshold estimation of solution run time &\\
 
 \hline Implementing the approximate Adjoint Derivative & March 2015 \\  to the Flux Jacobians &\\ testing on Euler Equations  &\\
 

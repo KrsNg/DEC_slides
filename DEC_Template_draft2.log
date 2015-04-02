@@ -1,43 +1,34 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.7.11)  2 APR 2015 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  2 APR 2015 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **DEC_Template_draft2.tex
 (./DEC_Template_draft2.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
- icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
-iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
- lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
-ish, portuguese, romanian, russian, sanskrit, serbian, slovak, slovenian, spani
-sh, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamer.cls
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasercs
-.sty
-Package: beamerbasercs 2010/06/12 (rcs-revision c3821710bb40)
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamer.cls
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasercs.sty
+Package: beamerbasercs 2013/12/25 (rcs-revision 31cc758a62ae)
 )
-Document Class: beamer 2010/06/21 development version 3.10 A class for typesett
-ing presentations (rcs-revision a6b1a8434d30)
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasemod
-es.sty
-Package: beamerbasemodes 2010/05/01 (rcs-revision efa082c6111d)
+Document Class: beamer 2013/12/02 3.33 A class for typesetting presentations (r
+cs-revision 332bfd3ce558)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
 \beamer@tempcount=\count79
 \c@beamerpauses=\count80
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasedec
-ode.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
 Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@slideinframe=\count81
 \beamer@minimum=\count82
 )
 \beamer@commentbox=\box27
 \beamer@modecount=\count83
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 \headheight=\dimen102
 \headdp=\dimen103
@@ -82,32 +73,24 @@ Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@sectionadjust=\count100
 \beamer@tocsectionnumber=\count101
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbaseopt
-ions.sty
-Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
 \beamer@paperwidth=\skip42
 \beamer@paperheight=\skip43
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/geometry/geometry.st
-y
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/ifvtex.st
-y
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/ifxetex/ifxetex.st
-y
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count102
@@ -122,120 +105,111 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen125
 \Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks15
-) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/pgf/basiclayer/pgfco
-re.sty
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.st
-y
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/graphics/graphics.st
-y
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
- (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics
-.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.de
-f
-File: pdftex.def 2011/05/18 v0.06c Graphics/color for pdfTeX
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr
-.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.s
-ty
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count105
 ))
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/pgf/systemlayer/pgfs
-ys.sty
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/pgf/utilities/pgfrcs
-.sty
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfu
-til-common.tex
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
 \pgfutil@everybye=\toks16
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfu
-til-latex.def
-\pgfutil@abb=\box34
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/ms/everyshi.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box34
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfr
-cs.code.tex
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pg
-fsys.code.tex
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfk
-eys.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfk
-eysfiltered.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
 \pgfkeys@tmptoks=\toks19
 ))
-\pgf@x=\dimen129
-\pgf@y=\dimen130
-\pgf@xa=\dimen131
-\pgf@ya=\dimen132
-\pgf@xb=\dimen133
-\pgf@yb=\dimen134
-\pgf@xc=\dimen135
-\pgf@yc=\dimen136
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count106
 \c@pgf@countb=\count107
 \c@pgf@countc=\count108
 \c@pgf@countd=\count109
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pg
-f.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Driver file for pgf: pgfsys-pdftex.def
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pg
-fsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pg
-fsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pg
-fsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count110
 \pgfsyssoftpath@bigbuffer@items=\count111
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pg
-fsysprotocol.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/latexconfig/color.cf
-g
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -249,235 +223,236 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-core.code.tex
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmath.c
-ode.tex
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathca
-lc.code.tex
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathut
-il.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathpa
-rser.code.tex
-\pgfmath@dimen=\dimen137
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen139
 \pgfmath@count=\count112
 \pgfmath@box=\box35
-\pgfmath@toks=\toks20
-\pgfmath@stack@operand=\toks21
-\pgfmath@stack@operation=\toks22
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.code.tex
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.basic.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.trigonometric.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.random.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.comparison.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.base.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.round.code.tex)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfu
-nctions.misc.code.tex)))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathfl
-oat.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count113
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corepoints.code.tex
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen138
-\pgf@picmaxx=\dimen139
-\pgf@picminy=\dimen140
-\pgf@picmaxy=\dimen141
-\pgf@pathminx=\dimen142
-\pgf@pathmaxx=\dimen143
-\pgf@pathminy=\dimen144
-\pgf@pathmaxy=\dimen145
-\pgf@xx=\dimen146
-\pgf@xy=\dimen147
-\pgf@yx=\dimen148
-\pgf@yy=\dimen149
-\pgf@zx=\dimen150
-\pgf@zy=\dimen151
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen152
-\pgf@path@lasty=\dimen153
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen154
-\pgf@shorten@start@additional=\dimen155
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corescopes.code.tex
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box36
 \pgf@hbox=\box37
 \pgf@layerbox@main=\box38
 \pgf@picture@serial@count=\count114
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen156
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen158
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coretransformations.code.tex
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen157
-\pgf@pt@y=\dimen158
-\pgf@pt@temp=\dimen159
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corequick.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coreobjects.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corearrows.code.tex
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen162
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coreshade.code.tex
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen160
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen163
 \pgf@sys@shading@range@num=\count115
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coreimage.code.tex
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coreexternal.code.tex
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box39
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corelayers.code.tex
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-coretransparency.code.tex
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgf
-corepatterns.code.tex
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/pgf/utilities/xxcolo
-r.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count116
 \XC@countmixins=\count117
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/hyperref/hyperref.st
-y
-Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/hobsub-hy
-perref.sty
-Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/hobsub-ge
-neric.sty
-Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
-Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
-Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
-Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
-Package atveryend Info: \enddocument detected (standard).
-Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
-Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.s
-ty
-Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen161
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen164
 \Hy@linkcounter=\count118
 \Hy@pagecounter=\count119
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count120
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/latexconfig/hyperref
-.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 3905.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 3905.
-Package hyperref Info: Option `implicit' set `false' on input line 3905.
-Package hyperref Info: Hyper figures OFF on input line 4026.
-Package hyperref Info: Link nesting OFF on input line 4031.
-Package hyperref Info: Hyper index ON on input line 4034.
-Package hyperref Info: Plain pages OFF on input line 4041.
-Package hyperref Info: Backreferencing OFF on input line 4046.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `implicit' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4264.
+Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count121
- (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/url/url.sty
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4617.
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen165
 \Fld@menulength=\count122
-\Field@Width=\dimen162
-\Fld@charsize=\dimen163
-Package hyperref Info: Hyper figures OFF on input line 5701.
-Package hyperref Info: Link nesting OFF on input line 5706.
-Package hyperref Info: Hyper index ON on input line 5709.
-Package hyperref Info: backreferencing OFF on input line 5716.
-Package hyperref Info: Link coloring OFF on input line 5721.
-Package hyperref Info: Link coloring with OCG OFF on input line 5726.
-Package hyperref Info: PDF/A mode OFF on input line 5731.
-LaTeX Info: Redefining \ref on input line 5771.
-LaTeX Info: Redefining \pageref on input line 5775.
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
 \Hy@abspage=\count123
 
 
@@ -487,795 +462,751 @@ Package hyperref Message: Stopped early.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count124
 \c@bookmark@seq@number=\count125
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/oberdiek/rerunfilech
-eck.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasereq
-uires.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
 Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasecom
-patibility.sty
-Package: beamerbasecompatibility 2010/07/12  (rcs-revision 6648c3177e4e)
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasefon
-t.sty
-Package: beamerbasefont 2010/05/10  (rcs-revision cd36e8a33c6b)
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.st
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasecompatibility.st
 y
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
-\@emptytoks=\toks23
+Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+Package: beamerbasefont 2013/10/18  (rcs-revision 72f39e01808a)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2013/03/28
+(/usr/local/texlive/2014/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasetra
-nslator.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
 Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/tr
-anslator.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/tr
-anslator-language-mappings.tex)))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasemis
-c.sty
-Package: beamerbasemisc 2010/06/06  (rcs-revision bff0a9294b45)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-lang
+uage-mappings.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
+Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasetwo
-screens.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty
 Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbaseove
-rlay.sty
-Package: beamerbaseoverlay 2010/05/07  (rcs-revision 5584dad462a9)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
 \beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
 \beamer@trivlistdepth=\count127
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasetit
-le.sty
-Package: beamerbasetitle 2010/06/12  (rcs-revision 717e481ca47a)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetitle.sty
+Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasesec
-tion.sty
-Package: beamerbasesection 2010/06/17  (rcs-revision e0d9401bb743)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@lecture=\count128
 \c@part=\count129
 \c@section=\count130
 \c@subsection=\count131
 \c@subsubsection=\count132
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasefra
-me.sty
-Package: beamerbaseframe 2010/06/06  (rcs-revision bff0a9294b45)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
 \beamer@zoomcount=\count133
 \beamer@zoomframecount=\count134
-\beamer@frametextheight=\dimen164
+\beamer@frametextheight=\dimen168
 \c@subsectionslide=\count135
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
-\beamer@envbody=\toks24
+\beamer@envbody=\toks27
+\framewidth=\dimen169
 \c@framenumber=\count136
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasever
-batim.sty
-Package: beamerbaseverbatim 2010/05/01  (rcs-revision efa082c6111d)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
 \beamer@verbatimfileout=\write4
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasefra
-mesize.sty
-Package: beamerbaseframesize 2010/06/27  (rcs-revision 6baa2d92e6f1)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@splitbox=\box43
 \beamer@autobreakcount=\count137
-\beamer@autobreaklastheight=\dimen165
-\beamer@frametitletoks=\toks25
-\beamer@framesubtitletoks=\toks26
+\beamer@autobreaklastheight=\dimen170
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasefra
-mecomponents.sty
-Package: beamerbaseframecomponents 2010/07/12  (rcs-revision 09e82992d9b1)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.
+sty
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasecol
-or.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
 Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasenot
-es.sty
-Package: beamerbasenotes 2010/05/01  (rcs-revision efa082c6111d)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasetoc
-.sty
-Package: beamerbasetoc 2010/06/11  (rcs-revision 242ecaa6783b)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetoc.sty
+Package: beamerbasetoc 2013/05/23  (rcs-revision 0fdf5bc43be8)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasetem
-plates.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
-\beamer@sbttoks=\toks27
+\beamer@sbttoks=\toks30
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbaseaux
-templates.sty
-Package: beamerbaseauxtemplates 2010/05/01  (rcs-revision efa082c6111d)
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasebox
-es.sty
-Package: beamerbaseboxes 2010/05/01  (rcs-revision efa082c6111d)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+Package: beamerbaseauxtemplates 2013/09/04  (rcs-revision 4ac715c499d0)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \bmb@box=\box46
 \bmb@colorbox=\box47
 \bmb@boxshadow=\box48
 \bmb@boxshadowball=\box49
 \bmb@boxshadowballlarge=\box50
-\bmb@temp=\dimen166
-\bmb@dima=\dimen167
-\bmb@dimb=\dimen168
-\bmb@prevheight=\dimen169
+\bmb@temp=\dimen171
+\bmb@dima=\dimen172
+\bmb@dimb=\dimen173
+\bmb@prevheight=\dimen174
 )
-\beamer@blockheadheight=\dimen170
+\beamer@blockheadheight=\dimen175
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbaseloc
-alstructure.sty
-Package: beamerbaselocalstructure 2010/06/01  (rcs-revision 81f9e33f7cc2)
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks28
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.s
+ty
+Package: beamerbaselocalstructure 2013/09/04  (rcs-revision 4ac715c499d0)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
 )
 \c@figure=\count138
 \c@table=\count139
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasenav
-igation.sty
-Package: beamerbasenavigation 2010/05/01  (rcs-revision efa082c6111d)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+Package: beamerbasenavigation 2013/10/05  (rcs-revision 62be157fe783)
+\beamer@section@min@dim=\dimen176
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasethe
-orems.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
 Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks29
-\ex@=\dimen171
-)) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.st
-y
+\@emptytoks=\toks32
+\ex@=\dimen177
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen172
-) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen178
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count140
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count141
 \leftroot@=\count142
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count143
 \DOTSCASE@=\count144
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-\big@size=\dimen173
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\big@size=\dimen179
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count145
 \c@MaxMatrixCols=\count146
 \dotsspace@=\muskip11
 \c@parentequation=\count147
 \dspbrk@lvl=\count148
-\tag@help=\toks30
+\tag@help=\toks33
 \row@=\count149
 \column@=\count150
 \maxfields@=\count151
-\andhelp@=\toks31
-\eqnshift@=\dimen174
-\alignsep@=\dimen175
-\tagshift@=\dimen176
-\tagwidth@=\dimen177
-\totwidth@=\dimen178
-\lineht@=\dimen179
-\@envbody=\toks32
+\andhelp@=\toks34
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
+\@envbody=\toks35
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks33
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amscls/amsthm.sty
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
-\thm@style=\toks34
-\thm@bodyfont=\toks35
-\thm@headfont=\toks36
-\thm@notefont=\toks37
-\thm@headpunct=\toks38
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
 \thm@preskip=\skip54
 \thm@postskip=\skip55
 \thm@headsep=\skip56
-\dth@everypar=\toks39
+\dth@everypar=\toks42
 )
 \c@theorem=\count152
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/beamerbasethe
-mes.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasethemes.sty
 Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/theme/
-beamerthemedefault.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/theme/beamerthemede
+fault.sty
 Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/font/b
-eamerfontthemedefault.sty
-Package: beamerfontthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/font/beamerfontthem
+edefault.sty
+Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/color/
-beamercolorthemedefault.sty
-Package: beamercolorthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emedefault.sty
+Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/inner/
-beamerinnerthemedefault.sty
-Package: beamerinnerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
-\beamer@dima=\dimen180
-\beamer@dimb=\dimen181
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerth
+emedefault.sty
+Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
+\beamer@dima=\dimen186
+\beamer@dimb=\dimen187
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/outer/
-beamerouterthemedefault.sty
-Package: beamerouterthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
+emedefault.sty
+Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/theme/
-beamerthemePaloAlto.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/theme/beamerthemePa
+loAlto.sty
 Package: beamerthemePaloAlto 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/outer/
-beamerouterthemesidebar.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
+emesidebar.sty
 Package: beamerouterthemesidebar 2010/06/17  (rcs-revision d02a7cf4d8ae)
-\beamer@sidebarwidth=\dimen182
-\beamer@headheight=\dimen183
+\beamer@sidebarwidth=\dimen188
+\beamer@headheight=\dimen189
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/inner/
-beamerinnerthemerounded.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerth
+emerounded.sty
 Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/color/
-beamercolorthemeorchid.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emeorchid.sty
 Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/color/
-beamercolorthemewhale.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emewhale.sty
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/inner/
-beamerinnerthemerectangles.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerth
+emerectangles.sty
 Package: beamerinnerthemerectangles 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/themes/color/
-beamercolorthemebeaver.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emebeaver.sty
 Package: beamercolorthemebeaver 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/mhchem/mhchem.sty
-Package: mhchem 2011/04/29 v3.10 for typesetting chemical formulae
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2014/03/27 v3.17 for typesetting chemical formulae
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count153
 \calc@Bcount=\count154
-\calc@Adimen=\dimen184
-\calc@Bdimen=\dimen185
+\calc@Adimen=\dimen190
+\calc@Bdimen=\dimen191
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count155
 \calc@Cskip=\skip59
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/oberdiek/twoopt.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/twoopt.sty
 Package: twoopt 2008/08/11 v1.5 Definitions with two optional arguments (HO)
 )
-\tok@mhchem@ce@iii=\toks40
-\mhchem@arrowminlength=\skip60
-\mhchem@arrows@box=\box53
-\mhchem@arrowlength@pgf=\skip61
-\mhchem@arrowminlength@pgf=\skip62
-\mhchem@bondwidth=\skip63
-\mhchem@bondheight=\skip64
-\mhchem@smallbondwidth@tmpA=\skip65
-\mhchem@smallbondwidth@tmpB=\skip66
-\mhchem@smallbondwidth=\skip67
-\mhchem@cf@result=\toks41
-\mhchem@cf@element=\toks42
-\mhchem@cf@amount=\toks43
-\mhchem@cf@sup=\toks44
-\mhchem@cf@presub=\toks45
-\mhchem@cf@presup=\toks46
-\mhchem@cf@replaceMath@result=\toks47
-\mhchem@cf@replaceMathMinusDot@result=\toks48
-\mhchem@prepostscript@tmp@i=\skip68
-\mhchem@prepostscript@tmp@ii=\skip69
-\mhchem@mathbox@tmp@i=\skip70
-\mhchem@mathbox@tmp@ii=\skip71
-\mhchem@minispace@tmp=\skip72
-\mhchem@option@minussidebearingleft=\skip73
-\mhchem@option@minussidebearingright=\skip74
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2014/11/25 v5471 L3 programming layer (loader) 
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
-\captionmargin=\dimen186
-\captionmargin@=\dimen187
-\captionwidth=\dimen188
-\caption@indent=\dimen189
-\caption@parindent=\dimen190
-\caption@hangindent=\dimen191
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2014/11/25 v5471 L3 programming layer (code) 
+L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count156
 )
-\c@ContinuedFloat=\count156
+L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
+L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
+L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
+L3 Module: l3tl 2014/11/19 v5460 L3 Token lists
+L3 Module: l3str 2014/08/24 v5368 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2014/09/14 v5421 L3 Integers
+\c_max_int=\count157
+\l_tmpa_int=\count158
+\l_tmpb_int=\count159
+\g_tmpa_int=\count160
+\g_tmpb_int=\count161
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count162
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2014/08/24 v5358 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count163
+\l__iow_target_count_int=\count164
+\l__iow_current_line_int=\count165
+\l__iow_current_word_int=\count166
+\l__iow_current_indentation_int=\count167
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen192
+\c_max_dim=\dimen193
+\l_tmpa_dim=\dimen194
+\l_tmpb_dim=\dimen195
+\g_tmpa_dim=\dimen196
+\g_tmpb_dim=\dimen197
+\c_zero_skip=\skip60
+\c_max_skip=\skip61
+\l_tmpa_skip=\skip62
+\l_tmpb_skip=\skip63
+\g_tmpa_skip=\skip64
+\g_tmpb_skip=\skip65
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
+\g__keyval_level_int=\count168
+\l_keys_choice_int=\count169
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count170
+\c__fp_middle_shift_int=\count171
+\c__fp_trailing_shift_int=\count172
+\c__fp_big_leading_shift_int=\count173
+\c__fp_big_middle_shift_int=\count174
+\c__fp_big_trailing_shift_int=\count175
+\c__fp_Bigg_leading_shift_int=\count176
+\c__fp_Bigg_middle_shift_int=\count177
+\c__fp_Bigg_trailing_shift_int=\count178
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box53
+\l_tmpa_box=\box54
+\l_tmpb_box=\box55
+\g_tmpa_box=\box56
+\g_tmpb_box=\box57
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box58
+\l__coffin_internal_dim=\dimen198
+\l__coffin_offset_x_dim=\dimen199
+\l__coffin_offset_y_dim=\dimen200
+\l__coffin_x_dim=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\l__coffin_y_dim=\dimen256
+\l__coffin_x_prime_dim=\dimen257
+\l__coffin_y_prime_dim=\dimen258
+\c_empty_coffin=\box59
+\l__coffin_aligned_coffin=\box60
+\l__coffin_aligned_internal_coffin=\box61
+\l_tmpa_coffin=\box62
+\l_tmpb_coffin=\box63
+\l__coffin_display_coffin=\box64
+\l__coffin_display_coord_coffin=\box65
+\l__coffin_display_pole_coffin=\box66
+\l__coffin_display_offset_dim=\dimen259
+\l__coffin_display_x_dim=\dimen260
+\l__coffin_display_y_dim=\dimen261
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen262
+\l__box_bottom_dim=\dimen263
+\l__box_left_dim=\dimen264
+\l__box_right_dim=\dimen265
+\l__box_top_new_dim=\dimen266
+\l__box_bottom_new_dim=\dimen267
+\l__box_left_new_dim=\dimen268
+\l__box_right_new_dim=\dimen269
+\l__box_internal_box=\box67
+\l__coffin_bounding_shift_dim=\dimen270
+\l__coffin_left_corner_dim=\dimen271
+\l__coffin_right_corner_dim=\dimen272
+\l__coffin_bottom_corner_dim=\dimen273
+\l__coffin_top_corner_dim=\dimen274
+\l__coffin_scaled_total_height_dim=\dimen275
+\l__coffin_scaled_width_dim=\dimen276
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2014/11/23 v5465 L3 Unicode data
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2014/11/23 v5466 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count179
+))
+\mhchem@ce@result=\toks43
+\mhchem@ce@part=\toks44
+\mhchem@arrow@deployType=\toks45
+\mhchem@arrow@params=\toks46
+\mhchem@arrowlength@pgf=\skip66
+\mhchem@bondwidth=\skip67
+\mhchem@bondheight=\skip68
+\mhchem@smallbondwidth@tmpA=\skip69
+\mhchem@smallbondwidth@tmpB=\skip70
+\mhchem@smallbondwidth=\skip71
+\__mhchem_option_version_int=\count180
+\mhchem@prepostscript@tmp@i=\skip72
+\mhchem@prepostscript@tmp@ii=\skip73
+\mhchem@mathbox@tmp@i=\skip74
+\mhchem@mathbox@tmp@ii=\skip75
+\mhchem@minispace@tmp=\skip76
+\mhchem@option@minussidebearingleft=\skip77
+\mhchem@option@minussidebearingright=\skip78
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen277
+\captionmargin@=\dimen278
+\captionwidth=\dimen279
+\caption@tempdima=\dimen280
+\caption@indent=\dimen281
+\caption@parindent=\dimen282
+\caption@hangindent=\dimen283
+)
+\c@ContinuedFloat=\count181
 Package caption Info: beamer document class.
 Package caption Info: hyperref package is loaded.
-
-
-Package caption Warning: Hyperref support is turned off
-(caption)                because hyperref has stopped early.
-See the caption package documentation for explanation.
-
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2010/09/30 v1.7g
+(/usr/local/texlive/2014/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2014/01/03 v1.7j
 
-Package: `textpos' 1.7g <2010 September 30>
-\TP@textbox=\box54
-\TPHorizModule=\dimen192
-\TPVertModule=\dimen193
-\TP@margin=\dimen194
-\TP@absmargin=\dimen195
+Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
+\TP@textbox=\box68
+\TPHorizModule=\dimen284
+\TPVertModule=\dimen285
+\TP@margin=\dimen286
+\TP@absmargin=\dimen287
 Grid set 16 x 16 = 22.7622pt x 17.07166pt
-\TPboxrulesize=\dimen196
-\TP@tbargs=\toks49
-\TP@prevdepth=\dimen197
-) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/esint/esint.sty
+\TPboxrulesize=\dimen288
+\TP@tbargs=\toks47
+\TP@prevdepth=\dimen289
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/esint/esint.sty
 Package: esint 
 \symlargesymbolsA=\mathgroup6
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/siunitx/siunitx.sty
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/expl3.sty
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3names.sty
-Package: l3names 2011/01/08 v2122 L3 Experimental Naming Scheme for TeX Primiti
-ves
+(/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count182
+\l__xparse_m_args_int=\count183
+\l__xparse_mandatory_args_int=\count184
+\l__xparse_processor_int=\count185
+\l__xparse_v_nesting_int=\count186
 )
-Package: expl3 2011/04/09 v2222 L3 Experimental code bundle wrapper
+Package: siunitx 2014/10/28 v2.6d A comprehensive (SI) units package
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count157
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen290
+\extrarowheight=\dimen291
+\NC@list=\toks48
+\extratabsurround=\skip79
+\backup@length=\skip80
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3basics.sty
-Package: l3basics 2011/04/23 v2246 L3 Experimental basic definitions
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3expan.sty
-Package: l3expan 2011/04/09 v2223 L3 Experimental Argument Expansion module
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3tl.sty
-Package: l3tl 2011/04/09 v2223 L3 Experimental Token Lists
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3int.sty
-Package: l3int 2011/04/11 v2229 L3 Experimental Integer module
-\l_tmpa_int=\count158
-\l_tmpb_int=\count159
-\l_tmpc_int=\count160
-\g_tmpa_int=\count161
-\g_tmpb_int=\count162
-\c_max_int=\count163
-\g_tl_inline_level_int=\count164
-\g_prg_inline_level_int=\count165
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3quark.sty
-Package: l3quark 2011/04/14 v2234 L3 Experimental Quark Commands
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3seq.sty
-Package: l3seq 2011/04/21 v2245 The LaTeX3 kernel: sequences and stacks
-\g_seq_nesting_depth_int=\count166
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3toks.sty
-Package: l3toks 2011/04/09 v2223 L3 Experimental Token Registers
-\l_tmpb_toks=\toks50
-\l_tmpc_toks=\toks51
-\g_tmpa_toks=\toks52
-\g_tmpb_toks=\toks53
-\g_tmpc_toks=\toks54
-\c_empty_toks=\toks55
-\l_tl_replace_toks=\toks56
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3prg.sty
-Package: l3prg 2011/04/09 v2223 L3 Experimental control structures
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3clist.sty
-Package: l3clist 2011/04/09 v2223 L3 Experimental comma separated lists
-\g_clist_map_inline_int=\count167
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3token.sty
-Package: l3token 2011/04/09 v2223 L3 Experimental token investigation and manip
-ulation
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3prop.sty
-Package: l3prop 2011/04/09 v2223 L3 Experimental Property Lists
-\g_prop_inline_level_int=\count168
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3msg.sty
-Package: l3msg 2010/10/02 v2052 L3 Experimental LaTeX Messages module
-\l_msg_redirect_classes_prop=\toks57
-\l_msg_redirect_names_prop=\toks58
-\l_msg_redirect_fatal_prop=\toks59
-\l_msg_redirect_error_prop=\toks60
-\l_msg_redirect_warning_prop=\toks61
-\l_msg_redirect_info_prop=\toks62
-\l_msg_redirect_log_prop=\toks63
-\l_msg_redirect_trace_prop=\toks64
-\l_msg_redirect_none_prop=\toks65
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3io.sty
-Package: l3io 2010/10/03 v2063 L3 Experimental i/o module
-\g_iow_streams_prop=\toks66
-\g_ior_streams_prop=\toks67
-\l_iow_stream_int=\count169
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3skip.sty
-Package: l3skip 2011/02/15 v2149 L3 Experimental skip registers
-\l_tmpa_skip=\skip75
-\l_tmpb_skip=\skip76
-\l_tmpc_skip=\skip77
-\g_tmpa_skip=\skip78
-\g_tmpb_skip=\skip79
-\l_tmpa_dim=\dimen198
-\l_tmpb_dim=\dimen199
-\l_tmpc_dim=\dimen200
-\l_tmpd_dim=\dimen201
-Normal \dimen register pool exhausted, switching to extended pool.
-\g_tmpa_dim=\dimen256
-\g_tmpb_dim=\dimen257
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3box.sty
-Package: l3box 2011/04/09 v2223 L3 Experimental Box module
-\l_tmpb_box=\box55
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3keyval.sty
-Package: l3keyval 2011/04/09 v2223 L3 Experimental keyval processing
-\l_KV_level_int=\count170
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3keys.sty
-Package: l3keys 2010/11/11 v2082 L3 Experimental key-value support
-\l_keys_choice_int=\count171
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3precom.sty
-Package: l3precom 2011/04/09 v2223 L3 Experimental precompilation module
-\g_gen_sym_int=\count172
-\g_ggen_sym_int=\count173
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3xref.sty
-Package: l3xref 2011/04/09 v2223 L3 Experimental cross referencing
-\g_xref_all_curr_immediate_fields_prop=\toks68
-\g_xref_all_curr_deferred_fields_prop=\toks69
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3file.sty
-Package: l3file 2011/04/21 v2242 The LaTeX3 kernel: file operations
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3fp.sty
-Package: l3fp 2011/03/19 v2201 L3 Experimental floating-point operations
-\c_one_million=\count174
-\c_one_hundred_million=\count175
-\c_five_hundred_million=\count176
-\c_one_thousand_million=\count177
-\c_fp_pi_by_four_decimal_int=\count178
-\c_fp_pi_by_four_extended_int=\count179
-\c_fp_pi_decimal_int=\count180
-\c_fp_pi_extended_int=\count181
-\c_fp_two_pi_decimal_int=\count182
-\c_fp_two_pi_extended_int=\count183
-\l_fp_count_int=\count184
-\l_fp_div_offset_int=\count185
-\l_fp_exp_integer_int=\count186
-\l_fp_exp_decimal_int=\count187
-\l_fp_exp_extended_int=\count188
-\l_fp_exp_exponent_int=\count189
-\l_fp_input_a_sign_int=\count190
-\l_fp_input_a_integer_int=\count191
-\l_fp_input_a_decimal_int=\count192
-\l_fp_input_a_exponent_int=\count193
-\l_fp_input_b_sign_int=\count194
-\l_fp_input_b_integer_int=\count195
-\l_fp_input_b_decimal_int=\count196
-\l_fp_input_b_exponent_int=\count197
-\l_fp_input_a_extended_int=\count198
-\l_fp_input_b_extended_int=\count199
-\l_fp_mul_a_i_int=\count200
-\l_fp_mul_a_ii_int=\count201
+Variant \tl_if_blank:VTF already defined; not changing it on line 50
+\l__siunitx_tmp_box=\box69
+\l__siunitx_tmp_dim=\dimen292
+\l__siunitx_tmp_int=\count187
+Variant \prop_get:NVNT already defined; not changing it on line 372
+Variant \prop_get:NVNF already defined; not changing it on line 373
+Variant \prop_get:NVNTF already defined; not changing it on line 374
+\l__siunitx_number_mantissa_length_int=\count188
+\l__siunitx_number_uncert_length_int=\count189
+\l__siunitx_round_int=\count190
+\l__siunitx_process_decimal_int=\count191
+\l__siunitx_process_uncertainty_int=\count192
+\l__siunitx_process_fixed_int=\count193
+\l__siunitx_process_integer_min_int=\count194
+\l__siunitx_process_precision_int=\count195
+\l__siunitx_group_min_int=\count196
+\l__siunitx_angle_marker_box=\box70
+\l__siunitx_angle_unit_box=\box71
+\l__siunitx_angle_marker_dim=\dimen293
+\l__siunitx_angle_unit_dim=\dimen294
+\l__siunitx_unit_int=\count197
+\l__siunitx_unit_denominator_int=\count198
+\l__siunitx_unit_numerator_int=\count199
+\l__siunitx_unit_prefix_int=\count200
+\l__siunitx_unit_prefix_base_int=\count201
 Normal \count register pool exhausted, switching to extended pool.
-\l_fp_mul_a_iii_int=\count277
-\l_fp_mul_a_iv_int=\count278
-\l_fp_mul_a_v_int=\count279
-\l_fp_mul_a_vi_int=\count280
-\l_fp_mul_b_i_int=\count281
-\l_fp_mul_b_ii_int=\count282
-\l_fp_mul_b_iii_int=\count283
-\l_fp_mul_b_iv_int=\count284
-\l_fp_mul_b_v_int=\count285
-\l_fp_mul_b_vi_int=\count286
-\l_fp_mul_output_int=\count287
-\l_fp_output_sign_int=\count288
-\l_fp_output_integer_int=\count289
-\l_fp_output_decimal_int=\count290
-\l_fp_output_exponent_int=\count291
-\l_fp_output_extended_int=\count292
-\l_fp_round_position_int=\count293
-\l_fp_round_target_int=\count294
-\l_fp_split_sign_int=\count295
-\l_fp_tmp_int=\count296
-\l_fp_trig_octant_int=\count297
-\l_fp_trig_sign_int=\count298
-\l_fp_trig_decimal_int=\count299
-\l_fp_trig_extended_int=\count300
-\l_fp_tmp_dim=\dimen258
-\l_fp_tmp_skip=\skip80
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/expl3/l3luatex.sty
-Package: l3luatex 2010/07/18 v1985 L3 Experimental LuaTeX functions
-\g_cctab_allocate_int=\count301
-\g_cctab_stack_int=\count302
-))
-Package: siunitx 2011/05/23 v2.2e A comprehensive (SI) units package
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/xpackages/xbase/xpar
-se.sty
-Package: xparse 2011/04/08 v2219 Generic document command parser
-\c_xparse_shorthands_prop=\toks70
-\l_xparse_m_args_int=\count303
-\l_xparse_mandatory_args_int=\count304
-\l_xparse_processor_int=\count305
-\l_xparse_total_args_int=\count306
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen259
-\extrarowheight=\dimen260
-\NC@list=\toks71
-\extratabsurround=\skip81
-\backup@length=\skip82
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/xpackages/xtras/l3ke
-ys2e.sty
-Package: l3keys2e 2011/05/06 v2320 Parsing LaTeX3 keyvals as LaTeX2e package op
-tions
-)
-\l_siunitx_tmp_box=\box56
-\l_siunitx_tmp_int=\count307
-\l_siunitx_number_in_prop=\toks72
-\l_siunitx_number_mantissa_length_int=\count308
-\l_siunitx_number_uncert_length_int=\count309
-\l_siunitx_round_int=\count310
-\l_siunitx_process_decimal_int=\count311
-\l_siunitx_process_uncertainty_int=\count312
-\l_siunitx_process_fixed_int=\count313
-\l_siunitx_process_integer_min_int=\count314
-\l_siunitx_process_precision_int=\count315
-\l_siunitx_number_out_prop=\toks73
-\l_siunitx_angle_marker_box=\box57
-\l_siunitx_angle_unit_box=\box58
-\l_siunitx_angle_marker_dim=\dimen261
-\l_siunitx_angle_unit_dim=\dimen262
-\l_siunitx_angle_degree_prop=\toks74
-\l_siunitx_angle_minute_prop=\toks75
-\l_siunitx_angle_second_prop=\toks76
-\l_siunitx_unit_int=\count316
-\l_siunitx_unit_prop=\toks77
-\l_siunitx_unit_denominator_int=\count317
-\l_siunitx_unit_numerator_int=\count318
-\l_siunitx_unit_prefix_int=\count319
-\l_siunitx_unit_prefix_base_int=\count320
-\l_siunitx_unit_prefix_gram_int=\count321
-\l_siunitx_number_product_int=\count322
-\c_siunitx_one_fill_skip=\skip83
-\l_siunitx_table_unit_align_skip=\skip84
-\l_siunitx_table_fill_box=\box59
-\l_siunitx_table_fill_dim=\dimen263
-\l_siunitx_table_pre_box=\box60
-\l_siunitx_table_post_box=\box61
-\l_siunitx_table_result_box=\box62
-\l_siunitx_table_comparator_dim=\dimen264
-\l_siunitx_table_decimal_dim=\dimen265
-\l_siunitx_table_exponent_dim=\dimen266
-\l_siunitx_table_integer_dim=\dimen267
-\l_siunitx_table_mantissa_dim=\dimen268
-\l_siunitx_table_marker_dim=\dimen269
-\l_siunitx_table_result_dim=\dimen270
-\l_siunitx_table_uncert_dim=\dimen271
-\l_siunitx_table_gap_dim=\dimen272
-\l_siunitx_table_model_prop=\toks78
-\l_siunitx_table_space_dim=\dimen273
-\l_siunitx_table_number_align_skip=\skip85
-\l_siunitx_table_text_align_skip=\skip86
-\l_siunitx_table_decimal_int=\count323
-\l_siunitx_table_exponent_int=\count324
-\l_siunitx_table_integer_int=\count325
-\l_siunitx_table_uncert_int=\count326
- LaTeX info: Defining document command \DeclareBinaryPrefix
-(LaTeX)  with arg. spec. 'mmm' on line 6791.
-
- LaTeX info: Defining document command \DeclareSIPostPower
-(LaTeX)  with arg. spec. 'mm' on line 6794.
-
- LaTeX info: Defining document command \DeclareSIPrefix
-(LaTeX)  with arg. spec. 'mmm' on line 6797.
-
- LaTeX info: Defining document command \DeclareSIPrePower
-(LaTeX)  with arg. spec. 'mm' on line 6800.
-
- LaTeX info: Defining document command \DeclareSIQualifier
-(LaTeX)  with arg. spec. 'mm' on line 6803.
-
- LaTeX info: Defining document command \DeclareSIUnit
-(LaTeX)  with arg. spec. 'O{}mm' on line 6806.
-
- LaTeX info: Defining document command \DeclareSIUnitWithOptions
-(LaTeX)  with arg. spec. 'mmm' on line 6809.
-
- LaTeX info: Defining document command \ang
-(LaTeX)  with arg. spec. 'o>{\SplitArgument {2}{;}}m' on line 6824.
-
- LaTeX info: Defining document command \num
-(LaTeX)  with arg. spec. 'om' on line 6831.
-
- LaTeX info: Defining document command \numlist
-(LaTeX)  with arg. spec. 'o>{\SplitList {;}}m' on line 6838.
-
- LaTeX info: Defining document command \numrange
-(LaTeX)  with arg. spec. 'omm' on line 6845.
-
- LaTeX info: Defining document command \SIlist
-(LaTeX)  with arg. spec. 'o>{\SplitList {;}}mm' on line 6855.
-
- LaTeX info: Defining document command \SIrange
-(LaTeX)  with arg. spec. 'ommm' on line 6865.
-
- LaTeX info: Defining document command \SI
-(LaTeX)  with arg. spec. 'omom' on line 6875.
-
- LaTeX info: Defining document command \sisetup
-(LaTeX)  with arg. spec. 'm' on line 6878.
-
- LaTeX info: Defining document command \tablenum
-(LaTeX)  with arg. spec. 'om' on line 6885.
-
- LaTeX info: Defining document command \si
-(LaTeX)  with arg. spec. 'om' on line 6895.
-
- LaTeX info: Defining document command \siunitx_bookmark_num:w
-(LaTeX)  with arg. spec. 'om' on line 6932.
-
- LaTeX info: Defining document command \siunitx_bookmark_numrange:w
-(LaTeX)  with arg. spec. 'omm' on line 6934.
-
- LaTeX info: Defining document command \siunitx_bookmark_SI:w
-(LaTeX)  with arg. spec. 'omom' on line 6936.
-
- LaTeX info: Defining document command \siunitx_bookmark_SIlist:w
-(LaTeX)  with arg. spec. 'omm' on line 6938.
-
- LaTeX info: Defining document command \siunitx_bookmark_SIrange:w
-(LaTeX)  with arg. spec. 'ommm' on line 6940.
-
- LaTeX info: Defining document command \siunitx_bookmark_si:w
-(LaTeX)  with arg. spec. 'om' on line 6941.
-
-\g_ior_tmp_stream=\read2
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/etoolbox/etoolbox.st
-y
+\l__siunitx_unit_prefix_gram_int=\count277
+\l__siunitx_number_product_int=\count278
+\c__siunitx_one_fill_skip=\skip81
+\l__siunitx_table_unit_align_skip=\skip82
+\l__siunitx_table_exponent_dim=\dimen295
+\l__siunitx_table_integer_dim=\dimen296
+\l__siunitx_table_mantissa_dim=\dimen297
+\l__siunitx_table_marker_dim=\dimen298
+\l__siunitx_table_result_dim=\dimen299
+\l__siunitx_table_uncert_dim=\dimen300
+\l__siunitx_table_fill_pre_dim=\dimen301
+\l__siunitx_table_fill_post_dim=\dimen302
+\l__siunitx_table_fill_mid_dim=\dimen303
+\l__siunitx_table_pre_box=\box72
+\l__siunitx_table_post_box=\box73
+\l__siunitx_table_mantissa_box=\box74
+\l__siunitx_table_result_box=\box75
+\l__siunitx_table_number_align_skip=\skip83
+\l__siunitx_table_text_align_skip=\skip84
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7168.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7171.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7174.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7177.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7180.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7183.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7186.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7201.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7209.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7217.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7225.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7247.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7258.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7261.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7273.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7284.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7331.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7333.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7335.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7339.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7340.
+.................................................
+\g__file_internal_ior=\read2
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count327
+\etb@tempcnta=\count279
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen274
-\WF@size=\dimen275
-\c@WF@wrappedlines=\count328
-\WF@box=\box63
-\WF@everypar=\toks79
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen304
+\WF@size=\dimen305
+\c@WF@wrappedlines=\count280
+\WF@box=\box76
+\WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
-) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count329
-\mult@box=\box64
-\multicol@leftmargin=\dimen276
-\c@unbalance=\count330
-\c@collectmore=\count331
-\doublecol@number=\count332
-\multicoltolerance=\count333
-\multicolpretolerance=\count334
-\full@width=\dimen277
-\page@free=\dimen278
-\premulticols=\dimen279
-\postmulticols=\dimen280
-\multicolsep=\skip87
-\multicolbaselineskip=\skip88
-\partial@page=\box65
-\last@line=\box66
-\mult@rightbox=\box67
-\mult@grightbox=\box68
-\mult@gfirstbox=\box69
-\mult@firstbox=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
+\c@tracingmulticols=\count281
+\mult@box=\box77
+\multicol@leftmargin=\dimen306
+\c@unbalance=\count282
+\c@collectmore=\count283
+\doublecol@number=\count284
+\multicoltolerance=\count285
+\multicolpretolerance=\count286
+\full@width=\dimen307
+\page@free=\dimen308
+\premulticols=\dimen309
+\postmulticols=\dimen310
+\multicolsep=\skip85
+\multicolbaselineskip=\skip86
+\partial@page=\box78
+\last@line=\box79
+\maxbalancingoverflow=\dimen311
+\mult@rightbox=\box80
+\mult@grightbox=\box81
+\mult@gfirstbox=\box82
+\mult@firstbox=\box83
 \@tempa=\box84
 \@tempa=\box85
 \@tempa=\box86
 \@tempa=\box87
-\c@columnbadness=\count335
-\c@finalcolumnbadness=\count336
-\last@try=\dimen281
-\multicolovershoot=\dimen282
-\multicolundershoot=\dimen283
-\mult@nat@firstbox=\box88
-\colbreak@box=\box89
-) (/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count337
-\sf@farskip=\skip89
-\sf@captopadj=\dimen284
-\sf@capskip=\skip90
-\sf@nearskip=\skip91
-\c@subfigure=\count338
-\c@subfigure@save=\count339
-\c@depth=\count340
-\c@subtable=\count341
-\c@subtable@save=\count342
-\sf@top=\skip92
-\sf@bottom=\skip93
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\c@columnbadness=\count287
+\c@finalcolumnbadness=\count288
+\last@try=\dimen312
+\multicolovershoot=\dimen313
+\multicolundershoot=\dimen314
+\mult@nat@firstbox=\box101
+\colbreak@box=\box102
+\mc@col@check@num=\count289
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/chngcntr/chngcntr.st
-y
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count290
+\sf@farskip=\skip87
+\sf@captopadj=\dimen315
+\sf@capskip=\skip88
+\sf@nearskip=\skip89
+\c@subfigure=\count291
+\c@subfigure@save=\count292
+\c@depth=\count293
+\c@subtable=\count294
+\c@subtable@save=\count295
+\sf@top=\skip90
+\sf@bottom=\skip91
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 126.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 126.
@@ -1352,53 +1283,51 @@ LaTeX Font Info:    ... okay on input line 126.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen285
-\scratchbox=\box90
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks80
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen286
-\MPnumerator=\count347
-\everyMPtoPDFconversion=\toks81
-)
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-ba
-se.sty
+\scratchcounter=\count296
+\scratchdimen=\dimen316
+\scratchbox=\box103
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen317
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks51
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf
--sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box91
+))
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box104
 Package hyperref Info: Link coloring OFF on input line 126.
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/generic/oberdiek/gettitles
-tring.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count348
+\c@section@level=\count302
 )
 LaTeX Info: Redefining \ref on input line 126.
 LaTeX Info: Redefining \pageref on input line 126.
 LaTeX Info: Redefining \nameref on input line 126.
- (./DEC_Template_draft2.out) (./DEC_Template_draft2.out)
+
+(./DEC_Template_draft2.out) (./DEC_Template_draft2.out)
 \@outlinefile=\write5
 \openout5 = `DEC_Template_draft2.out'.
 
@@ -1444,63 +1373,91 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 126.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 126.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+26.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
+126.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 126.
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/di
-cts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/di
-cts/translator-bibliography-dictionary/translator-bibliography-dictionary-Engli
-sh.dict
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-bibliography-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/di
-cts/translator-environment-dictionary/translator-environment-dictionary-English
-.dict
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-environment-dictionary/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/di
-cts/translator-months-dictionary/translator-months-dictionary-English.dict
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-months-dictionary/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/di
-cts/translator-numbers-dictionary/translator-numbers-dictionary-English.dict
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-numbers-dictionary/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/beamer/translator/di
-cts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
+LaTeX Info: Redefining \includegraphics on input line 126.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 126.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@err
+or {\noexpand \caption outside figure or table}\@ehd \expandafter \@gobble \els
+e \refstepcounter \@captype \expandafter \@firstofone \fi {\@dblarg {\@caption 
+\@captype }}.
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(./DEC_Template_draft2.nav)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
+) (./DEC_Template_draft2.nav)
 Overfull \hbox (2.11946pt too wide) in paragraph at lines 126--126
 [][][][]  
  []
 
-\c_siunitx_mathsf_int=\count349
+\c__siunitx_mathsf_int=\count303
 LaTeX Font Info:    Try loading font information for U+msa on input line 126.
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 126.
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+esint on input line 126.
 
 
-(/nfs/kris/d1/local_net2/texlive/2010/texmf-dist/tex/latex/esint/uesint.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-\c_siunitx_mathtt_int=\count350
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 126.
 
-<./figs/utias_logo_blue.jpg, id=163, 651.8754pt x 826.7688pt>
+(/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+\c__siunitx_mathtt_int=\count304
+ <./figs/utias_logo_blue.jpg, id=168, 651.8754pt x 826.7688pt>
 File: ./figs/utias_logo_blue.jpg Graphic file (type jpg)
 
 <use ./figs/utias_logo_blue.jpg>
@@ -1508,16 +1465,16 @@ Package pdftex.def Info: ./figs/utias_logo_blue.jpg used on input line 135.
 (pdftex.def)             Requested size: 32.32068pt x 40.98763pt.
  [1
 
-{/nfs/kris/d1/local_net2/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.
-map} <./figs/utias_logo_blue.jpg>]
-<./figs/MooresLaw.png, id=177, 1218.5525pt x 818.05624pt>
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figs/
+utias_logo_blue.jpg>]
+<./figs/MooresLaw.png, id=179, 1218.5525pt x 818.05624pt>
 File: ./figs/MooresLaw.png Graphic file (type png)
 
 <use ./figs/MooresLaw.png>
 Package pdftex.def Info: ./figs/MooresLaw.png used on input line 192.
 (pdftex.def)             Requested size: 189.00383pt x 116.29527pt.
 
-<./figs/utias-logo2.jpg, id=181, 441.43297pt x 552.1428pt>
+<./figs/utias-logo2.jpg, id=183, 441.43297pt x 552.1428pt>
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 
 <use ./figs/utias-logo2.jpg>
@@ -1545,7 +1502,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 232.
 
-<./figs/dlrflame.png, id=225, 110.4125pt x 281.05pt>
+<./figs/dlrflame.png, id=227, 110.4125pt x 281.05pt>
 File: ./figs/dlrflame.png Graphic file (type png)
  <use ./figs/dlrflame.png>
 Package pdftex.def Info: ./figs/dlrflame.png used on input line 232.
@@ -1562,8 +1519,8 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [3
 
- <./figs/dlrflame.png (PNG copy)>]
-<./figs/Temperatures.png, id=252, 488.82625pt x 377.41pt>
+ <./figs/dlrflame.png>]
+<./figs/Temperatures.png, id=254, 488.82625pt x 377.41pt>
 File: ./figs/Temperatures.png Graphic file (type png)
 
 <use ./figs/Temperatures.png>
@@ -1575,7 +1532,7 @@ S}) has been already used, duplicate ignored
                    \relax 
 l.256 \end{frame}
                  
-<./figs/Temp_DNS_LES2.png, id=253, 492.84125pt x 400.49625pt>
+<./figs/Temp_DNS_LES2.png, id=255, 492.84125pt x 400.49625pt>
 File: ./figs/Temp_DNS_LES2.png Graphic file (type png)
 
 <use ./figs/Temp_DNS_LES2.png>
@@ -1610,7 +1567,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [5
 
-] <./figs/BlockDivision.jpg, id=303, 1061.9675pt x 737.75626pt>
+] <./figs/BlockDivision.jpg, id=306, 1061.9675pt x 737.75626pt>
 File: ./figs/BlockDivision.jpg Graphic file (type jpg)
 
 <use ./figs/BlockDivision.jpg>
@@ -1637,28 +1594,28 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [6
 
  <./figs/BlockDivision.jpg>]
-<./figs/flagged_cells.jpg, id=334, 579.96675pt x 579.96675pt>
+<./figs/flagged_cells.jpg, id=337, 579.96675pt x 579.96675pt>
 File: ./figs/flagged_cells.jpg Graphic file (type jpg)
 
 <use ./figs/flagged_cells.jpg>
 Package pdftex.def Info: ./figs/flagged_cells.jpg used on input line 354.
 (pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
 
-<./figs/cell-based-refine.jpg, id=336, 579.96675pt x 579.96675pt>
+<./figs/cell-based-refine.jpg, id=339, 579.96675pt x 579.96675pt>
 File: ./figs/cell-based-refine.jpg Graphic file (type jpg)
 
 <use ./figs/cell-based-refine.jpg>
 Package pdftex.def Info: ./figs/cell-based-refine.jpg used on input line 354.
 (pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
 
-<./figs/patch-based_refine.jpg, id=338, 579.96675pt x 579.96675pt>
+<./figs/patch-based_refine.jpg, id=341, 579.96675pt x 579.96675pt>
 File: ./figs/patch-based_refine.jpg Graphic file (type jpg)
 
 <use ./figs/patch-based_refine.jpg>
 Package pdftex.def Info: ./figs/patch-based_refine.jpg used on input line 354.
 (pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
 
-<./figs/block-based.jpg, id=340, 583.58025pt x 583.58025pt>
+<./figs/block-based.jpg, id=343, 583.58025pt x 583.58025pt>
 File: ./figs/block-based.jpg Graphic file (type jpg)
 
 <use ./figs/block-based.jpg>
@@ -1697,14 +1654,14 @@ ored
                    \relax 
 l.388 \end{frame}
                  
-<./figs/shockCubeAniso3.jpg, id=374, 792.9625pt x 705.63625pt>
+<./figs/shockCubeAniso3.jpg, id=377, 792.9625pt x 705.63625pt>
 File: ./figs/shockCubeAniso3.jpg Graphic file (type jpg)
 
 <use ./figs/shockCubeAniso3.jpg>
 Package pdftex.def Info: ./figs/shockCubeAniso3.jpg used on input line 388.
 (pdftex.def)             Requested size: 129.2893pt x 115.04675pt.
 
-<./figs/shockCubeIso3.jpg, id=376, 792.9625pt x 705.63625pt>
+<./figs/shockCubeIso3.jpg, id=379, 792.9625pt x 705.63625pt>
 File: ./figs/shockCubeIso3.jpg Graphic file (type jpg)
 
 <use ./figs/shockCubeIso3.jpg>
@@ -1731,25 +1688,31 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [8
 
  <./figs/shockCubeAniso3.jpg> <./figs/shockCubeIso3.jpg>]
-<./figs/ghostblock.png, id=405, 683.55376pt x 554.07pt>
+<./figs/ghostblock.png, id=408, 683.55376pt x 554.07pt>
 File: ./figs/ghostblock.png Graphic file (type png)
 
 <use ./figs/ghostblock.png>
 Package pdftex.def Info: ./figs/ghostblock.png used on input line 424.
 (pdftex.def)             Requested size: 86.19067pt x 69.85884pt.
 Package epstopdf Info: Source file: <./figs/parallel-domain-decomp.eps>
-(epstopdf)                    date: 2015-03-25 19:14:52
+(epstopdf)                    date: 2015-04-02 15:42:57
 (epstopdf)                    size: 1621555 bytes
 (epstopdf)             Output file: <./figs/parallel-domain-decomp-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2015-03-25 19:14:52
+(epstopdf)                    date: 2015-04-02 15:42:56
 (epstopdf)                    size: 51705 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/parallel-domain-dec
 omp-eps-converted-to.pdf ./figs/parallel-domain-decomp.eps>
 (epstopdf)             \includegraphics on input line 424.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=./figs/parallel-domain-decomp-eps-converted-to.pd
+f ./figs/parallel-domain-decomp.eps)...executed safely (allowed).
 
-<./figs/parallel-domain-decomp-eps-converted-to.pdf, id=407, 490.83376pt x 327.
+Package epstopdf Info: Result file: <./figs/parallel-domain-decomp-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2015-04-02 15:42:56
+(epstopdf)                    size: 51705 bytes.
+
+<./figs/parallel-domain-decomp-eps-converted-to.pdf, id=410, 490.83376pt x 327.
 2225pt>
 File: ./figs/parallel-domain-decomp-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1758,7 +1721,7 @@ Package pdftex.def Info: ./figs/parallel-domain-decomp-eps-converted-to.pdf use
 d on input line 424.
 (pdftex.def)             Requested size: 86.19067pt x 57.45952pt.
 
-<./figs/Non-UniformBlock.png, id=409, 1138.2525pt x 829.0975pt>
+<./figs/Non-UniformBlock.png, id=412, 1138.2525pt x 829.0975pt>
 File: ./figs/Non-UniformBlock.png Graphic file (type png)
 
 <use ./figs/Non-UniformBlock.png>
@@ -1805,14 +1768,14 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [10
 
-] <./figs/fig_quadpts.png, id=472, 666.49pt x 576.1525pt>
+] <./figs/fig_quadpts.png, id=475, 666.49pt x 576.1525pt>
 File: ./figs/fig_quadpts.png Graphic file (type png)
 
 <use ./figs/fig_quadpts.png>
 Package pdftex.def Info: ./figs/fig_quadpts.png used on input line 504.
 (pdftex.def)             Requested size: 114.20413pt x 98.71826pt.
 
-<./figs/error_ho_amr3.jpg, id=474, 782.17218pt x 595.47469pt>
+<./figs/error_ho_amr3.jpg, id=477, 782.17218pt x 595.47469pt>
 File: ./figs/error_ho_amr3.jpg Graphic file (type jpg)
 
 <use ./figs/error_ho_amr3.jpg>
@@ -1861,23 +1824,23 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [12
 
-] <./figs/Error.png, id=521, 1059.96pt x 797.98125pt>
+] <./figs/Error.png, id=524, 1059.96pt x 797.98125pt>
 File: ./figs/Error.png Graphic file (type png)
 
 <use ./figs/Error.png>
-Package pdftex.def Info: ./figs/Error.png used on input line 571.
+Package pdftex.def Info: ./figs/Error.png used on input line 567.
 (pdftex.def)             Requested size: 247.16597pt x 186.0751pt.
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 571--571
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 567--567
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 571.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 567.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 571
+Overfull \vbox (37.88681pt too high) detected at line 567
  []
 
 
@@ -1890,7 +1853,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
  <./figs/Error.png>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 598.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 594.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1902,7 +1865,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 628.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 627.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1914,7 +1877,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 644.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 643.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1923,37 +1886,37 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [16
 
-] <./figs/outflowIso.png, id=615, 745.78625pt x 664.4825pt>
+] <./figs/outflowIso.png, id=618, 745.78625pt x 664.4825pt>
 File: ./figs/outflowIso.png Graphic file (type png)
 
 <use ./figs/outflowIso.png>
-Package pdftex.def Info: ./figs/outflowIso.png used on input line 673.
+Package pdftex.def Info: ./figs/outflowIso.png used on input line 672.
 (pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
 
-<./figs/outflowAniso.png, id=617, 745.78625pt x 664.4825pt>
+<./figs/outflowAniso.png, id=620, 745.78625pt x 664.4825pt>
 File: ./figs/outflowAniso.png Graphic file (type png)
 
 <use ./figs/outflowAniso.png>
-Package pdftex.def Info: ./figs/outflowAniso.png used on input line 673.
+Package pdftex.def Info: ./figs/outflowAniso.png used on input line 672.
 (pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
 
-<./figs/outflowError.png, id=619, 745.78625pt x 664.4825pt>
+<./figs/outflowError.png, id=622, 745.78625pt x 664.4825pt>
 File: ./figs/outflowError.png Graphic file (type png)
 
 <use ./figs/outflowError.png>
-Package pdftex.def Info: ./figs/outflowError.png used on input line 673.
+Package pdftex.def Info: ./figs/outflowError.png used on input line 672.
 (pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 673--673
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 672--672
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 673.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 672.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (12.2375pt too high) detected at line 673
+Overfull \vbox (12.2375pt too high) detected at line 672
  []
 
 
@@ -1967,7 +1930,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 s/outflowError.png (PNG copy)>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 686.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 685.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1979,7 +1942,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 711.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 710.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1991,7 +1954,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 754.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 753.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2001,16 +1964,16 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 793--793
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 792--792
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 793.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 792.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (12.2375pt too high) detected at line 793
+Overfull \vbox (12.2375pt too high) detected at line 792
  []
 
 
@@ -2023,7 +1986,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 819.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 818.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2037,7 +2000,7 @@ Missing character: There is no Ï in font cmss8!
 Missing character: There is no ‰ in font cmss8!
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 838.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 837.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2046,30 +2009,30 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [23
 
-] <./figs/LAV_adj_err.png, id=778, 1377.145pt x 492.84125pt>
+] <./figs/LAV_adj_err.png, id=782, 1377.145pt x 492.84125pt>
 File: ./figs/LAV_adj_err.png Graphic file (type png)
 
 <use ./figs/LAV_adj_err.png>
-Package pdftex.def Info: ./figs/LAV_adj_err.png used on input line 873.
+Package pdftex.def Info: ./figs/LAV_adj_err.png used on input line 872.
 (pdftex.def)             Requested size: 137.90706pt x 49.34717pt.
 
-<./figs/LAV_mesh.png, id=780, 759.83875pt x 540.0175pt>
+<./figs/LAV_mesh.png, id=784, 759.83875pt x 540.0175pt>
 File: ./figs/LAV_mesh.png Graphic file (type png)
 
 <use ./figs/LAV_mesh.png>
-Package pdftex.def Info: ./figs/LAV_mesh.png used on input line 873.
+Package pdftex.def Info: ./figs/LAV_mesh.png used on input line 872.
 (pdftex.def)             Requested size: 152.99223pt x 108.7267pt.
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 873--873
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 872--872
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 873.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 872.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 873
+Overfull \vbox (16.33751pt too high) detected at line 872
  []
 
 
@@ -2080,27 +2043,27 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [24
 
  <./figs/LAV_adj_err.png (PNG copy)> <./figs/LAV_mesh.png (PNG copy)>]
-<./figs/Poisson2D.png, id=807, 560.0925pt x 472.6458pt>
+<./figs/Poisson2D.png, id=811, 560.0925pt x 472.6458pt>
 File: ./figs/Poisson2D.png Graphic file (type png)
 
 <use ./figs/Poisson2D.png>
-Package pdftex.def Info: ./figs/Poisson2D.png used on input line 906.
+Package pdftex.def Info: ./figs/Poisson2D.png used on input line 905.
 (pdftex.def)             Requested size: 150.83533pt x 127.28432pt.
 
-<./figs/3D_Poisson.png, id=808, 1184.425pt x 1052.93375pt>
+<./figs/3D_Poisson.png, id=812, 1184.425pt x 1052.93375pt>
 File: ./figs/3D_Poisson.png Graphic file (type png)
 
 <use ./figs/3D_Poisson.png>
-Package pdftex.def Info: ./figs/3D_Poisson.png used on input line 906.
+Package pdftex.def Info: ./figs/3D_Poisson.png used on input line 905.
 (pdftex.def)             Requested size: 150.83533pt x 126.82854pt.
 
-Overfull \hbox (79.44304pt too wide) in paragraph at lines 906--906
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 905--905
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 906.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 905.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2110,56 +2073,56 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [25
 
  <./figs/3D_Poisson.png (PNG copy)> <./figs/Poisson2D.png>]
-<./figs/Flame_temp.png, id=840, 794.97pt x 705.63625pt>
+<./figs/Flame_temp.png, id=844, 794.97pt x 705.63625pt>
 File: ./figs/Flame_temp.png Graphic file (type png)
 
 <use ./figs/Flame_temp.png>
-Package pdftex.def Info: ./figs/Flame_temp.png used on input line 948.
+Package pdftex.def Info: ./figs/Flame_temp.png used on input line 947.
 (pdftex.def)             Requested size: 45.25224pt x 58.29585pt.
 
-<./figs/fsd2_0ms.png, id=842, 1178.4025pt x 1067.99pt>
+<./figs/fsd2_0ms.png, id=846, 1178.4025pt x 1067.99pt>
 File: ./figs/fsd2_0ms.png Graphic file (type png)
 
 <use ./figs/fsd2_0ms.png>
-Package pdftex.def Info: ./figs/fsd2_0ms.png used on input line 948.
+Package pdftex.def Info: ./figs/fsd2_0ms.png used on input line 947.
 (pdftex.def)             Requested size: 64.64465pt x 58.58481pt.
 
-<./figs/fsd4_25ms.png, id=844, 1178.4025pt x 1072.005pt>
+<./figs/fsd4_25ms.png, id=848, 1178.4025pt x 1072.005pt>
 File: ./figs/fsd4_25ms.png Graphic file (type png)
 
 <use ./figs/fsd4_25ms.png>
-Package pdftex.def Info: ./figs/fsd4_25ms.png used on input line 948.
+Package pdftex.def Info: ./figs/fsd4_25ms.png used on input line 947.
 (pdftex.def)             Requested size: 64.64465pt x 58.80505pt.
 
-<./figs/fsd7_0ms.png, id=846, 1178.4025pt x 1073.00874pt>
+<./figs/fsd7_0ms.png, id=850, 1178.4025pt x 1073.00874pt>
 File: ./figs/fsd7_0ms.png Graphic file (type png)
 
 <use ./figs/fsd7_0ms.png>
-Package pdftex.def Info: ./figs/fsd7_0ms.png used on input line 948.
+Package pdftex.def Info: ./figs/fsd7_0ms.png used on input line 947.
 (pdftex.def)             Requested size: 64.64465pt x 58.8601pt.
 
-<./figs/Time_averaged_c_O2.png, id=848, 794.97pt x 705.63625pt>
+<./figs/Time_averaged_c_O2.png, id=852, 794.97pt x 705.63625pt>
 File: ./figs/Time_averaged_c_O2.png Graphic file (type png)
 
 <use ./figs/Time_averaged_c_O2.png>
-Package pdftex.def Info: ./figs/Time_averaged_c_O2.png used on input line 948.
+Package pdftex.def Info: ./figs/Time_averaged_c_O2.png used on input line 947.
 (pdftex.def)             Requested size: 53.87pt x 58.924pt.
 
-Overfull \hbox (2.31357pt too wide) in paragraph at lines 948--948
+Overfull \hbox (2.31357pt too wide) in paragraph at lines 947--947
  [][][][][] 
  []
 
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 948--948
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 947--947
 []  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 948.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 947.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (31.2375pt too high) detected at line 948
+Overfull \vbox (31.2375pt too high) detected at line 947
  []
 
 
@@ -2171,29 +2134,29 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
  <./figs/Flame_temp.png (PNG copy)> <./figs/fsd2_0ms.png (PNG copy)> <./figs/fs
 d4_25ms.png (PNG copy)> <./figs/fsd7_0ms.png (PNG copy)> <./figs/Time_averaged_
-c_O2.png (PNG copy)>] <./figs/20Rho.png, id=882, 794.97pt x 705.63625pt>
+c_O2.png (PNG copy)>] <./figs/20Rho.png, id=886, 794.97pt x 705.63625pt>
 File: ./figs/20Rho.png Graphic file (type png)
 
 <use ./figs/20Rho.png>
-Package pdftex.def Info: ./figs/20Rho.png used on input line 981.
+Package pdftex.def Info: ./figs/20Rho.png used on input line 980.
 (pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
- <./figs/20RhoAdj.png, id=884, 794.97pt x 705.63625pt>
+ <./figs/20RhoAdj.png, id=888, 794.97pt x 705.63625pt>
 File: ./figs/20RhoAdj.png Graphic file (type png)
 
 <use ./figs/20RhoAdj.png>
-Package pdftex.def Info: ./figs/20RhoAdj.png used on input line 981.
+Package pdftex.def Info: ./figs/20RhoAdj.png used on input line 980.
 (pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
 
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 981--981
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 980--980
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 981.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 980.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 981
+Overfull \vbox (16.33751pt too high) detected at line 980
  []
 
 
@@ -2204,16 +2167,16 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [27
 
  <./figs/20Rho.png (PNG copy)> <./figs/20RhoAdj.png (PNG copy)>]
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 1017--1017
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 1016--1016
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1017.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1016.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (12.2375pt too high) detected at line 1017
+Overfull \vbox (12.2375pt too high) detected at line 1016
  []
 
 
@@ -2224,21 +2187,21 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [28
 
 ]
-Overfull \hbox (1.68826pt too wide) in paragraph at lines 1060--1060
+Overfull \hbox (1.68826pt too wide) in paragraph at lines 1059--1059
 [][]  
  []
 
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 1060--1060
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 1059--1059
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1060.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1059.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (12.2375pt too high) detected at line 1060
+Overfull \vbox (12.2375pt too high) detected at line 1059
  []
 
 
@@ -2251,7 +2214,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1070.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1069.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2263,9 +2226,9 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 1074.
+(hyperref)                removing `\translate ' on input line 1073.
 
-\c@finalframe=\count351
+\c@finalframe=\count305
 Missing character: There is no â in font cmss8!
 Missing character: There is no € in font cmss8!
 Missing character: There is no “ in font cmss8!
@@ -2273,16 +2236,16 @@ Missing character: There is no â in font cmss8!
 Missing character: There is no € in font cmss8!
 Missing character: There is no “ in font cmss8!
 
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 1109--1109
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 1108--1108
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1109.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1108.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 1109
+Overfull \vbox (16.33751pt too high) detected at line 1108
  []
 
 
@@ -2292,30 +2255,30 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [31
 
-] <./figs/rho_mesh.png, id=993, 794.97pt x 705.63625pt>
+] <./figs/rho_mesh.png, id=997, 794.97pt x 705.63625pt>
 File: ./figs/rho_mesh.png Graphic file (type png)
 
 <use ./figs/rho_mesh.png>
-Package pdftex.def Info: ./figs/rho_mesh.png used on input line 1143.
+Package pdftex.def Info: ./figs/rho_mesh.png used on input line 1142.
 (pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
 
-<./figs/rhoAdj_mesh.png, id=995, 794.97pt x 705.63625pt>
+<./figs/rhoAdj_mesh.png, id=999, 794.97pt x 705.63625pt>
 File: ./figs/rhoAdj_mesh.png Graphic file (type png)
 
 <use ./figs/rhoAdj_mesh.png>
-Package pdftex.def Info: ./figs/rhoAdj_mesh.png used on input line 1143.
+Package pdftex.def Info: ./figs/rhoAdj_mesh.png used on input line 1142.
 (pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
 
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 1143--1143
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 1142--1142
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1143.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1142.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 1143
+Overfull \vbox (16.33751pt too high) detected at line 1142
  []
 
 
@@ -2335,12 +2298,12 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `DEC_Template_draft2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1151.
 
 (./DEC_Template_draft2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1151.
 
 Package rerunfilecheck Info: File `DEC_Template_draft2.out' has not changed.
 (rerunfilecheck)             Checksum: E5C18EDA06C4790BD460950E3BD6D50D;2266.
@@ -2355,47 +2318,43 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1152.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1151.
  ) 
 Here is how much of TeX's memory you used:
- 25033 strings out of 493763
- 509022 string characters out of 3138789
- 541432 words of memory out of 3000000
- 27602 multiletter control sequences out of 15000+200000
- 28057 words of font info for 114 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 49i,18n,63p,2358b,969s stack positions out of 5000i,500n,10000p,200000b,50000s
-</nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/
-cmextra/cmex7.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/
-public/amsfonts/cmextra/cmex8.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></nfs/kris/d1/local_net2/texlive/2
-010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></nfs/kris/d1/local_net
-2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></nfs/kris/d
-1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmss10.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss12.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss17.pfb></nfs/kris/d1/local_net2/texlive/20
-10/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></nfs/kris/d1/local_net2
-/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></nfs/kris/d1
-/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
-></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmssi12.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmssi17.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi8.pfb></nfs/kris/d1/local_net2/texlive/2010/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nfs/kris/d1/local_net2/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></nfs/kris/d1/loc
-al_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></nfs/
-kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy9.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt8.pfb></nfs/kris/d1/local_net2/texlive/2010/texmf-dist/fon
-ts/type1/public/esint-type1/esint10.pfb>
-Output written on DEC_Template_draft2.pdf (32 pages, 5314589 bytes).
+ 27751 strings out of 493109
+ 568878 string characters out of 6135003
+ 603602 words of memory out of 5000000
+ 30518 multiletter control sequences out of 15000+600000
+ 28848 words of font info for 115 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,18n,63p,10356b,1154s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cm
+ex8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
+Output written on DEC_Template_draft2.pdf (32 pages, 5331483 bytes).
 PDF statistics:
- 1116 PDF objects out of 1200 (max. 8388607)
- 971 compressed objects within 10 object streams
- 149 named destinations out of 1000 (max. 500000)
- 690 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1121 PDF objects out of 1200 (max. 8388607)
+ 974 compressed objects within 10 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 700 words of extra memory for PDF output out of 10000 (max. 10000000)
 
