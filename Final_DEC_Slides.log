@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  2 APR 2015 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  3 APR 2015 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,7 +1215,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 126.
 
-No file Final_DEC_Slides.aux.
+(./Final_DEC_Slides.aux
+
+LaTeX Warning: Label `fig:contourDNS' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:contourDNS' multiply defined.
+
+
+LaTeX Warning: Label `fig:cubeAMRbased' multiply defined.
+
+
+LaTeX Warning: Label `fig:errorHO' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:errorHO' multiply defined.
+
+)
 \openout1 = `Final_DEC_Slides.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
@@ -1232,6 +1248,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
 LaTeX Font Info:    ... okay on input line 126.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
 LaTeX Font Info:    ... okay on input line 126.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1309,6 +1326,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 126.
 LaTeX Info: Redefining \pageref on input line 126.
 LaTeX Info: Redefining \nameref on input line 126.
+
+(./Final_DEC_Slides.out) (./Final_DEC_Slides.out)
 \@outlinefile=\write5
 \openout5 = `Final_DEC_Slides.out'.
 
@@ -1409,9 +1428,7 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
-)
-No file Final_DEC_Slides.nav.
-
+) (./Final_DEC_Slides.nav)
 Overfull \hbox (2.11946pt too wide) in paragraph at lines 126--126
 [][][][]  
  []
@@ -1440,7 +1457,7 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 \c__siunitx_mathtt_int=\count304
- <./figs/utias_logo_blue.jpg, id=20, 651.8754pt x 826.7688pt>
+ <./figs/utias_logo_blue.jpg, id=168, 651.8754pt x 826.7688pt>
 File: ./figs/utias_logo_blue.jpg Graphic file (type jpg)
 
 <use ./figs/utias_logo_blue.jpg>
@@ -1450,20 +1467,14 @@ Package pdftex.def Info: ./figs/utias_logo_blue.jpg used on input line 135.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figs/
 utias_logo_blue.jpg>]
-<./figs/MooresLaw.png, id=31, 1218.5525pt x 818.05624pt>
+<./figs/MooresLaw.png, id=179, 1218.5525pt x 818.05624pt>
 File: ./figs/MooresLaw.png Graphic file (type png)
 
 <use ./figs/MooresLaw.png>
 Package pdftex.def Info: ./figs/MooresLaw.png used on input line 192.
 (pdftex.def)             Requested size: 189.00383pt x 116.29527pt.
 
-
-LaTeX Warning: Citation `MooreLaw' on page 2 undefined on input line 192.
-
-
-LaTeX Warning: Citation `MooreLaw' on page 2 undefined on input line 192.
-
-<./figs/utias-logo2.jpg, id=33, 441.43297pt x 552.1428pt>
+<./figs/utias-logo2.jpg, id=183, 441.43297pt x 552.1428pt>
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 
 <use ./figs/utias-logo2.jpg>
@@ -1482,21 +1493,16 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [2
 
  <./figs/MooresLaw.png (PNG copy)> <./figs/utias-logo2.jpg>]
-
-LaTeX Warning: Citation `Kohler' on page 3 undefined on input line 232.
-
-
-LaTeX Warning: Citation `AdelaideISF' on page 3 undefined on input line 232.
-
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 232
 .
 LaTeX Font Info:    No file OMScmss.fd. on input line 232.
+
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 232.
 
-<./figs/dlrflame.png, id=48, 110.4125pt x 281.05pt>
+<./figs/dlrflame.png, id=227, 110.4125pt x 281.05pt>
 File: ./figs/dlrflame.png Graphic file (type png)
  <use ./figs/dlrflame.png>
 Package pdftex.def Info: ./figs/dlrflame.png used on input line 232.
@@ -1514,10 +1520,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [3
 
  <./figs/dlrflame.png>]
-
-LaTeX Warning: Citation `Pope' on page 4 undefined on input line 256.
-
-<./figs/Temperatures.png, id=59, 488.82625pt x 377.41pt>
+<./figs/Temperatures.png, id=254, 488.82625pt x 377.41pt>
 File: ./figs/Temperatures.png Graphic file (type png)
 
 <use ./figs/Temperatures.png>
@@ -1528,7 +1531,8 @@ S}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.256 \end{frame}
-                  <./figs/Temp_DNS_LES2.png, id=60, 492.84125pt x 400.49625pt>
+                 
+<./figs/Temp_DNS_LES2.png, id=255, 492.84125pt x 400.49625pt>
 File: ./figs/Temp_DNS_LES2.png Graphic file (type png)
 
 <use ./figs/Temp_DNS_LES2.png>
@@ -1563,7 +1567,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [5
 
-] <./figs/BlockDivision.jpg, id=82, 1061.9675pt x 737.75626pt>
+] <./figs/BlockDivision.jpg, id=306, 1061.9675pt x 737.75626pt>
 File: ./figs/BlockDivision.jpg Graphic file (type jpg)
 
 <use ./figs/BlockDivision.jpg>
@@ -1590,28 +1594,28 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [6
 
  <./figs/BlockDivision.jpg>]
-<./figs/flagged_cells.jpg, id=96, 579.96675pt x 579.96675pt>
+<./figs/flagged_cells.jpg, id=337, 579.96675pt x 579.96675pt>
 File: ./figs/flagged_cells.jpg Graphic file (type jpg)
 
 <use ./figs/flagged_cells.jpg>
 Package pdftex.def Info: ./figs/flagged_cells.jpg used on input line 354.
 (pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
 
-<./figs/cell-based-refine.jpg, id=98, 579.96675pt x 579.96675pt>
+<./figs/cell-based-refine.jpg, id=339, 579.96675pt x 579.96675pt>
 File: ./figs/cell-based-refine.jpg Graphic file (type jpg)
 
 <use ./figs/cell-based-refine.jpg>
 Package pdftex.def Info: ./figs/cell-based-refine.jpg used on input line 354.
 (pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
 
-<./figs/patch-based_refine.jpg, id=100, 579.96675pt x 579.96675pt>
+<./figs/patch-based_refine.jpg, id=341, 579.96675pt x 579.96675pt>
 File: ./figs/patch-based_refine.jpg Graphic file (type jpg)
 
 <use ./figs/patch-based_refine.jpg>
 Package pdftex.def Info: ./figs/patch-based_refine.jpg used on input line 354.
 (pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
 
-<./figs/block-based.jpg, id=102, 583.58025pt x 583.58025pt>
+<./figs/block-based.jpg, id=343, 583.58025pt x 583.58025pt>
 File: ./figs/block-based.jpg Graphic file (type jpg)
 
 <use ./figs/block-based.jpg>
@@ -1650,14 +1654,14 @@ ored
                    \relax 
 l.388 \end{frame}
                  
-<./figs/shockCubeAniso3.jpg, id=122, 792.9625pt x 705.63625pt>
+<./figs/shockCubeAniso3.jpg, id=377, 792.9625pt x 705.63625pt>
 File: ./figs/shockCubeAniso3.jpg Graphic file (type jpg)
 
 <use ./figs/shockCubeAniso3.jpg>
 Package pdftex.def Info: ./figs/shockCubeAniso3.jpg used on input line 388.
 (pdftex.def)             Requested size: 129.2893pt x 115.04675pt.
 
-<./figs/shockCubeIso3.jpg, id=124, 792.9625pt x 705.63625pt>
+<./figs/shockCubeIso3.jpg, id=379, 792.9625pt x 705.63625pt>
 File: ./figs/shockCubeIso3.jpg Graphic file (type jpg)
 
 <use ./figs/shockCubeIso3.jpg>
@@ -1684,7 +1688,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [8
 
  <./figs/shockCubeAniso3.jpg> <./figs/shockCubeIso3.jpg>]
-<./figs/ghostblock.png, id=139, 683.55376pt x 554.07pt>
+<./figs/ghostblock.png, id=408, 683.55376pt x 554.07pt>
 File: ./figs/ghostblock.png Graphic file (type png)
 
 <use ./figs/ghostblock.png>
@@ -1708,7 +1712,7 @@ d-to.pdf>
 (epstopdf)                    date: 2015-04-02 15:42:56
 (epstopdf)                    size: 51705 bytes.
 
-<./figs/parallel-domain-decomp-eps-converted-to.pdf, id=141, 490.83376pt x 327.
+<./figs/parallel-domain-decomp-eps-converted-to.pdf, id=410, 490.83376pt x 327.
 2225pt>
 File: ./figs/parallel-domain-decomp-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1717,7 +1721,7 @@ Package pdftex.def Info: ./figs/parallel-domain-decomp-eps-converted-to.pdf use
 d on input line 424.
 (pdftex.def)             Requested size: 86.19067pt x 57.45952pt.
 
-<./figs/Non-UniformBlock.png, id=143, 1138.2525pt x 829.0975pt>
+<./figs/Non-UniformBlock.png, id=412, 1138.2525pt x 829.0975pt>
 File: ./figs/Non-UniformBlock.png Graphic file (type png)
 
 <use ./figs/Non-UniformBlock.png>
@@ -1764,14 +1768,14 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [10
 
-] <./figs/fig_quadpts.png, id=179, 666.49pt x 576.1525pt>
+] <./figs/fig_quadpts.png, id=475, 666.49pt x 576.1525pt>
 File: ./figs/fig_quadpts.png Graphic file (type png)
 
 <use ./figs/fig_quadpts.png>
 Package pdftex.def Info: ./figs/fig_quadpts.png used on input line 504.
 (pdftex.def)             Requested size: 114.20413pt x 98.71826pt.
 
-<./figs/error_ho_amr3.jpg, id=181, 782.17218pt x 595.47469pt>
+<./figs/error_ho_amr3.jpg, id=477, 782.17218pt x 595.47469pt>
 File: ./figs/error_ho_amr3.jpg Graphic file (type jpg)
 
 <use ./figs/error_ho_amr3.jpg>
@@ -1820,7 +1824,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [12
 
-] <./figs/Error.png, id=206, 1059.96pt x 797.98125pt>
+] <./figs/Error.png, id=524, 1059.96pt x 797.98125pt>
 File: ./figs/Error.png Graphic file (type png)
 
 <use ./figs/Error.png>
@@ -1882,21 +1886,21 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [16
 
-] <./figs/outflowIso.png, id=243, 745.78625pt x 664.4825pt>
+] <./figs/outflowIso.png, id=618, 745.78625pt x 664.4825pt>
 File: ./figs/outflowIso.png Graphic file (type png)
 
 <use ./figs/outflowIso.png>
 Package pdftex.def Info: ./figs/outflowIso.png used on input line 672.
 (pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
 
-<./figs/outflowAniso.png, id=245, 745.78625pt x 664.4825pt>
+<./figs/outflowAniso.png, id=620, 745.78625pt x 664.4825pt>
 File: ./figs/outflowAniso.png Graphic file (type png)
 
 <use ./figs/outflowAniso.png>
 Package pdftex.def Info: ./figs/outflowAniso.png used on input line 672.
 (pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
 
-<./figs/outflowError.png, id=247, 745.78625pt x 664.4825pt>
+<./figs/outflowError.png, id=622, 745.78625pt x 664.4825pt>
 File: ./figs/outflowError.png Graphic file (type png)
 
 <use ./figs/outflowError.png>
@@ -2005,14 +2009,14 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [23
 
-] <./figs/LAV_adj_err.png, id=317, 1377.145pt x 492.84125pt>
+] <./figs/LAV_adj_err.png, id=782, 1377.145pt x 492.84125pt>
 File: ./figs/LAV_adj_err.png Graphic file (type png)
 
 <use ./figs/LAV_adj_err.png>
 Package pdftex.def Info: ./figs/LAV_adj_err.png used on input line 872.
 (pdftex.def)             Requested size: 137.90706pt x 49.34717pt.
 
-<./figs/LAV_mesh.png, id=319, 759.83875pt x 540.0175pt>
+<./figs/LAV_mesh.png, id=784, 759.83875pt x 540.0175pt>
 File: ./figs/LAV_mesh.png Graphic file (type png)
 
 <use ./figs/LAV_mesh.png>
@@ -2039,14 +2043,14 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [24
 
  <./figs/LAV_adj_err.png (PNG copy)> <./figs/LAV_mesh.png (PNG copy)>]
-<./figs/Poisson2D.png, id=336, 560.0925pt x 472.6458pt>
+<./figs/Poisson2D.png, id=811, 560.0925pt x 472.6458pt>
 File: ./figs/Poisson2D.png Graphic file (type png)
 
 <use ./figs/Poisson2D.png>
 Package pdftex.def Info: ./figs/Poisson2D.png used on input line 905.
 (pdftex.def)             Requested size: 150.83533pt x 127.28432pt.
 
-<./figs/3D_Poisson.png, id=337, 1184.425pt x 1052.93375pt>
+<./figs/3D_Poisson.png, id=812, 1184.425pt x 1052.93375pt>
 File: ./figs/3D_Poisson.png Graphic file (type png)
 
 <use ./figs/3D_Poisson.png>
@@ -2069,35 +2073,35 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [25
 
  <./figs/3D_Poisson.png (PNG copy)> <./figs/Poisson2D.png>]
-<./figs/Flame_temp.png, id=355, 794.97pt x 705.63625pt>
+<./figs/Flame_temp.png, id=844, 794.97pt x 705.63625pt>
 File: ./figs/Flame_temp.png Graphic file (type png)
 
 <use ./figs/Flame_temp.png>
 Package pdftex.def Info: ./figs/Flame_temp.png used on input line 947.
 (pdftex.def)             Requested size: 45.25224pt x 58.29585pt.
 
-<./figs/fsd2_0ms.png, id=357, 1178.4025pt x 1067.99pt>
+<./figs/fsd2_0ms.png, id=846, 1178.4025pt x 1067.99pt>
 File: ./figs/fsd2_0ms.png Graphic file (type png)
 
 <use ./figs/fsd2_0ms.png>
 Package pdftex.def Info: ./figs/fsd2_0ms.png used on input line 947.
 (pdftex.def)             Requested size: 64.64465pt x 58.58481pt.
 
-<./figs/fsd4_25ms.png, id=359, 1178.4025pt x 1072.005pt>
+<./figs/fsd4_25ms.png, id=848, 1178.4025pt x 1072.005pt>
 File: ./figs/fsd4_25ms.png Graphic file (type png)
 
 <use ./figs/fsd4_25ms.png>
 Package pdftex.def Info: ./figs/fsd4_25ms.png used on input line 947.
 (pdftex.def)             Requested size: 64.64465pt x 58.80505pt.
 
-<./figs/fsd7_0ms.png, id=361, 1178.4025pt x 1073.00874pt>
+<./figs/fsd7_0ms.png, id=850, 1178.4025pt x 1073.00874pt>
 File: ./figs/fsd7_0ms.png Graphic file (type png)
 
 <use ./figs/fsd7_0ms.png>
 Package pdftex.def Info: ./figs/fsd7_0ms.png used on input line 947.
 (pdftex.def)             Requested size: 64.64465pt x 58.8601pt.
 
-<./figs/Time_averaged_c_O2.png, id=363, 794.97pt x 705.63625pt>
+<./figs/Time_averaged_c_O2.png, id=852, 794.97pt x 705.63625pt>
 File: ./figs/Time_averaged_c_O2.png Graphic file (type png)
 
 <use ./figs/Time_averaged_c_O2.png>
@@ -2130,13 +2134,13 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
  <./figs/Flame_temp.png (PNG copy)> <./figs/fsd2_0ms.png (PNG copy)> <./figs/fs
 d4_25ms.png (PNG copy)> <./figs/fsd7_0ms.png (PNG copy)> <./figs/Time_averaged_
-c_O2.png (PNG copy)>] <./figs/20Rho.png, id=384, 794.97pt x 705.63625pt>
+c_O2.png (PNG copy)>] <./figs/20Rho.png, id=886, 794.97pt x 705.63625pt>
 File: ./figs/20Rho.png Graphic file (type png)
 
 <use ./figs/20Rho.png>
 Package pdftex.def Info: ./figs/20Rho.png used on input line 980.
 (pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
- <./figs/20RhoAdj.png, id=386, 794.97pt x 705.63625pt>
+ <./figs/20RhoAdj.png, id=888, 794.97pt x 705.63625pt>
 File: ./figs/20RhoAdj.png Graphic file (type png)
 
 <use ./figs/20RhoAdj.png>
@@ -2251,14 +2255,14 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [31
 
-] <./figs/rho_mesh.png, id=446, 794.97pt x 705.63625pt>
+] <./figs/rho_mesh.png, id=997, 794.97pt x 705.63625pt>
 File: ./figs/rho_mesh.png Graphic file (type png)
 
 <use ./figs/rho_mesh.png>
 Package pdftex.def Info: ./figs/rho_mesh.png used on input line 1142.
 (pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
 
-<./figs/rhoAdj_mesh.png, id=448, 794.97pt x 705.63625pt>
+<./figs/rhoAdj_mesh.png, id=999, 794.97pt x 705.63625pt>
 File: ./figs/rhoAdj_mesh.png Graphic file (type png)
 
 <use ./figs/rhoAdj_mesh.png>
@@ -2301,15 +2305,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1151.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1151.
 
+Package rerunfilecheck Info: File `Final_DEC_Slides.out' has not changed.
+(rerunfilecheck)             Checksum: E5C18EDA06C4790BD460950E3BD6D50D;2266.
 
-
-Package rerunfilecheck Warning: File `Final_DEC_Slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Final_DEC_Slides.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E5C18EDA06C4790BD460950E3BD6D50D;2266.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -2318,21 +2316,18 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1151.
  ) 
 Here is how much of TeX's memory you used:
- 27519 strings out of 493109
- 565848 string characters out of 6135003
- 594991 words of memory out of 5000000
- 30294 multiletter control sequences out of 15000+600000
+ 27751 strings out of 493109
+ 568833 string characters out of 6135003
+ 603590 words of memory out of 5000000
+ 30518 multiletter control sequences out of 15000+600000
  28848 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,63p,10353b,1154s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,18n,63p,10353b,1154s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cm
 ex8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
@@ -2356,10 +2351,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
-Output written on Final_DEC_Slides.pdf (32 pages, 5313488 bytes).
+Output written on Final_DEC_Slides.pdf (32 pages, 5331483 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
+ 1121 PDF objects out of 1200 (max. 8388607)
+ 974 compressed objects within 10 object streams
  150 named destinations out of 1000 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 700 words of extra memory for PDF output out of 10000 (max. 10000000)
 
