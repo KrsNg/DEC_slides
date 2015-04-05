@@ -21,14 +21,14 @@
 \headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Basis}}\headcommand {\beamer@subsectionpages {6}{5}}
 \headcommand {\slideentry {2}{1}{1}{6/6}{Basis}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{AMR types}}\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\slideentry {2}{2}{1}{7/7}{AMR types}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Block based AMR}}\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {2}{2}{1}{7/7}{Block based AMR}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{8}{Block based AMR}}\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {2}{3}{1}{8/8}{Block based AMR}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{8}{AMR types}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{3}{1}{8/8}{AMR types}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{9}{Usage}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {2}{4}{1}{9/9}{Usage}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{9}{Characteristics}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {2}{4}{1}{9/9}{Characteristics}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\sectionentry {3}{FVM}{10}{High order FVM, CENO and LES}{0}}
 \headcommand {\beamer@sectionpages {6}{9}}
@@ -132,8 +132,14 @@
 \headcommand {\beamer@subsectionpages {31}{31}}
 \headcommand {\slideentry {14}{0}{4}{32/32}{}{1}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@partpages {31}{32}}
-\headcommand {\beamer@subsectionpages {32}{32}}
-\headcommand {\beamer@sectionpages {32}{32}}
-\headcommand {\beamer@documentpages {32}}
+\headcommand {\slideentry {14}{0}{5}{33/33}{}{1}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {14}{0}{6}{34/34}{}{1}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {14}{0}{7}{35/35}{}{1}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\beamer@partpages {31}{35}}
+\headcommand {\beamer@subsectionpages {32}{35}}
+\headcommand {\beamer@sectionpages {32}{35}}
+\headcommand {\beamer@documentpages {35}}
 \headcommand {\def \inserttotalframenumber {29}}

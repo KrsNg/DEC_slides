@@ -207,17 +207,13 @@
 Zone between flame-base and nozzle may have partial premixing.  }
 \begin{itemize}%[<+->]
 \tiny
-%\setlength\itemsep{-0.7mm}
-\item Fuel temp, air temp and pressure near std.
 \item Dimensions: nozzle diameter = 2.0 mm; co-flow air annulus diameter = 140 mm\\
 \item Exit fuel Reynolds number: $\num{10e3}$
-\item Air mass flow: 320 g/min 
-\item Mean fuel jet velocity: 44 m/s 
 \end{itemize}
 \end{column}
 \begin{column}{0.3\textwidth}
 \vspace{0pt}
-\includegraphics[height=1\textwidth]{./figs/dlrflame.png}
+\includegraphics[height=0.7\textwidth]{./figs/dlrflame.png}
 \end{column}
 \end{columns}
 \end{minipage}
@@ -226,7 +222,13 @@ Zone between flame-base and nozzle may have partial premixing.  }
 \scriptsize
 Turbulent combustion: practical reactive flows almost always involve turbulence.
 \newline \newline
-Simulation techniques: Large eddy simulation (LES): higher accuracy than Reynolds averaged Navier Stokes (RANS) $\rightarrow$ lower cost (time, resources) than direct numerical simulation (DNS).
+Simulation techniques: 
+\begin{enumerate}[(a)]
+\item DNS resolves all the scales 
+\item LES models sub-filter scales (SFS) while resolving larger scales 
+\item RANS models all turbulent scales 
+\end{enumerate}
+Large eddy simulation (LES): higher accuracy than Reynolds averaged Navier Stokes (RANS) $\rightarrow$ lower cost (time, resources) than direct numerical simulation (DNS).
 
 
 \end{frame}
@@ -237,53 +239,66 @@ Simulation techniques: Large eddy simulation (LES): higher accuracy than Reynold
 \begin{frame}%[allowframebreaks]
 \frametitle{Turbulent combustion - LES \& DNS comparison}
 \scriptsize
-\begin{enumerate}[(a)]
-\item DNS resolves all the scales 
-\item LES models sub-filter scales (SFS) while resolving larger scales 
-\item RANS models all turbulent scales 
-\item Comparison of DNS and LES by Yang, Pope and Chen [2013]\cite{Pope}: turbulent Ethylene jet flame in co-flow
+Comparison of DNS and LES by Yang, Pope and Chen [2013]\cite{Pope}: turbulent Ethylene jet flame in co-flow
 
 \vspace{-15pt}
 \begin{figure}
 \label{fig:DNSLES}
 \centering
 \subfloat[\tiny{temperature in $x$-$y$ plane: DNS (L), LES/PDF (R)} \label{fig:contourDNS}]
-{\includegraphics[width=0.7\textheight]{./figs/Temperatures.png}}
-\subfloat[\tiny{Mean temperature: DNS and LES} \label{fig:meanTemp}]
-{\includegraphics[width=0.6\textheight]{./figs/Temp_DNS_LES2.png}}
+{\includegraphics[width=0.9\textheight]{./figs/Temperatures.png}}
 \end{figure}
-\end{enumerate}
+
 \end{frame}
+
+%--------------------------------------------------------------------
 
 \begin{frame}%[allowframebreaks]
 \frametitle{Turbulent combustion - LES \& DNS comparison cont'd}
 Numerical setup of Yang, Pope and Chen [2013]:\newline
-\tiny{
-Boundary conditions (BCs) are inflow/outflow in $x$ and $y$, while periodic in $z$.\newline
-$H = 2$ mm is the jet width.}\newline
-Computational domain $=$ cuboid\newline
-Streamwise $x$-, transverse $y$-, and spanwise $z$-directions.
-\begin{itemize}
+\tiny{$H = 2$ mm is the jet width, computational domain $=$ cuboid}\newline
 \scriptsize
-\item DNS 
+DNS: 
 \begin{enumerate}[(1)]
 \scriptsize
 \item Grid points $ = 1.3 \times 10^9$.  
-\item Computational cost $\approx 14 \times 10^6$ CPU hours.
-\item $L_x \times L_y \times L_z = 15H \times 20H \times 3H$ 
+\item Computational cost $\approx 14 \times 10^6$ CPU hours. ($10^6$ hrs = $114$ years)
 \end{enumerate}
-\item LES
+LES:
 \begin{enumerate}[(1)]
 \scriptsize
 \item Grid points $ \approx 8.3 \times 10^3$.  
 \item Cost not specified - expected to be several orders of magnitude \textit{lower}.
-\item $ L_x \times L_y \times L_z = 15H \times 30H \times 3H$. \newline \tiny{(larger y moves the y-boundary away from central turbulent jet, avoiding the artifact of the Dirichlet boundary condition on entrainment near the jet.)}
 \end{enumerate}
-\end{itemize}
-\vspace{10pt}
-\scriptsize
-Mean temperature results show agreement between LES and DNS at $\frac{x}{H} = 6$. \newline LES values lower than DNS for $\frac{x}{H} = 12$.\newline
-Anticipate this to improve for increased LES mesh resolution.
+\vspace{0pt}
+
+\begin{minipage}[0.5\textheight]{\textwidth}
+\begin{columns}[T]
+\hspace{-10pt}
+\begin{column}{0.7\textwidth}
+\vspace{-20pt}
+\begin{figure}
+\centering
+\subfloat[\tiny{Mean temperature: DNS and LES} \label{fig:meanTemp}]
+{\includegraphics[width=0.7\textheight]{./figs/Temp_DNS_LES2.png}}
+\end{figure}
+
+
+\end{column}
+\hspace{-30pt}
+\begin{column}{0.5\textwidth}
+\vspace{20pt}
+\tiny
+Mean temperature results:
+\begin{enumerate}[(a)]
+\item agreement between LES and DNS at $x = 6H$. 
+\item LES values lower than DNS for $x = 12H$. 
+\item Anticipate improvement for increased LES mesh resolution.
+\end{enumerate}
+
+\end{column}
+\end{columns}
+\end{minipage}
 
 \end{frame}
 
@@ -298,7 +313,7 @@ Anticipate this to improve for increased LES mesh resolution.
 \begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-15pt}
 \begin{exampleblock}{Key characteristics of AMR}
-[Groth et al 1999, 2005, 2011, 2013, 2015]\newline [Berger et al 1984, 1986, 1989] \newline [Aftomis et al 1998, 2000, 2004]
+[Groth et al 1999, 2005, 2011, 2013, 2015]\newline [Berger et al 1984, 1986, 1989] \newline [Aftosmis et al 1998, 2000, 2004]
 \begin{itemize}
 \tiny
 \item localized refinement, large variation of scales, easily automatable
@@ -315,6 +330,37 @@ Anticipate this to improve for increased LES mesh resolution.
 \end{minipage}
 
 \end{frame}
+
+
+%---------------------------------------------------------------------------------
+\subsection{Block based AMR}
+\begin{frame}%[allowframebreaks]
+\frametitle{Benefits: anisotropic vs isotropic AMR}
+\tiny
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-15pt}
+\begin{exampleblock}{Key characteristics}
+\vspace{-20pt}
+\begin{figure}
+\label{fig:cubeAMRbased}
+\centering
+\subfloat[\tiny{With Anisotropic AMR. 5522 (8x8x8) blocks [Freret 2015]} \label{fig:cubeIso}]
+{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/shockCubeAniso3.jpg}}
+\subfloat[\tiny{With isotropic AMR. 7036 (8x8x8) blocks [Freret 2015]} \label{fig:cubeAniso}]
+{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/shockCubeIso3.jpg}}
+\end{figure}
+\vspace{-15pt}
+\begin{itemize}
+\tiny
+\item For the above shockcube cases, cell count ratio of anisotropic $:$ isotropic $\approx 0.72$ thus reflecting approximately $28 \%$ reduction in number of cells
+\item Williamschen [2013] previously obtained savings of up to $85 \%$ reduction in cell count for 3D meshes for inviscid flows
+\end{itemize}
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
+
 
 %---------------------------------------------------------------------------------------
 
@@ -358,49 +404,19 @@ Anticipate this to improve for increased LES mesh resolution.
 
 %---------------------------------------------------------------------------------------
 
-\subsection{Block based AMR}
+\subsection{Characteristics}
 \begin{frame}%[allowframebreaks]
 \frametitle{Block-based AMR}
 \tiny
 \begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-15pt}
 \begin{exampleblock}{Key characteristics}
-Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012] \newline
-Entire block gets refined, along with all its cells. This approach is much cheaper than individual cell refinement, having a lighter tree structure.
-\vspace{-20pt}
-\begin{figure}
-\label{fig:cubeAMRbased}
-\centering
-\subfloat[\tiny{With Anisotropic AMR. 5522 (8x8x8) blocks [Freret 2015]} \label{fig:cubeIso}]
-{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/shockCubeAniso3.jpg}}
-\subfloat[\tiny{With isotropic AMR. 7036 (8x8x8) blocks [Freret 2015]} \label{fig:cubeAniso}]
-{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/shockCubeIso3.jpg}}
-\end{figure}
-\vspace{-15pt}
+Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012, 2013] \newline
+
 \begin{itemize}
 \tiny
-\item For the above shockcube cases, cell ratio of isotropic $:$ anisotropic $\approx 0.78$ thus reflecting approximately $28 \%$ reduction in number of cells
-\item Williamschen [2013] previously obtained savings of up to $85 \%$ reduction in cell count for 3D meshes for inviscid flows
-\end{itemize}
-\end{exampleblock}
-\end{minipage}
-
-\end{frame}
-
-%---------------------------------------------------------------------------------------
-
-
-
-\subsection{Usage}
-\begin{frame}%[allowframebreaks]
-\frametitle{Implementation}
-\tiny
-\begin{minipage}[t][1\textheight]{1\textwidth}
-\vspace{-15pt}
-\begin{exampleblock}{Key characteristics}
-[Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012, 2013]:
-\begin{itemize}
-\tiny
+\item Entire block gets refined, along with all its cells. 
+\item This approach is much cheaper than individual cell refinement, having a lighter tree structure.
 \item How the block-based technique works; ghost cells for intercommunication 
 \item Parallelizable, low memory and storage requirements
 \item New non-uniform approach [Freret 2015]
@@ -432,39 +448,47 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \section[FVM]{High order FVM, CENO and LES}
 \subsection{High order FVM}
 \begin{frame}%[allowframebreaks]
-\frametitle{High order finite volume method}
+\frametitle{High order FVM and CENO}
 \begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-20pt}
-\begin{exampleblock}{Error reduction via p}
 \tiny
 \begin{block}{Integral Form of the Governing Equations}
+\vspace{-5pt}
      \[
       \frac{\mathrm{d}\overline{\mathbf{U}}}{\mathrm{d}t} = 
       - \frac{1}{V} \oiint_A \left( \vec{\mathcal{F}}^{\rm I} - 
       \vec{\mathcal{F}}^{\rm V} \right) \cdot \hat{n} \mathrm{d}\mathcal{A} + 
       \overline{\mathbf{S}}
      \] 
-    Using a two-dimensional Gauss quadrature integration rule:
+    \vspace{-5pt} 
+    Using a two-dimensional Gauss-Legendre quadrature integration rule:
     \[  \frac{\mathrm{d}\overline{\mathbf{U}}_{ijk}}{\mathrm{d}t} = -
        \frac{1}{{V}_{ijk}} \sum_{l=1}^{N_f}     
       \sum_{m=1}^{N_{GF}} \left( \omega \left(\vec{\mathcal{F}^{\mathrm{I}}} - 
       \vec{\mathcal{F}^{\mathrm{V}}} \right)\cdot \hat{n} {A} \right)_{ijk,l,m} 
       + \sum_{n=1}^{N_{GV}} \left( \omega_n {\mathbf{S}} \right)_{i,j,k,n}      
        = \overline{\mathbf{R}}_{ijk}  \left( \overline{\mathbf{U}} \right) \]
- 
+\vspace{-10pt} 
 \end{block}
-
-\begin{enumerate}[(a)]
+\vspace{-5pt}
+\begin{enumerate}[1.]
 \tiny
-\item High order methods  generally $ > 2^{nd}$ order accuracy, reduce numerical error between PDE governing equations and discretized formulations.
-\item Discretized scheme expressed in matrix-vector form: [Northrup 2013] GMRES solver.\item High $p$ $\rightarrow$ more the quadrature points ($ N_G $ with weights $ \omega $).
-\item (Gauss-Legendre) quadrature rules $\rightarrow$ reference elements $\rightarrow$ computational elements via mapping functions
-\item Evaluate the inviscid and viscous fluxes: apply weights to quadrature points
-\item Evaluate source vector, which adds effects of turbulence and chemistry in reacting flows
-\item Apply appropriate time-marching, e.g. RK4 suitable to high order methods.
-\item Other groups researching high order methods in LES: Ihme (Stanford) and Poinsot (CERFACS)
+\item High order: $ > 2^{nd}$ order. Error (Governing equations : discretized formulations) $\downarrow$, ($N_G, N_F \uparrow$, more $\omega$)
+\item Quadrature rules $\rightarrow$ reference elements $\rightarrow$ computational elements via mapping functions
 \end{enumerate}
-\end{exampleblock}
+\vspace{-26pt}
+\begin{figure}
+\label{fig:h_order_error}
+%\centering
+\hspace{-40pt}
+\subfloat[\tiny{Example of quadrature points on the cell faces} \label{fig:errorHO}]
+{\includegraphics[width=0.4\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/fig_quadpts.png}}
+\:
+\vspace{0pt}
+\subfloat[\tiny{L1 error norm, unsteady advection equation. N = total mesh count} \label{fig:errorHO}]
+{\includegraphics[width=0.55\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/error_ho_amr3.jpg}}
+\end{figure}
+
 \end{minipage}
 
 
@@ -475,30 +499,29 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \subsection{CENO}
 \begin{frame}
 \scriptsize
-\frametitle{Central essentially non-oscillatory (CENO) scheme implementation} 
+\frametitle{High order FVM and CENO cont'd} 
 
 \begin{minipage}[t][1\textheight]{1\textwidth}
-\vspace{-20pt}
-\begin{exampleblock}{Error reduction via p}
-\tiny
+\scriptsize
+
+\begin{enumerate}[1.]
+\setcounter{enumi}{2}
+\item Discretized scheme expressed in matrix-vector form.
+\item Evaluate the inviscid and viscous fluxes: apply weights to quadrature points
+\item Evaluate source vector, which adds effects of turbulence and chemistry in reacting flows
+\item Apply appropriate time-marching, e.g. RK4 suitable to high order methods.
+\item Other groups researching high order methods in LES: Ihme (Stanford) and Poinsot (CERFACS)
+\end{enumerate}
+
+\textbf{Central essentially non-oscillatory (CENO)} scheme implementation:\newline
 [Ivan and Groth 2011, 2012]
 \begin{itemize}
-\item Reconstruction: FVM technique is cell centered. We may at times need state values on faces (flux evaluations) or at quadrature points (high-order)
+\item Reconstruction: FVM technique is cell centered. May need state values on faces (flux evaluations), quadrature points (high-order)
 \item CENO uses fixed stencil for reconstruction
 \item CENO eliminates oscillations typical of shocks \& discontinuities
 \item smoothness indicators used to select between high order (p) or piecewise linear reconstruction
 \end{itemize}
 \vspace{-20pt}
-\tiny
-\begin{figure}
-\label{fig:h_order_error}
-\centering
-\subfloat[\tiny{Example of quadrature points on the cell faces} \label{fig:errorHO}]
-{\includegraphics[width=0.53\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/fig_quadpts.png}}
-\subfloat[\tiny{L1 error norm in the solution for an unsteady advection equation having a quantity distribution gaussian profile. N = total mesh count} \label{fig:errorHO}]
-{\includegraphics[width=0.6\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/error_ho_amr3.jpg}}
-\end{figure}
-\end{exampleblock}
 \end{minipage}
 
 \end{frame}
@@ -513,16 +536,17 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \begin{minipage}[t][1\textheight]{1\textwidth}
 [Piomelli 1999][Ghosal and Moin 1999]
 \begin{enumerate}[1.]
+\scriptsize
 \setlength\itemsep{0.3em}
 \item LES utilizes a spatial filtering of a given width, $\bar{\Delta} $. 
-\item Any scales smaller than  $\bar{\Delta} $  are modeled $\rightarrow$ sub-filter scales (SFS) [Smagorinsky 1963][Germano 1991][Piomelli 1991][Ghosal and Moin 1999][Lilly 1992]
+\item Any scales smaller than  $\bar{\Delta} $  are modeled $\rightarrow$ sub-filter scales (SFS) \newline {\tiny{[Smagorinsky 1963][Germano 1991][Piomelli 1991][Ghosal and Moin 1999][Lilly 1992]}}
 \item Scales larger than $\bar{\Delta}$ are fully resolved.
 \item Need appropriate balance for accuracy, $\rightarrow$ modeling error. 
 \item Types of filters broadly categorized into:\par
 \begin{enumerate}[(a)]
 \tiny
 \vspace{-2pt}
-\item {\scriptsize{\textit{Implicit filtering} [Aspden et al 2008]}}
+\item {\scriptsize{\textbf{\textit{Implicit filtering}} {\tiny{[Aspden et al 2008]}}}}
 \begin{itemize}
 
 \item Filter width not fixed: inherently related to grid resolution
@@ -530,7 +554,7 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 \end{itemize}
 
 \vspace{-2pt}
-\item {\scriptsize{\textit{Explicit filtering} [Vasilyev et al, 1998] [Deconinck, 2008]}}
+\item {\scriptsize{\textbf{\textit{Explicit filtering}} {\tiny{[Vasilyev et al, 1998] [Deconinck, 2008]}}}}
 \begin{itemize}
 
 \item Define $\bar{\Delta} $ to fixed for the entire mesh: easily comparable for different meshes
@@ -551,7 +575,7 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 
 \section[Error]{Overview of error in CFD}
 \begin{frame}%[allowframebreaks]
-\frametitle{Overview of error}
+\frametitle{Overview of error in CFD}
 \vspace{0pt}
 \begin{minipage}[t][1.1\textheight]{1\textwidth}
 \scriptsize
@@ -569,7 +593,7 @@ Entire block gets refined, along with all its cells. This approach is much cheap
 
 \subsection{Types of error in CFD}
 \begin{frame}%[allowframebreaks]
-\frametitle{Types of error}
+\frametitle{Types of error in CFD}
 \scriptsize
 We can broadly classify the two key sources of error in CFD as follows:
 
@@ -636,9 +660,9 @@ Where rates of change of (physical) solution variables are highest, mesh refinem
 \begin{enumerate}[(a)]
 \item Thus have enough cells to capture solution changes $\rightarrow$ represent them as \textit{smoothly} as possible.
 \item Re-iterate solution to establish new gradients. Changes are again made as necessary. 
-\item Error can be compared to a higher discretization (h or p) solution.
+\item Error can be compared to a higher $h$-refinement solution.
 \item This is the present utility in the anisotropic and isotropic AMR functionality of the CFFC code used by the CFD and Propulsion group.
-\item Main disadvantages of the gradient based approach it the lack of continual reduction of solution error with continued $h$ refinements - see next slide
+\item Main disadvantages of the gradient based approach it the lack of continual reduction of solution error with continued $h$-refinement - see next slide
 \end{enumerate}
 \end{frame}
 
@@ -806,11 +830,11 @@ A method to reduce discretization errors based on the mesh resolution.
 \begin{enumerate}[(a)]
 \scriptsize
 \item Consider 2 levels of mesh resolution: coarse (H) and fine (h). Calculate the state ($\mathbf{U}_H$) and functional ($\mathbf{J}_H(\mathbf{U}_H)$) on coarse space. Residual, $\mathbf{R}_H(\mathbf{U}_H) = 0$
-\item To evaluate functional on the fine space, $\mathbf{J}_h(\mathbf{U}_h)$ is expensive.Use prolongation operator ($\mathbf{U}_h^H = I_h^H \mathbf{U}_H$) to inject fine space state onto coarse space state.
+\item To evaluate functional on the fine space, $\mathbf{J}_h(\mathbf{U}_h)$ is expensive. Use prolongation operator ($\mathbf{U}_h^H = I_h^H \mathbf{U}_H$) to inject coarse space state onto fine space state.
 \item Output error, $\delta \mathbf{J} \equiv \mathbf{J}_H(\mathbf{U}_H) - \mathbf{J}_h(\mathbf{U}_h) \neq 0$
 \item Expect new residual, $\mathbf{R}_h(\mathbf{U}_h^H) \neq 0$ 
-\item Injected coarse state solves: $ \mathbf{R}_h(\mathbf{U}_h^\prime) - \mathbf{R}_h(\mathbf{U}_h^H) = 0 \rightarrow (\mathbf{U}_h^\prime) = (\mathbf{U}_h^H)$
-\item $ \delta \mathbf{J} \approx  \mathbf{J}_h(\mathbf{U}_h^H) - \mathbf{J}_h(U_h) = \mathbf{\Psi}_h^T \delta \mathbf{R}_h = -\mathbf{\Psi}_h^T \mathbf{R}_h(\mathbf{U}_h^H)   $, using the definition of the fine space adjoint, $\mathbf{\Psi}_h$
+%\item Injected coarse state solves: $ \mathbf{R}_h(\mathbf{U}_h^\prime) - \mathbf{R}_h(\mathbf{U}_h^H) = 0 \rightarrow (\mathbf{U}_h^\prime) = (\mathbf{U}_h^H)$
+\item Using the definition of the fine space adjoint, the error estimate = $ \delta \mathbf{J} \approx  \mathbf{J}_h(\mathbf{U}_h^H) - \mathbf{J}_h(U_h) = \mathbf{\Psi}_h^T \delta \mathbf{R}_h = -\mathbf{\Psi}_h^T \mathbf{R}_h(\mathbf{U}_h^H)   $
 \item Error estimate is the value of $\delta \mathbf{J}$, and does not need evaluation of $U_h$, primal solution on the fine space. Can use this error estimate as a flag for refinement, given some threshold value
 %\item Steady vs unsteady adjoints: for unsteady, march forward in time, evaluating $\psi$, then march backwards in time. Now have all the sensitivities. Use this to refine the mesh at those time levels. Check set tolerance and repeat until convergence.
 \end{enumerate}
@@ -1144,10 +1168,136 @@ CFFC = Computational Framework for Fluids and Combustion
 
 
 
+\begin{frame}%[allowframebreaks]
+\frametitle{Turbulent combustion - LES \& DNS comparison cont'd}
+Numerical setup of Yang, Pope and Chen [2013]:\newline
+\tiny{
+Boundary conditions (BCs) are inflow/outflow in $x$ and $y$, while periodic in $z$.\newline
+$H = 2$ mm is the jet width.}\newline
+Computational domain $=$ cuboid\newline
+Streamwise $x$-, transverse $y$-, and spanwise $z$-directions.
+\begin{itemize}
+\scriptsize
+\item DNS 
+\begin{enumerate}[(1)]
+\scriptsize
+\item Grid points $ = 1.3 \times 10^9$.  
+\item Computational cost $\approx 14 \times 10^6$ CPU hours.
+\item $L_x \times L_y \times L_z = 15H \times 20H \times 3H$ 
+\end{enumerate}
+\item LES
+\begin{enumerate}[(1)]
+\scriptsize
+\item Grid points $ \approx 8.3 \times 10^3$.  
+\item Cost not specified - expected to be several orders of magnitude \textit{lower}.
+\item $ L_x \times L_y \times L_z = 15H \times 30H \times 3H$. \newline \tiny{(larger y moves the y-boundary away from central turbulent jet, avoiding the artifact of the Dirichlet boundary condition on entrainment near the jet.)}
+\end{enumerate}
+\end{itemize}
+\vspace{10pt}
+\scriptsize
+Mean temperature results show agreement between LES and DNS at $\frac{x}{H} = 6$. \newline LES values lower than DNS for $\frac{x}{H} = 12$.\newline
+Anticipate this to improve for increased LES mesh resolution.
+
+\end{frame}
+
+
+\begin{frame}%[allowframebreaks]
+\frametitle{Turbulent combustion - Example flame}
+\scriptsize
+[K{\"o}hler 2006] \cite{Kohler, AdelaideISF}
+\begin{minipage}[0.5\textheight]{\textwidth}
+\begin{columns}[T]
+\begin{column}{0.65\textwidth}
+\vspace{10pt}
+
+\tiny{Lifted turbulent Ethylene ($C_2H_4$) jet flame issuing into a concentric co-flow of air.
+Zone between flame-base and nozzle may have partial premixing.  }
+\begin{itemize}%[<+->]
+\tiny
+%\setlength\itemsep{-0.7mm}
+\item Fuel temp, air temp and pressure near std.
+\item Dimensions: nozzle diameter = 2.0 mm; co-flow air annulus diameter = 140 mm\\
+\item Exit fuel Reynolds number: $\num{10e3}$
+\item Air mass flow: 320 g/min 
+\item Mean fuel jet velocity: 44 m/s 
+\end{itemize}
+\end{column}
+\begin{column}{0.3\textwidth}
+\vspace{0pt}
+\includegraphics[height=1\textwidth]{./figs/dlrflame.png}
+\end{column}
+\end{columns}
+\end{minipage}
+
+\vspace{10pt}
+\scriptsize
+Turbulent combustion: practical reactive flows almost always involve turbulence.
+\newline \newline
+Simulation techniques: 
+\begin{enumerate}[(a)]
+\item DNS resolves all the scales 
+\item LES models sub-filter scales (SFS) while resolving larger scales 
+\item RANS models all turbulent scales 
+\end{enumerate}
+Large eddy simulation (LES): higher accuracy than Reynolds averaged Navier Stokes (RANS) $\rightarrow$ lower cost (time, resources) than direct numerical simulation (DNS).
+
+
+\end{frame}
+
+
+
+\begin{frame}%[allowframebreaks]
+\frametitle{High order finite volume method}
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-20pt}
+\begin{exampleblock}{Error reduction via p}
+\tiny
+\begin{block}{Integral Form of the Governing Equations}
+     \[
+      \frac{\mathrm{d}\overline{\mathbf{U}}}{\mathrm{d}t} = 
+      - \frac{1}{V} \oiint_A \left( \vec{\mathcal{F}}^{\rm I} - 
+      \vec{\mathcal{F}}^{\rm V} \right) \cdot \hat{n} \mathrm{d}\mathcal{A} + 
+      \overline{\mathbf{S}}
+     \] 
+    Using a two-dimensional Gauss quadrature integration rule:
+    \[  \frac{\mathrm{d}\overline{\mathbf{U}}_{ijk}}{\mathrm{d}t} = -
+       \frac{1}{{V}_{ijk}} \sum_{l=1}^{N_f}     
+      \sum_{m=1}^{N_{GF}} \left( \omega \left(\vec{\mathcal{F}^{\mathrm{I}}} - 
+      \vec{\mathcal{F}^{\mathrm{V}}} \right)\cdot \hat{n} {A} \right)_{ijk,l,m} 
+      + \sum_{n=1}^{N_{GV}} \left( \omega_n {\mathbf{S}} \right)_{i,j,k,n}      
+       = \overline{\mathbf{R}}_{ijk}  \left( \overline{\mathbf{U}} \right) \]
+ 
+\end{block}
+
+\begin{enumerate}[(a)]
+\tiny
+\item High order methods  generally $ > 2^{nd}$ order accuracy, reduce numerical error between PDE governing equations and discretized formulations.
+\item Discretized scheme expressed in matrix-vector form: [Northrup 2013] GMRES solver.\item High $p$ $\rightarrow$ more the quadrature points ($ N_G $ with weights $ \omega $).
+\item (Gauss-Legendre) quadrature rules $\rightarrow$ reference elements $\rightarrow$ computational elements via mapping functions
+\item Evaluate the inviscid and viscous fluxes: apply weights to quadrature points
+\item Evaluate source vector, which adds effects of turbulence and chemistry in reacting flows
+\item Apply appropriate time-marching, e.g. RK4 suitable to high order methods.
+\item Other groups researching high order methods in LES: Ihme (Stanford) and Poinsot (CERFACS)
+\end{enumerate}
+\end{exampleblock}
+\end{minipage}
+
+
+\end{frame}
+
+%==========================================================================
+
+
+
+
 
 %==========================================================================
 
 \setcounter{framenumber}{\value{finalframe}}
+
+
+
+
 \end{document}
 
 
