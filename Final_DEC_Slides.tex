@@ -115,7 +115,7 @@
 
 %%========================================================================
 
-\title[]{Development of $h$-$p$ Adjoint-based error estimation for LES of reactive flows }
+\title[]{Development of $h$-$p$ adjoint-based error estimation for LES of reactive flows }
 \author[]{{Christopher Ngigi \texorpdfstring{\\ \tiny{Ph.D. Candidate} \\} \footnotesize Supervisor: Prof. C. P. T. Groth}}
 \titlegraphic{\includegraphics[width=0.15\textheight]{./figs/utias_logo_blue.jpg}}
 \institute[]{Doctoral Examination Committee \\ Meeting I \\ University of Toronto, Institute for Aerospace Studies}
@@ -267,7 +267,7 @@ DNS:
 LES:
 \begin{enumerate}[(1)]
 \scriptsize
-\item Grid points $ \approx 8.3 \times 10^3$.  
+\item Grid points $ \approx 83 \times 10^3$.  
 \item Cost not specified - expected to be several orders of magnitude \textit{lower}.
 \end{enumerate}
 \vspace{0pt}
@@ -302,18 +302,129 @@ Mean temperature results:
 
 \end{frame}
 
+
+\section[Error]{Overview of error in CFD}
+\begin{frame}%[allowframebreaks]
+\frametitle{Overview of error in CFD}
+\vspace{0pt}
+\begin{minipage}[t][1.1\textheight]{1\textwidth}
+\scriptsize
+\vspace{-20pt}
+\begin{exampleblock}{Likely sources of error}
+\vspace{-20pt}
+\begin{figure}[h!]
+\subfloat[\tiny{Some sources of error [Fidkowski 2012]}\label{fig:Fidk}]
+{\includegraphics[height=0.64\textwidth]{./figs/Error.png}}
+\end{figure}
+\end{exampleblock}
+\end{minipage}
+\end{frame}
+
+
+\subsection{Types of error in CFD}
+\begin{frame}%[allowframebreaks]
+\frametitle{Types of error in CFD}
+\scriptsize
+We can broadly classify the two key sources of error in CFD as follows:
+
+\begin{enumerate}[1.]
+\item Numerical error:
+	\begin{enumerate}[(a)]
+	\scriptsize
+	\item Solution error - between exact value and the CFD-obtained value
+	\item Truncation error - actual governing equations PDEs and the discretized form of the numerical scheme
+	\item Convergence error - nature of the iterative technique used
+	\end{enumerate}
+\item Modeling error:
+	\begin{enumerate}[(a)]
+	\scriptsize
+	\item Sub-filter scale turbulence model: inappropriate model selected
+	\item Combustion and chemistry model
+	\item Aliasing errors - decomposed nonlinear terms in FANS = feedback of frequencies beyond filter bandwidth, = 'fake' stresses 
+	\item Commutation errors - exist between filtering and differential operations 
+	\end{enumerate}
+\end{enumerate}
+
+\end{frame}
+
+
+
+\subsection{Techniques for controlling numerical error}
+\begin{frame}%[allowframebreaks]
+\frametitle{Techniques for controlling numerical error}
+\scriptsize
+We can control numerical error in CFD using a combination of:
+
+\begin{enumerate}[1.]
+\item Mesh refinement
+	
+\item High-order discretizations (space and time)
+	
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
 %==========================================================================
 
 \section[AMR]{Adaptive mesh refinement}
 
+\subsection[AMR types]{Common AMR strategies}
+\begin{frame}%[allowframebreaks]
+\frametitle{Common adaptive mesh refinement (AMR) strategies}
+\tiny
+\begin{minipage}[t][1\textheight]{1\textwidth}
+\vspace{-15pt}
+\begin{exampleblock}{Key characteristics}
+[Northrup 2013]
+\vspace{-20pt}
+\begin{figure} \label{fig:AMRtypes}
+\centering
+\subfloat[\tiny{flagged cells} \label{fig:flag}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/flagged_cells.jpg}}
+\subfloat[\tiny{Cell-based refinement} \label{fig:cell-b}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/cell-based-refine.jpg}}
+\subfloat[\tiny{Patch-based refinement} \label{fig:patch-b}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/patch-based_refine.jpg}}
+\subfloat[\tiny{Block-based refinement} \label{fig:block-b}]
+{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/block-based.jpg}}
+\end{figure}
+
+\vspace{5pt}
+\begin{itemize}
+\tiny
+\item Cell based: [Powell et al, 1993] [Berger and Leveque, 1989] [Aftosmis et al, 1998] \newline Cells refined individually, hierarchy stored in a (very dense) tree
+
+\item Patch based: [Berger and Collela, 1989] \newline Cells are organized into collections of rectangular patches
+
+\item Block based:  [Groth and co-workers, 1999, 2005, 2011, 2013, 2015] [Berger, 1994 ] \newline Entire blocks get refined, much lighter tree structure, efficient domain decomposition
+\end{itemize}
+\end{exampleblock}
+\end{minipage}
+
+\end{frame}
+
+
+
+
+
+
 \subsection{Basis}
 \begin{frame}%[allowframebreaks]
-\frametitle{Adaptive mesh refinement (AMR)}
+\frametitle{AMR: isotropic and anisotropic}
 \tiny
 \begin{minipage}[t][1\textheight]{1\textwidth}
 \vspace{-15pt}
 \begin{exampleblock}{Key characteristics of AMR}
-[Groth et al 1999, 2005, 2011, 2013, 2015]\newline [Berger et al 1984, 1986, 1989] \newline [Aftosmis et al 1998, 2000, 2004]
+[Groth et al 1999, 2005, 2011, 2013, 2015]
 \begin{itemize}
 \tiny
 \item localized refinement, large variation of scales, easily automatable
@@ -363,41 +474,6 @@ Mean temperature results:
 
 
 %---------------------------------------------------------------------------------------
-
-\subsection[AMR types]{Common AMR strategies}
-\begin{frame}%[allowframebreaks]
-\frametitle{Common AMR strategies}
-\tiny
-\begin{minipage}[t][1\textheight]{1\textwidth}
-\vspace{-15pt}
-\begin{exampleblock}{Key characteristics}
-[Northrup 2013]
-\vspace{-20pt}
-\begin{figure} \label{fig:AMRtypes}
-\centering
-\subfloat[\tiny{flagged cells} \label{fig:flag}]
-{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0cm 0cm,clip=true]{./figs/flagged_cells.jpg}}
-\subfloat[\tiny{Cell-based refinement} \label{fig:cell-b}]
-{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/cell-based-refine.jpg}}
-\subfloat[\tiny{Patch-based refinement} \label{fig:patch-b}]
-{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/patch-based_refine.jpg}}
-\subfloat[\tiny{Block-based refinement} \label{fig:block-b}]
-{\includegraphics[width=0.339\textheight, trim=0cm 0cm 0 0cm,clip=true]{./figs/block-based.jpg}}
-\end{figure}
-
-\vspace{5pt}
-\begin{itemize}
-\tiny
-\item Cell based: [Powell et al, 1993] [Berger and Leveque, 1989] [Aftosmis et al, 1998] \newline Cells refined individually, hierarchy stored in a (very dense) tree
-
-\item Patch based: [Berger and Collela, 1989] \newline Cells are organized into collections of rectangular patches
-
-\item Block based:  [Groth and co-workers, 1999, 2005, 2011, 2013, 2015] [Berger, 1994 ] \newline Entire blocks get refined, much lighter tree structure, efficient domain decomposition
-\end{itemize}
-\end{exampleblock}
-\end{minipage}
-
-\end{frame}
 
 
 
@@ -573,51 +649,6 @@ Block-based AMR: [Groth and co-workers 1999, 2005, 2006, 2010, 2011, 2012, 2013]
 %==========================================================================
 
 
-\section[Error]{Overview of error in CFD}
-\begin{frame}%[allowframebreaks]
-\frametitle{Overview of error in CFD}
-\vspace{0pt}
-\begin{minipage}[t][1.1\textheight]{1\textwidth}
-\scriptsize
-\vspace{-20pt}
-\begin{exampleblock}{Likely sources of error}
-\vspace{-20pt}
-\begin{figure}[h!]
-\subfloat[\tiny{Some sources of error [Fidkowski 2012]}\label{fig:Fidk}]
-{\includegraphics[height=0.64\textwidth]{./figs/Error.png}}
-\end{figure}
-\end{exampleblock}
-\end{minipage}
-\end{frame}
-
-
-\subsection{Types of error in CFD}
-\begin{frame}%[allowframebreaks]
-\frametitle{Types of error in CFD}
-\scriptsize
-We can broadly classify the two key sources of error in CFD as follows:
-
-\begin{enumerate}[1.]
-\item Numerical error:
-	\begin{enumerate}[(a)]
-	\scriptsize
-	\item Solution error - between exact value and the CFD-obtained value
-	\item Truncation error - actual governing equations PDEs and the discretized form of the numerical scheme
-	\item Convergence error - nature of the iterative technique used
-	\end{enumerate}
-\item Modeling error:
-	\begin{enumerate}[(a)]
-	\scriptsize
-	\item Sub-filter scale turbulence model: inappropriate model selected
-	\item Combustion and chemistry model
-	\item Aliasing errors - decomposed nonlinear terms in FANS = feedback of frequencies beyond filter bandwidth, = 'fake' stresses 
-	\item Commutation errors - exist between filtering and differential operations 
-	\end{enumerate}
-\end{enumerate}
-
-\end{frame}
-
-
 
 
 
@@ -662,7 +693,7 @@ Where rates of change of (physical) solution variables are highest, mesh refinem
 \item Re-iterate solution to establish new gradients. Changes are again made as necessary. 
 \item Error can be compared to a higher $h$-refinement solution.
 \item This is the present utility in the anisotropic and isotropic AMR functionality of the CFFC code used by the CFD and Propulsion group.
-\item Main disadvantages of the gradient based approach it the lack of continual reduction of solution error with continued $h$-refinement - see next slide
+\item Main disadvantages of the gradient based approach is the lack of continual reduction of solution error with continued $h$-refinement - see next slide
 \end{enumerate}
 \end{frame}
 
@@ -770,8 +801,6 @@ Two main formulations
    \item Now the non-uniform vs the uniform block modification [Freret 2015]
    \end{itemize}
    
-\item Solution method: [Northrup 2013] implemented an implicit time marching GMRES method that improves the capability of the CFFC code   
-   
 \item Develop a framework for the adjoint based error estimation with $h$-$p$ AMR and CENO
 \end{enumerate}
 \end{frame}
@@ -805,9 +834,9 @@ Methods to evaluate the matrix $\frac{\partial{\mathbf{R}}}{\partial{\mathbf{U}}
 \vspace{2pt}
 \begin{enumerate}[1.]
 \tiny
+\item Differentiation by hand  - using the inbuilt functions within CFFC code [Northrup, 2013]
 \item Finite differencing - perturbing the state U to evaluate R 
 \item Automated differentiation - tools that evaluate the differential [Bischof et al: 1992, 1996, 2008]
-\item Approximate method  - using the inbuilt functions within CFFC code [Northrup, 2013]
 \item Complex step [Martins, Alonso and Sturdza: 2003]
 \end{enumerate}
 \end{minipage}

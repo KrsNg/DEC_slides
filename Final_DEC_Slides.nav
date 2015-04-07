@@ -15,131 +15,134 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{3}{2}{5/5}{simulation}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\sectionentry {2}{AMR}{6}{Adaptive mesh refinement}{0}}
+\headcommand {\sectionentry {2}{Error}{6}{Overview of error in CFD}{0}}
 \headcommand {\beamer@sectionpages {2}{5}}
 \headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Basis}}\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\slideentry {2}{1}{1}{6/6}{Basis}{0}}
+\headcommand {\slideentry {2}{0}{3}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Block based AMR}}\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\slideentry {2}{2}{1}{7/7}{Block based AMR}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Types of error in CFD}}\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {2}{1}{1}{7/7}{Types of error in CFD}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{8}{AMR types}}\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {2}{3}{1}{8/8}{AMR types}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{Techniques for controlling numerical error}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{2}{1}{8/8}{Techniques for controlling numerical error}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{9}{Characteristics}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {2}{4}{1}{9/9}{Characteristics}{0}}
+\headcommand {\sectionentry {3}{AMR}{9}{Adaptive mesh refinement}{0}}
+\headcommand {\beamer@sectionpages {6}{8}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{AMR types}}\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{AMR types}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {3}{FVM}{10}{High order FVM, CENO and LES}{0}}
-\headcommand {\beamer@sectionpages {6}{9}}
-\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{High order FVM}}\headcommand {\beamer@subsectionpages {10}{9}}
-\headcommand {\slideentry {3}{1}{1}{10/10}{High order FVM}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{10}{Basis}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {3}{2}{1}{10/10}{Basis}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{CENO}}\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {3}{2}{1}{11/11}{CENO}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{11}{Block based AMR}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {3}{3}{1}{11/11}{Block based AMR}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\sectionentry {4}{LES}{12}{LES}{0}}
-\headcommand {\beamer@sectionpages {10}{11}}
-\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\slideentry {4}{0}{2}{12/12}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{12}{Characteristics}}\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {3}{4}{1}{12/12}{Characteristics}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\sectionentry {5}{Error}{13}{Overview of error in CFD}{0}}
-\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\sectionentry {4}{FVM}{13}{High order FVM, CENO and LES}{0}}
+\headcommand {\beamer@sectionpages {9}{12}}
 \headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\slideentry {5}{0}{3}{13/13}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{13}{High order FVM}}\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\slideentry {4}{1}{1}{13/13}{High order FVM}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{14}{Types of error in CFD}}\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\slideentry {5}{1}{1}{14/14}{Types of error in CFD}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{14}{CENO}}\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\slideentry {4}{2}{1}{14/14}{CENO}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {6}{Error estimates}{15}{Error estimation}{0}}
+\headcommand {\sectionentry {5}{LES}{15}{LES}{0}}
 \headcommand {\beamer@sectionpages {13}{14}}
 \headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{15}{Foundation}}\headcommand {\beamer@subsectionpages {15}{14}}
-\headcommand {\slideentry {6}{1}{1}{15/15}{Foundation}{0}}
+\headcommand {\slideentry {5}{0}{2}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{6}{2}{16}{Gradient}}\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\slideentry {6}{2}{1}{16/16}{Gradient}{0}}
+\headcommand {\sectionentry {6}{Error estimates}{16}{Error estimation}{0}}
+\headcommand {\beamer@sectionpages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{16}{Foundation}}\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\slideentry {6}{1}{1}{16/16}{Foundation}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{6}{3}{17}{example}}\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\slideentry {6}{3}{1}{17/17}{example}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{17}{Gradient}}\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\slideentry {6}{2}{1}{17/17}{Gradient}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@subsectionentry {0}{6}{4}{18}{Adjoint}}\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\slideentry {6}{4}{1}{18/18}{Adjoint}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{18}{example}}\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {6}{3}{1}{18/18}{example}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionentry {0}{6}{5}{19}{Adjoint formulation}}\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\slideentry {6}{5}{1}{19/19}{Adjoint formulation}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{4}{19}{Adjoint}}\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {6}{4}{1}{19/19}{Adjoint}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\sectionentry {7}{Methodology}{20}{Methodology}{0}}
-\headcommand {\beamer@sectionpages {15}{19}}
-\headcommand {\beamer@subsectionpages {19}{19}}
-\headcommand {\slideentry {7}{0}{2}{20/20}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{5}{20}{Adjoint formulation}}\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\slideentry {6}{5}{1}{20/20}{Adjoint formulation}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\sectionentry {8}{Discrete adjoint}{21}{Discrete adjoint}{0}}
-\headcommand {\beamer@sectionpages {20}{20}}
+\headcommand {\sectionentry {7}{Methodology}{21}{Methodology}{0}}
+\headcommand {\beamer@sectionpages {16}{20}}
 \headcommand {\beamer@subsectionpages {20}{20}}
-\headcommand {\slideentry {8}{0}{3}{21/21}{}{0}}
+\headcommand {\slideentry {7}{0}{2}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\sectionentry {9}{$\Psi $ with h}{22}{Basis of refinement: h and p}{0}}
+\headcommand {\sectionentry {8}{Discrete adjoint}{22}{Discrete adjoint}{0}}
 \headcommand {\beamer@sectionpages {21}{21}}
 \headcommand {\beamer@subsectionpages {21}{21}}
-\headcommand {\beamer@subsectionentry {0}{9}{1}{22}{Estimation}}\headcommand {\beamer@subsectionpages {22}{21}}
-\headcommand {\slideentry {9}{1}{1}{22/22}{Estimation}{0}}
+\headcommand {\slideentry {8}{0}{3}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionentry {0}{9}{2}{23}{Other groups}}\headcommand {\beamer@subsectionpages {22}{22}}
-\headcommand {\slideentry {9}{2}{1}{23/23}{Other groups}{0}}
+\headcommand {\sectionentry {9}{$\Psi $ with h}{23}{Basis of refinement: h and p}{0}}
+\headcommand {\beamer@sectionpages {22}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\beamer@subsectionentry {0}{9}{1}{23}{Estimation}}\headcommand {\beamer@subsectionpages {23}{22}}
+\headcommand {\slideentry {9}{1}{1}{23/23}{Estimation}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\sectionentry {10}{Usage}{24}{Usage}{0}}
-\headcommand {\beamer@sectionpages {22}{23}}
-\headcommand {\beamer@subsectionpages {23}{23}}
-\headcommand {\slideentry {10}{0}{2}{24/24}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{9}{2}{24}{Other groups}}\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\slideentry {9}{2}{1}{24/24}{Other groups}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\sectionentry {11}{Progress}{25}{Progress to date}{0}}
-\headcommand {\beamer@sectionpages {24}{24}}
+\headcommand {\sectionentry {10}{Usage}{25}{Usage}{0}}
+\headcommand {\beamer@sectionpages {23}{24}}
 \headcommand {\beamer@subsectionpages {24}{24}}
-\headcommand {\beamer@subsectionentry {0}{11}{1}{25}{Poisson}}\headcommand {\beamer@subsectionpages {25}{24}}
-\headcommand {\slideentry {11}{1}{1}{25/25}{Poisson}{0}}
+\headcommand {\slideentry {10}{0}{2}{25/25}{}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\beamer@subsectionentry {0}{11}{2}{26}{LES flame}}\headcommand {\beamer@subsectionpages {25}{25}}
-\headcommand {\slideentry {11}{2}{1}{26/26}{LES flame}{0}}
+\headcommand {\sectionentry {11}{Progress}{26}{Progress to date}{0}}
+\headcommand {\beamer@sectionpages {25}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\beamer@subsectionentry {0}{11}{1}{26}{Poisson}}\headcommand {\beamer@subsectionpages {26}{25}}
+\headcommand {\slideentry {11}{1}{1}{26/26}{Poisson}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\beamer@subsectionentry {0}{11}{3}{27}{Adjoint runs}}\headcommand {\beamer@subsectionpages {26}{26}}
-\headcommand {\slideentry {11}{3}{1}{27/27}{Adjoint runs}{0}}
+\headcommand {\beamer@subsectionentry {0}{11}{2}{27}{LES flame}}\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\slideentry {11}{2}{1}{27/27}{LES flame}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\sectionentry {12}{Timeline}{28}{Timeline}{0}}
-\headcommand {\beamer@sectionpages {25}{27}}
-\headcommand {\beamer@subsectionpages {27}{27}}
-\headcommand {\beamer@subsectionentry {0}{12}{1}{28}{Present}}\headcommand {\beamer@subsectionpages {28}{27}}
-\headcommand {\slideentry {12}{1}{1}{28/28}{Present}{0}}
+\headcommand {\beamer@subsectionentry {0}{11}{3}{28}{Adjoint runs}}\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\slideentry {11}{3}{1}{28/28}{Adjoint runs}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@subsectionentry {0}{12}{2}{29}{Future}}\headcommand {\beamer@subsectionpages {28}{28}}
-\headcommand {\slideentry {12}{2}{1}{29/29}{Future}{0}}
+\headcommand {\sectionentry {12}{Timeline}{29}{Timeline}{0}}
+\headcommand {\beamer@sectionpages {26}{28}}
+\headcommand {\beamer@subsectionpages {28}{28}}
+\headcommand {\beamer@subsectionentry {0}{12}{1}{29}{Present}}\headcommand {\beamer@subsectionpages {29}{28}}
+\headcommand {\slideentry {12}{1}{1}{29/29}{Present}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {12}{2}{2}{30/30}{Future}{0}}
+\headcommand {\beamer@subsectionentry {0}{12}{2}{30}{Future}}\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\slideentry {12}{2}{1}{30/30}{Future}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{30}}
-\headcommand {\beamer@sectionpages {28}{30}}
-\headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\beamer@appendixpages {31}}
-\headcommand {\sectionentry {13}{References}{31}{References}{1}}
-\headcommand {\beamer@sectionpages {31}{30}}
-\headcommand {\beamer@subsectionpages {31}{30}}
-\headcommand {\slideentry {13}{0}{3}{31/31}{}{1}}
+\headcommand {\slideentry {12}{2}{2}{31/31}{Future}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\sectionentry {14}{Backup}{32}{Backup}{1}}
-\headcommand {\beamer@sectionpages {31}{31}}
-\headcommand {\beamer@subsectionpages {31}{31}}
-\headcommand {\slideentry {14}{0}{4}{32/32}{}{1}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{31}}
+\headcommand {\beamer@sectionpages {29}{31}}
+\headcommand {\beamer@subsectionpages {30}{31}}
+\headcommand {\beamer@appendixpages {32}}
+\headcommand {\sectionentry {13}{References}{32}{References}{1}}
+\headcommand {\beamer@sectionpages {32}{31}}
+\headcommand {\beamer@subsectionpages {32}{31}}
+\headcommand {\slideentry {13}{0}{3}{32/32}{}{1}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {14}{0}{5}{33/33}{}{1}}
+\headcommand {\sectionentry {14}{Backup}{33}{Backup}{1}}
+\headcommand {\beamer@sectionpages {32}{32}}
+\headcommand {\beamer@subsectionpages {32}{32}}
+\headcommand {\slideentry {14}{0}{4}{33/33}{}{1}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {14}{0}{6}{34/34}{}{1}}
+\headcommand {\slideentry {14}{0}{5}{34/34}{}{1}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {14}{0}{7}{35/35}{}{1}}
+\headcommand {\slideentry {14}{0}{6}{35/35}{}{1}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@partpages {31}{35}}
-\headcommand {\beamer@subsectionpages {32}{35}}
-\headcommand {\beamer@sectionpages {32}{35}}
-\headcommand {\beamer@documentpages {35}}
-\headcommand {\def \inserttotalframenumber {29}}
+\headcommand {\slideentry {14}{0}{7}{36/36}{}{1}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@partpages {32}{36}}
+\headcommand {\beamer@subsectionpages {33}{36}}
+\headcommand {\beamer@sectionpages {33}{36}}
+\headcommand {\beamer@documentpages {36}}
+\headcommand {\def \inserttotalframenumber {30}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  5 APR 2015 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.10)  6 APR 2015 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1457,7 +1457,7 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 \c__siunitx_mathtt_int=\count304
- <./figs/utias_logo_blue.jpg, id=168, 651.8754pt x 826.7688pt>
+ <./figs/utias_logo_blue.jpg, id=172, 651.8754pt x 826.7688pt>
 File: ./figs/utias_logo_blue.jpg Graphic file (type jpg)
 
 <use ./figs/utias_logo_blue.jpg>
@@ -1467,14 +1467,14 @@ Package pdftex.def Info: ./figs/utias_logo_blue.jpg used on input line 135.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figs/
 utias_logo_blue.jpg>]
-<./figs/MooresLaw.png, id=179, 1218.5525pt x 818.05624pt>
+<./figs/MooresLaw.png, id=183, 1218.5525pt x 818.05624pt>
 File: ./figs/MooresLaw.png Graphic file (type png)
 
 <use ./figs/MooresLaw.png>
 Package pdftex.def Info: ./figs/MooresLaw.png used on input line 192.
 (pdftex.def)             Requested size: 189.00383pt x 116.29527pt.
 
-<./figs/utias-logo2.jpg, id=183, 441.43297pt x 552.1428pt>
+<./figs/utias-logo2.jpg, id=187, 441.43297pt x 552.1428pt>
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 
 <use ./figs/utias-logo2.jpg>
@@ -1502,7 +1502,7 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 234.
 
-<./figs/dlrflame.png, id=227, 110.4125pt x 281.05pt>
+<./figs/dlrflame.png, id=231, 110.4125pt x 281.05pt>
 File: ./figs/dlrflame.png Graphic file (type png)
  <use ./figs/dlrflame.png>
 Package pdftex.def Info: ./figs/dlrflame.png used on input line 234.
@@ -1520,7 +1520,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [3
 
  <./figs/dlrflame.png>]
-<./figs/Temperatures.png, id=254, 488.82625pt x 377.41pt>
+<./figs/Temperatures.png, id=258, 488.82625pt x 377.41pt>
 File: ./figs/Temperatures.png Graphic file (type png)
 
 <use ./figs/Temperatures.png>
@@ -1544,7 +1544,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [4
 
  <./figs/Temperatures.png>]
-<./figs/Temp_DNS_LES2.png, id=278, 492.84125pt x 400.49625pt>
+<./figs/Temp_DNS_LES2.png, id=282, 492.84125pt x 400.49625pt>
 File: ./figs/Temp_DNS_LES2.png Graphic file (type png)
 
 <use ./figs/Temp_DNS_LES2.png>
@@ -1566,23 +1566,22 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [5
 
  <./figs/Temp_DNS_LES2.png>]
-<./figs/BlockDivision.jpg, id=306, 1061.9675pt x 737.75626pt>
-File: ./figs/BlockDivision.jpg Graphic file (type jpg)
+<./figs/Error.png, id=310, 1059.96pt x 797.98125pt>
+File: ./figs/Error.png Graphic file (type png)
+ <use ./figs/Error.png>
+Package pdftex.def Info: ./figs/Error.png used on input line 321.
+(pdftex.def)             Requested size: 247.16597pt x 186.0751pt.
 
-<use ./figs/BlockDivision.jpg>
-Package pdftex.def Info: ./figs/BlockDivision.jpg used on input line 332.
-(pdftex.def)             Requested size: 204.70534pt x 142.20145pt.
-
-Overfull \hbox (3.99997pt too wide) in paragraph at lines 332--332
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 321--321
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 332.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 321.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (9.7375pt too high) detected at line 332
+Overfull \vbox (37.88681pt too high) detected at line 321
  []
 
 
@@ -1592,38 +1591,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [6
 
- <./figs/BlockDivision.jpg>]pdfTeX warning (ext4): destination with the same id
-entifier (name{fig:cubeAMRbased}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.361 \end{frame}
-                 
-<./figs/shockCubeAniso3.jpg, id=337, 792.9625pt x 705.63625pt>
-File: ./figs/shockCubeAniso3.jpg Graphic file (type jpg)
-
-<use ./figs/shockCubeAniso3.jpg>
-Package pdftex.def Info: ./figs/shockCubeAniso3.jpg used on input line 361.
-(pdftex.def)             Requested size: 129.2893pt x 115.04675pt.
-
-<./figs/shockCubeIso3.jpg, id=339, 792.9625pt x 705.63625pt>
-File: ./figs/shockCubeIso3.jpg Graphic file (type jpg)
-
-<use ./figs/shockCubeIso3.jpg>
-Package pdftex.def Info: ./figs/shockCubeIso3.jpg used on input line 361.
-(pdftex.def)             Requested size: 129.2893pt x 115.04675pt.
-
-Overfull \hbox (3.99997pt too wide) in paragraph at lines 361--361
-[][]  
- []
-
+ <./figs/Error.png>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 361.
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 348.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (9.7375pt too high) detected at line 361
- []
-
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1631,52 +1603,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [7
 
- <./figs/shockCubeAniso3.jpg> <./figs/shockCubeIso3.jpg>]
-<./figs/flagged_cells.jpg, id=369, 579.96675pt x 579.96675pt>
-File: ./figs/flagged_cells.jpg Graphic file (type jpg)
-
-<use ./figs/flagged_cells.jpg>
-Package pdftex.def Info: ./figs/flagged_cells.jpg used on input line 400.
-(pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
-
-<./figs/cell-based-refine.jpg, id=371, 579.96675pt x 579.96675pt>
-File: ./figs/cell-based-refine.jpg Graphic file (type jpg)
-
-<use ./figs/cell-based-refine.jpg>
-Package pdftex.def Info: ./figs/cell-based-refine.jpg used on input line 400.
-(pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
-
-<./figs/patch-based_refine.jpg, id=373, 579.96675pt x 579.96675pt>
-File: ./figs/patch-based_refine.jpg Graphic file (type jpg)
-
-<use ./figs/patch-based_refine.jpg>
-Package pdftex.def Info: ./figs/patch-based_refine.jpg used on input line 400.
-(pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
-
-<./figs/block-based.jpg, id=375, 583.58025pt x 583.58025pt>
-File: ./figs/block-based.jpg Graphic file (type jpg)
-
-<use ./figs/block-based.jpg>
-Package pdftex.def Info: ./figs/block-based.jpg used on input line 400.
-(pdftex.def)             Requested size: 73.04869pt x 73.04529pt.
-
-Overfull \hbox (1.45213pt too wide) in paragraph at lines 400--400
- [][][][] 
- []
-
-
-Overfull \hbox (3.99997pt too wide) in paragraph at lines 400--400
-[][]  
- []
-
+]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 400.
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 365.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (9.7375pt too high) detected at line 400
- []
-
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1684,13 +1615,131 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [8
 
+] <./figs/flagged_cells.jpg, id=377, 579.96675pt x 579.96675pt>
+File: ./figs/flagged_cells.jpg Graphic file (type jpg)
+
+<use ./figs/flagged_cells.jpg>
+Package pdftex.def Info: ./figs/flagged_cells.jpg used on input line 413.
+(pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
+
+<./figs/cell-based-refine.jpg, id=379, 579.96675pt x 579.96675pt>
+File: ./figs/cell-based-refine.jpg Graphic file (type jpg)
+
+<use ./figs/cell-based-refine.jpg>
+Package pdftex.def Info: ./figs/cell-based-refine.jpg used on input line 413.
+(pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
+
+<./figs/patch-based_refine.jpg, id=381, 579.96675pt x 579.96675pt>
+File: ./figs/patch-based_refine.jpg Graphic file (type jpg)
+
+<use ./figs/patch-based_refine.jpg>
+Package pdftex.def Info: ./figs/patch-based_refine.jpg used on input line 413.
+(pdftex.def)             Requested size: 73.04869pt x 73.04433pt.
+
+<./figs/block-based.jpg, id=383, 583.58025pt x 583.58025pt>
+File: ./figs/block-based.jpg Graphic file (type jpg)
+
+<use ./figs/block-based.jpg>
+Package pdftex.def Info: ./figs/block-based.jpg used on input line 413.
+(pdftex.def)             Requested size: 73.04869pt x 73.04529pt.
+
+Overfull \hbox (1.45213pt too wide) in paragraph at lines 413--413
+ [][][][] 
+ []
+
+
+Overfull \hbox (3.99997pt too wide) in paragraph at lines 413--413
+[][]  
+ []
+
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 413.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (9.7375pt too high) detected at line 413
+ []
+
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[9
+
  <./figs/flagged_cells.jpg> <./figs/cell-based-refine.jpg> <./figs/patch-based_
 refine.jpg> <./figs/block-based.jpg>]
-<./figs/ghostblock.png, id=408, 683.55376pt x 554.07pt>
+<./figs/BlockDivision.jpg, id=419, 1061.9675pt x 737.75626pt>
+File: ./figs/BlockDivision.jpg Graphic file (type jpg)
+
+<use ./figs/BlockDivision.jpg>
+Package pdftex.def Info: ./figs/BlockDivision.jpg used on input line 443.
+(pdftex.def)             Requested size: 204.70534pt x 142.20145pt.
+
+Overfull \hbox (3.99997pt too wide) in paragraph at lines 443--443
+[][]  
+ []
+
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 443.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (9.7375pt too high) detected at line 443
+ []
+
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[10
+
+ <./figs/BlockDivision.jpg>]pdfTeX warning (ext4): destination with the same id
+entifier (name{fig:cubeAMRbased}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.472 \end{frame}
+                 
+<./figs/shockCubeAniso3.jpg, id=447, 792.9625pt x 705.63625pt>
+File: ./figs/shockCubeAniso3.jpg Graphic file (type jpg)
+
+<use ./figs/shockCubeAniso3.jpg>
+Package pdftex.def Info: ./figs/shockCubeAniso3.jpg used on input line 472.
+(pdftex.def)             Requested size: 129.2893pt x 115.04675pt.
+
+<./figs/shockCubeIso3.jpg, id=449, 792.9625pt x 705.63625pt>
+File: ./figs/shockCubeIso3.jpg Graphic file (type jpg)
+
+<use ./figs/shockCubeIso3.jpg>
+Package pdftex.def Info: ./figs/shockCubeIso3.jpg used on input line 472.
+(pdftex.def)             Requested size: 129.2893pt x 115.04675pt.
+
+Overfull \hbox (3.99997pt too wide) in paragraph at lines 472--472
+[][]  
+ []
+
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 472.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (9.7375pt too high) detected at line 472
+ []
+
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[11
+
+ <./figs/shockCubeAniso3.jpg> <./figs/shockCubeIso3.jpg>]
+<./figs/ghostblock.png, id=478, 683.55376pt x 554.07pt>
 File: ./figs/ghostblock.png Graphic file (type png)
 
 <use ./figs/ghostblock.png>
-Package pdftex.def Info: ./figs/ghostblock.png used on input line 440.
+Package pdftex.def Info: ./figs/ghostblock.png used on input line 516.
 (pdftex.def)             Requested size: 86.19067pt x 69.85884pt.
 Package epstopdf Info: Source file: <./figs/parallel-domain-decomp.eps>
 (epstopdf)                    date: 2015-04-02 15:42:57
@@ -1701,7 +1750,7 @@ d-to.pdf>
 (epstopdf)                    size: 51705 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/parallel-domain-dec
 omp-eps-converted-to.pdf ./figs/parallel-domain-decomp.eps>
-(epstopdf)             \includegraphics on input line 440.
+(epstopdf)             \includegraphics on input line 516.
 runsystem(repstopdf --outfile=./figs/parallel-domain-decomp-eps-converted-to.pd
 f ./figs/parallel-domain-decomp.eps)...executed safely (allowed).
 
@@ -1710,110 +1759,32 @@ d-to.pdf>
 (epstopdf)                    date: 2015-04-02 15:42:56
 (epstopdf)                    size: 51705 bytes.
 
-<./figs/parallel-domain-decomp-eps-converted-to.pdf, id=410, 490.83376pt x 327.
+<./figs/parallel-domain-decomp-eps-converted-to.pdf, id=480, 490.83376pt x 327.
 2225pt>
 File: ./figs/parallel-domain-decomp-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./figs/parallel-domain-decomp-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/parallel-domain-decomp-eps-converted-to.pdf use
-d on input line 440.
+d on input line 516.
 (pdftex.def)             Requested size: 86.19067pt x 57.45952pt.
 
-<./figs/Non-UniformBlock.png, id=412, 1138.2525pt x 829.0975pt>
+<./figs/Non-UniformBlock.png, id=482, 1138.2525pt x 829.0975pt>
 File: ./figs/Non-UniformBlock.png Graphic file (type png)
 
 <use ./figs/Non-UniformBlock.png>
-Package pdftex.def Info: ./figs/Non-UniformBlock.png used on input line 440.
+Package pdftex.def Info: ./figs/Non-UniformBlock.png used on input line 516.
 (pdftex.def)             Requested size: 118.51465pt x 93.31372pt.
 
-Overfull \hbox (3.99997pt too wide) in paragraph at lines 440--440
+Overfull \hbox (3.99997pt too wide) in paragraph at lines 516--516
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 440.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 516.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (9.7375pt too high) detected at line 440
- []
-
-
-Overfull \hbox (2.11946pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[9
-
- <./figs/ghostblock.png (PNG copy)> <./figs/parallel-domain-decomp-eps-converte
-d-to.pdf> <./figs/Non-UniformBlock.png>]
-<./figs/fig_quadpts.png, id=447, 666.49pt x 576.1525pt>
-File: ./figs/fig_quadpts.png Graphic file (type png)
-
-<use ./figs/fig_quadpts.png>
-Package pdftex.def Info: ./figs/fig_quadpts.png used on input line 495.
-(pdftex.def)             Requested size: 86.19067pt x 74.50684pt.
-
-<./figs/error_ho_amr3.jpg, id=449, 782.17218pt x 595.47469pt>
-File: ./figs/error_ho_amr3.jpg Graphic file (type jpg)
-
-<use ./figs/error_ho_amr3.jpg>
-Package pdftex.def Info: ./figs/error_ho_amr3.jpg used on input line 495.
-(pdftex.def)             Requested size: 118.51465pt x 90.22597pt.
-
-Overfull \hbox (3.99997pt too wide) in paragraph at lines 495--495
-[][]  
- []
-
-File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 495.
-(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (16.33751pt too high) detected at line 495
- []
-
-
-Overfull \hbox (2.11946pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[10
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:errorHO})
- has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.495 \end{frame}
-                  <./figs/fig_quadpts.png> <./figs/error_ho_amr3.jpg>]
-File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 527.
-(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (12.2375pt too high) detected at line 527
- []
-
-
-Overfull \hbox (2.11946pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[11
-
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 570.
-
-File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 570.
-(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (6.2375pt too high) detected at line 570
+Overfull \vbox (9.7375pt too high) detected at line 516
  []
 
 
@@ -1823,23 +1794,32 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [12
 
-] <./figs/Error.png, id=524, 1059.96pt x 797.98125pt>
-File: ./figs/Error.png Graphic file (type png)
+ <./figs/ghostblock.png (PNG copy)> <./figs/parallel-domain-decomp-eps-converte
+d-to.pdf> <./figs/Non-UniformBlock.png>]
+<./figs/fig_quadpts.png, id=517, 666.49pt x 576.1525pt>
+File: ./figs/fig_quadpts.png Graphic file (type png)
 
-<use ./figs/Error.png>
-Package pdftex.def Info: ./figs/Error.png used on input line 591.
-(pdftex.def)             Requested size: 247.16597pt x 186.0751pt.
+<use ./figs/fig_quadpts.png>
+Package pdftex.def Info: ./figs/fig_quadpts.png used on input line 571.
+(pdftex.def)             Requested size: 86.19067pt x 74.50684pt.
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 591--591
+<./figs/error_ho_amr3.jpg, id=519, 782.17218pt x 595.47469pt>
+File: ./figs/error_ho_amr3.jpg Graphic file (type jpg)
+
+<use ./figs/error_ho_amr3.jpg>
+Package pdftex.def Info: ./figs/error_ho_amr3.jpg used on input line 571.
+(pdftex.def)             Requested size: 118.51465pt x 90.22597pt.
+
+Overfull \hbox (3.99997pt too wide) in paragraph at lines 571--571
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 591.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 571.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (37.88681pt too high) detected at line 591
+Overfull \vbox (16.33751pt too high) detected at line 571
  []
 
 
@@ -1849,11 +1829,22 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [13
 
- <./figs/Error.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{fig:errorHO})
+ has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.571 \end{frame}
+                  <./figs/fig_quadpts.png> <./figs/error_ho_amr3.jpg>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 618.
+
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 603.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (12.2375pt too high) detected at line 603
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1862,10 +1853,18 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [14
 
 ]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 646.
+
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 651.
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 646.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (6.2375pt too high) detected at line 646
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1876,7 +1875,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 667.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 682.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1885,39 +1884,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [16
 
-] <./figs/outflowIso.png, id=618, 745.78625pt x 664.4825pt>
-File: ./figs/outflowIso.png Graphic file (type png)
-
-<use ./figs/outflowIso.png>
-Package pdftex.def Info: ./figs/outflowIso.png used on input line 696.
-(pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
-
-<./figs/outflowAniso.png, id=620, 745.78625pt x 664.4825pt>
-File: ./figs/outflowAniso.png Graphic file (type png)
-
-<use ./figs/outflowAniso.png>
-Package pdftex.def Info: ./figs/outflowAniso.png used on input line 696.
-(pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
-
-<./figs/outflowError.png, id=622, 745.78625pt x 664.4825pt>
-File: ./figs/outflowError.png Graphic file (type png)
-
-<use ./figs/outflowError.png>
-Package pdftex.def Info: ./figs/outflowError.png used on input line 696.
-(pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
-
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 696--696
-[][]  
- []
-
+]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 696.
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 698.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (12.2375pt too high) detected at line 696
- []
-
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1925,12 +1896,39 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [17
 
- <./figs/outflowIso.png (PNG copy)> <./figs/outflowAniso.png (PNG copy)> <./fig
-s/outflowError.png (PNG copy)>]
+] <./figs/outflowIso.png, id=645, 745.78625pt x 664.4825pt>
+File: ./figs/outflowIso.png Graphic file (type png)
+
+<use ./figs/outflowIso.png>
+Package pdftex.def Info: ./figs/outflowIso.png used on input line 727.
+(pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
+
+<./figs/outflowAniso.png, id=647, 745.78625pt x 664.4825pt>
+File: ./figs/outflowAniso.png Graphic file (type png)
+
+<use ./figs/outflowAniso.png>
+Package pdftex.def Info: ./figs/outflowAniso.png used on input line 727.
+(pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
+
+<./figs/outflowError.png, id=649, 745.78625pt x 664.4825pt>
+File: ./figs/outflowError.png Graphic file (type png)
+
+<use ./figs/outflowError.png>
+Package pdftex.def Info: ./figs/outflowError.png used on input line 727.
+(pdftex.def)             Requested size: 96.96533pt x 86.38574pt.
+
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 727--727
+[][]  
+ []
+
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 709.
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 727.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (12.2375pt too high) detected at line 727
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1938,10 +1936,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [18
 
-]
+ <./figs/outflowIso.png (PNG copy)> <./figs/outflowAniso.png (PNG copy)> <./fig
+s/outflowError.png (PNG copy)>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 734.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 740.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1953,7 +1952,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 ]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 777.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 765.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -1963,18 +1962,10 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 816--816
-[][]  
- []
-
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 816.
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 806.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (12.2375pt too high) detected at line 816
- []
-
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1983,10 +1974,18 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [21
 
 ]
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 845--845
+[][]  
+ []
+
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 842.
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 845.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (12.2375pt too high) detected at line 845
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -1995,11 +1994,9 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [22
 
 ]
-Missing character: There is no Ï in font cmss8!
-Missing character: There is no ‰ in font cmss8!
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
  <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 861.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 871.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2008,32 +2005,13 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [23
 
-] <./figs/LAV_adj_err.png, id=782, 1377.145pt x 492.84125pt>
-File: ./figs/LAV_adj_err.png Graphic file (type png)
-
-<use ./figs/LAV_adj_err.png>
-Package pdftex.def Info: ./figs/LAV_adj_err.png used on input line 896.
-(pdftex.def)             Requested size: 137.90706pt x 49.34717pt.
-
-<./figs/LAV_mesh.png, id=784, 759.83875pt x 540.0175pt>
-File: ./figs/LAV_mesh.png Graphic file (type png)
-
-<use ./figs/LAV_mesh.png>
-Package pdftex.def Info: ./figs/LAV_mesh.png used on input line 896.
-(pdftex.def)             Requested size: 152.99223pt x 108.7267pt.
-
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 896--896
-[][]  
- []
-
+]
+Missing character: There is no Ï in font cmss8!
+Missing character: There is no ‰ in font cmss8!
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 896.
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 890.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (16.33751pt too high) detected at line 896
- []
-
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -2041,29 +2019,32 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [24
 
- <./figs/LAV_adj_err.png (PNG copy)> <./figs/LAV_mesh.png (PNG copy)>]
-<./figs/Poisson2D.png, id=811, 560.0925pt x 472.6458pt>
-File: ./figs/Poisson2D.png Graphic file (type png)
+] <./figs/LAV_adj_err.png, id=809, 1377.145pt x 492.84125pt>
+File: ./figs/LAV_adj_err.png Graphic file (type png)
 
-<use ./figs/Poisson2D.png>
-Package pdftex.def Info: ./figs/Poisson2D.png used on input line 929.
-(pdftex.def)             Requested size: 150.83533pt x 127.28432pt.
+<use ./figs/LAV_adj_err.png>
+Package pdftex.def Info: ./figs/LAV_adj_err.png used on input line 925.
+(pdftex.def)             Requested size: 137.90706pt x 49.34717pt.
 
-<./figs/3D_Poisson.png, id=812, 1184.425pt x 1052.93375pt>
-File: ./figs/3D_Poisson.png Graphic file (type png)
+<./figs/LAV_mesh.png, id=811, 759.83875pt x 540.0175pt>
+File: ./figs/LAV_mesh.png Graphic file (type png)
 
-<use ./figs/3D_Poisson.png>
-Package pdftex.def Info: ./figs/3D_Poisson.png used on input line 929.
-(pdftex.def)             Requested size: 150.83533pt x 126.82854pt.
+<use ./figs/LAV_mesh.png>
+Package pdftex.def Info: ./figs/LAV_mesh.png used on input line 925.
+(pdftex.def)             Requested size: 152.99223pt x 108.7267pt.
 
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 929--929
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 925--925
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 929.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 925.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (16.33751pt too high) detected at line 925
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -2071,59 +2052,29 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [25
 
- <./figs/3D_Poisson.png (PNG copy)> <./figs/Poisson2D.png>]
-<./figs/Flame_temp.png, id=844, 794.97pt x 705.63625pt>
-File: ./figs/Flame_temp.png Graphic file (type png)
+ <./figs/LAV_adj_err.png (PNG copy)> <./figs/LAV_mesh.png (PNG copy)>]
+<./figs/Poisson2D.png, id=839, 560.0925pt x 472.6458pt>
+File: ./figs/Poisson2D.png Graphic file (type png)
 
-<use ./figs/Flame_temp.png>
-Package pdftex.def Info: ./figs/Flame_temp.png used on input line 971.
-(pdftex.def)             Requested size: 45.25224pt x 58.29585pt.
+<use ./figs/Poisson2D.png>
+Package pdftex.def Info: ./figs/Poisson2D.png used on input line 958.
+(pdftex.def)             Requested size: 150.83533pt x 127.28432pt.
 
-<./figs/fsd2_0ms.png, id=846, 1178.4025pt x 1067.99pt>
-File: ./figs/fsd2_0ms.png Graphic file (type png)
+<./figs/3D_Poisson.png, id=840, 1184.425pt x 1052.93375pt>
+File: ./figs/3D_Poisson.png Graphic file (type png)
 
-<use ./figs/fsd2_0ms.png>
-Package pdftex.def Info: ./figs/fsd2_0ms.png used on input line 971.
-(pdftex.def)             Requested size: 64.64465pt x 58.58481pt.
+<use ./figs/3D_Poisson.png>
+Package pdftex.def Info: ./figs/3D_Poisson.png used on input line 958.
+(pdftex.def)             Requested size: 150.83533pt x 126.82854pt.
 
-<./figs/fsd4_25ms.png, id=848, 1178.4025pt x 1072.005pt>
-File: ./figs/fsd4_25ms.png Graphic file (type png)
-
-<use ./figs/fsd4_25ms.png>
-Package pdftex.def Info: ./figs/fsd4_25ms.png used on input line 971.
-(pdftex.def)             Requested size: 64.64465pt x 58.80505pt.
-
-<./figs/fsd7_0ms.png, id=850, 1178.4025pt x 1073.00874pt>
-File: ./figs/fsd7_0ms.png Graphic file (type png)
-
-<use ./figs/fsd7_0ms.png>
-Package pdftex.def Info: ./figs/fsd7_0ms.png used on input line 971.
-(pdftex.def)             Requested size: 64.64465pt x 58.8601pt.
-
-<./figs/Time_averaged_c_O2.png, id=852, 794.97pt x 705.63625pt>
-File: ./figs/Time_averaged_c_O2.png Graphic file (type png)
-
-<use ./figs/Time_averaged_c_O2.png>
-Package pdftex.def Info: ./figs/Time_averaged_c_O2.png used on input line 971.
-(pdftex.def)             Requested size: 53.87pt x 58.924pt.
-
-Overfull \hbox (2.31357pt too wide) in paragraph at lines 971--971
- [][][][][] 
- []
-
-
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 971--971
-[]  
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 958--958
+[][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 971.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 958.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (31.2375pt too high) detected at line 971
- []
-
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -2131,31 +2082,58 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [26
 
- <./figs/Flame_temp.png (PNG copy)> <./figs/fsd2_0ms.png (PNG copy)> <./figs/fs
-d4_25ms.png (PNG copy)> <./figs/fsd7_0ms.png (PNG copy)> <./figs/Time_averaged_
-c_O2.png (PNG copy)>] <./figs/20Rho.png, id=886, 794.97pt x 705.63625pt>
-File: ./figs/20Rho.png Graphic file (type png)
+ <./figs/3D_Poisson.png (PNG copy)> <./figs/Poisson2D.png>]
+<./figs/Flame_temp.png, id=871, 794.97pt x 705.63625pt>
+File: ./figs/Flame_temp.png Graphic file (type png)
 
-<use ./figs/20Rho.png>
-Package pdftex.def Info: ./figs/20Rho.png used on input line 1004.
-(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
- <./figs/20RhoAdj.png, id=888, 794.97pt x 705.63625pt>
-File: ./figs/20RhoAdj.png Graphic file (type png)
+<use ./figs/Flame_temp.png>
+Package pdftex.def Info: ./figs/Flame_temp.png used on input line 1000.
+(pdftex.def)             Requested size: 45.25224pt x 58.29585pt.
 
-<use ./figs/20RhoAdj.png>
-Package pdftex.def Info: ./figs/20RhoAdj.png used on input line 1004.
-(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
+<./figs/fsd2_0ms.png, id=873, 1178.4025pt x 1067.99pt>
+File: ./figs/fsd2_0ms.png Graphic file (type png)
 
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 1004--1004
-[][]  
+<use ./figs/fsd2_0ms.png>
+Package pdftex.def Info: ./figs/fsd2_0ms.png used on input line 1000.
+(pdftex.def)             Requested size: 64.64465pt x 58.58481pt.
+
+<./figs/fsd4_25ms.png, id=875, 1178.4025pt x 1072.005pt>
+File: ./figs/fsd4_25ms.png Graphic file (type png)
+
+<use ./figs/fsd4_25ms.png>
+Package pdftex.def Info: ./figs/fsd4_25ms.png used on input line 1000.
+(pdftex.def)             Requested size: 64.64465pt x 58.80505pt.
+
+<./figs/fsd7_0ms.png, id=877, 1178.4025pt x 1073.00874pt>
+File: ./figs/fsd7_0ms.png Graphic file (type png)
+
+<use ./figs/fsd7_0ms.png>
+Package pdftex.def Info: ./figs/fsd7_0ms.png used on input line 1000.
+(pdftex.def)             Requested size: 64.64465pt x 58.8601pt.
+
+<./figs/Time_averaged_c_O2.png, id=879, 794.97pt x 705.63625pt>
+File: ./figs/Time_averaged_c_O2.png Graphic file (type png)
+
+<use ./figs/Time_averaged_c_O2.png>
+Package pdftex.def Info: ./figs/Time_averaged_c_O2.png used on input line 1000.
+
+(pdftex.def)             Requested size: 53.87pt x 58.924pt.
+
+Overfull \hbox (2.31357pt too wide) in paragraph at lines 1000--1000
+ [][][][][] 
+ []
+
+
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 1000--1000
+[]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1004.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1000.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 1004
+Overfull \vbox (31.2375pt too high) detected at line 1000
  []
 
 
@@ -2165,17 +2143,31 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [27
 
- <./figs/20Rho.png (PNG copy)> <./figs/20RhoAdj.png (PNG copy)>]
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 1040--1040
+ <./figs/Flame_temp.png (PNG copy)> <./figs/fsd2_0ms.png (PNG copy)> <./figs/fs
+d4_25ms.png (PNG copy)> <./figs/fsd7_0ms.png (PNG copy)> <./figs/Time_averaged_
+c_O2.png (PNG copy)>] <./figs/20Rho.png, id=914, 794.97pt x 705.63625pt>
+File: ./figs/20Rho.png Graphic file (type png)
+
+<use ./figs/20Rho.png>
+Package pdftex.def Info: ./figs/20Rho.png used on input line 1033.
+(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
+ <./figs/20RhoAdj.png, id=916, 794.97pt x 705.63625pt>
+File: ./figs/20RhoAdj.png Graphic file (type png)
+
+<use ./figs/20RhoAdj.png>
+Package pdftex.def Info: ./figs/20RhoAdj.png used on input line 1033.
+(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
+
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 1033--1033
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1040.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1033.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (12.2375pt too high) detected at line 1040
+Overfull \vbox (16.33751pt too high) detected at line 1033
  []
 
 
@@ -2185,22 +2177,17 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [28
 
-]
-Overfull \hbox (1.68826pt too wide) in paragraph at lines 1083--1083
-[][]  
- []
-
-
-Overfull \hbox (5.33331pt too wide) in paragraph at lines 1083--1083
+ <./figs/20Rho.png (PNG copy)> <./figs/20RhoAdj.png (PNG copy)>]
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 1069--1069
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1083.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1069.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (12.2375pt too high) detected at line 1083
+Overfull \vbox (12.2375pt too high) detected at line 1069
  []
 
 
@@ -2211,10 +2198,23 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [29
 
 ]
+Overfull \hbox (1.68826pt too wide) in paragraph at lines 1112--1112
+[][]  
+ []
+
+
+Overfull \hbox (5.33331pt too wide) in paragraph at lines 1112--1112
+[][]  
+ []
+
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1093.
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1112.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (12.2375pt too high) detected at line 1112
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -2223,9 +2223,21 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [30
 
 ]
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1122.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[31
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 1097.
+(hyperref)                removing `\translate ' on input line 1126.
 
 \c@finalframe=\count305
 Missing character: There is no â in font cmss8!
@@ -2235,49 +2247,16 @@ Missing character: There is no â in font cmss8!
 Missing character: There is no € in font cmss8!
 Missing character: There is no “ in font cmss8!
 
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 1132--1132
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 1161--1161
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1132.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1161.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 1132
- []
-
-
-Overfull \hbox (2.11946pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[31
-
-] <./figs/rho_mesh.png, id=997, 794.97pt x 705.63625pt>
-File: ./figs/rho_mesh.png Graphic file (type png)
-
-<use ./figs/rho_mesh.png>
-Package pdftex.def Info: ./figs/rho_mesh.png used on input line 1166.
-(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
-
-<./figs/rhoAdj_mesh.png, id=999, 794.97pt x 705.63625pt>
-File: ./figs/rhoAdj_mesh.png Graphic file (type png)
-
-<use ./figs/rhoAdj_mesh.png>
-Package pdftex.def Info: ./figs/rhoAdj_mesh.png used on input line 1166.
-(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
-
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 1166--1166
-[][]  
- []
-
-File: ./figs/utias-logo2.jpg Graphic file (type jpg)
-<use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1166.
-(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
-
-Overfull \vbox (16.33751pt too high) detected at line 1166
+Overfull \vbox (16.33751pt too high) detected at line 1161
  []
 
 
@@ -2287,12 +2266,32 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [32
 
- <./figs/rho_mesh.png (PNG copy)> <./figs/rhoAdj_mesh.png (PNG copy)>]
-File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+] <./figs/rho_mesh.png, id=1024, 794.97pt x 705.63625pt>
+File: ./figs/rho_mesh.png Graphic file (type png)
 
+<use ./figs/rho_mesh.png>
+Package pdftex.def Info: ./figs/rho_mesh.png used on input line 1195.
+(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
+
+<./figs/rhoAdj_mesh.png, id=1026, 794.97pt x 705.63625pt>
+File: ./figs/rhoAdj_mesh.png Graphic file (type png)
+
+<use ./figs/rhoAdj_mesh.png>
+Package pdftex.def Info: ./figs/rhoAdj_mesh.png used on input line 1195.
+(pdftex.def)             Requested size: 140.06067pt x 124.31726pt.
+
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 1195--1195
+[][]  
+ []
+
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1201.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1195.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \vbox (16.33751pt too high) detected at line 1195
+ []
+
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
@@ -2300,14 +2299,11 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 
 [33
 
-]
-File: ./figs/dlrflame.png Graphic file (type png)
- <use ./figs/dlrflame.png>
-Package pdftex.def Info: ./figs/dlrflame.png used on input line 1245.
-(pdftex.def)             Requested size: 34.26627pt x 87.22366pt.
+ <./figs/rho_mesh.png (PNG copy)> <./figs/rhoAdj_mesh.png (PNG copy)>]
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
- <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1245.
+
+<use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1230.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
 Overfull \hbox (2.11946pt too wide) has occurred while \output is active
@@ -2317,16 +2313,32 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [34
 
 ]
-Overfull \hbox (7.29996pt too wide) in paragraph at lines 1286--1286
+File: ./figs/dlrflame.png Graphic file (type png)
+ <use ./figs/dlrflame.png>
+Package pdftex.def Info: ./figs/dlrflame.png used on input line 1274.
+(pdftex.def)             Requested size: 34.26627pt x 87.22366pt.
+File: ./figs/utias-logo2.jpg Graphic file (type jpg)
+ <use ./figs/utias-logo2.jpg>
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1274.
+(pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
+
+Overfull \hbox (2.11946pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[35
+
+]
+Overfull \hbox (7.29996pt too wide) in paragraph at lines 1315--1315
 [][]  
  []
 
 File: ./figs/utias-logo2.jpg Graphic file (type jpg)
 <use ./figs/utias-logo2.jpg>
-Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1286.
+Package pdftex.def Info: ./figs/utias-logo2.jpg used on input line 1315.
 (pdftex.def)             Requested size: 28.45166pt x 28.45125pt.
 
-Overfull \vbox (16.33751pt too high) detected at line 1286
+Overfull \vbox (16.33751pt too high) detected at line 1315
  []
 
 
@@ -2334,7 +2346,7 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[35
+[36
 
 ]
 \tf@nav=\write6
@@ -2346,14 +2358,14 @@ Overfull \hbox (2.11946pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Final_DEC_Slides.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1301.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1330.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1330.
  (./Final_DEC_Slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1330.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1330.
 
 Package rerunfilecheck Info: File `Final_DEC_Slides.out' has not changed.
-(rerunfilecheck)             Checksum: E046447A3DB21F6B721221D82075801C;2276.
+(rerunfilecheck)             Checksum: D949CAF37410531061BEEA32AD111487;2370.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2365,13 +2377,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1330.
  ) 
 Here is how much of TeX's memory you used:
- 27753 strings out of 493109
- 568779 string characters out of 6135003
- 598988 words of memory out of 5000000
- 30514 multiletter control sequences out of 15000+600000
+ 27761 strings out of 493109
+ 568868 string characters out of 6135003
+ 599167 words of memory out of 5000000
+ 30519 multiletter control sequences out of 15000+600000
  28848 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,18n,63p,10353b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2398,10 +2410,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
-Output written on Final_DEC_Slides.pdf (35 pages, 5339763 bytes).
+Output written on Final_DEC_Slides.pdf (36 pages, 5350105 bytes).
 PDF statistics:
- 1152 PDF objects out of 1200 (max. 8388607)
- 1001 compressed objects within 11 object streams
- 156 named destinations out of 1000 (max. 500000)
- 700 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1180 PDF objects out of 1200 (max. 8388607)
+ 1028 compressed objects within 11 object streams
+ 159 named destinations out of 1000 (max. 500000)
+ 708 words of extra memory for PDF output out of 10000 (max. 10000000)
 
